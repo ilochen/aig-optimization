@@ -1,0 +1,49 @@
+{
+  "library_sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+  "abc_sha256": "de543f9e6a3e4c41fdef9afce24964be93e349698d5d7fea079f0078eabf2e26",
+  "measured_core_sha256": {
+    "__init__.py": "7ab167792f8c9600b219db26d09e2274519dc255e1ca4885a1f0cc152d20929e",
+    "__main__.py": "a9c7284346e4b4b0530e6864abe7ac4ea5f2fd63a0e1271cb18dbfdb93a779bc",
+    "abc.py": "b64383a0c22b6bac38304baeeb5fe103886db06adf83f0688d23882b7fdde62b",
+    "benchmark.py": "1d91270e0d0ad214e0447d2be40876147ba24a2ea6b0fc1ff881c46b7859590d",
+    "bundle.py": "4ebf8ff539e02960c35fab2a3959ca1069ea8f3b59a413fe14ded5815d5c1c3f",
+    "centered_training.py": "c985034216ce43bb8d6a86f6e0ab034c2fbfe18c407119aa31e5c9fba658ca22",
+    "descriptors.py": "d8a79ad779028266fdc8855c26652243cbf7219ddcb04434ccee6f175d27b171",
+    "evaluator.py": "15c0d4056c9f47d778e17d3468c02288afaa624a9548018642af38a6bb24fe7e",
+    "finalist_benchmark.py": "7c0d1988a9fbf47796870274e312bff616356dbfb264b8c48522852725ec95ee",
+    "finalists.py": "5c2b8f2e5009fd136207259d7962d14695173fd547b52b1ea31b324daf91aed8",
+    "graph.py": "203affe4865a556bce4627935a652a428c7670275dc73d6b8882be038a730bd8",
+    "hybrid_evaluator.py": "323a32989297082db3b857fd8a2c133e64ff8360a8e37638c59ec44c6571ac86",
+    "load_descriptors.py": "2e97d024517d9fb6f42d50584b3121633d0b9ab9325fc3fb2e629f7d7b74bc95",
+    "objective.py": "bdf9f20b0f2c110f1262602a95c11c84a7e41df4e2598d537c56913d431c31c0",
+    "probes.py": "060c9d9dd2584dbc217ff05628d1e3b932e077e7d8b5f90679a775aad349b259",
+    "ranker.py": "5e784cc45301c14a6c853448d9b3d8804636218181cba6607f16bf1c2712e165",
+    "relative_evaluator.py": "a0c55aef767d14b89345c2bd5f33bdb5144659f02dc8369ef3992d610620b038",
+    "search.py": "905f6029883aa778a8f77978ca69e108d616dacc2435cc2ab560608420cb6411"
+  },
+  "artifacts_sha256": {
+    "benchmarks/checkpoints/baseline.json": "9ad9eb6c0358505536ad12acf98ae27b7a44c1165f11fa24327a7d21254be96e",
+    "benchmarks/checkpoints/regression.json": "adb4cba6a1c51ab7115e8619a3c1fc83ea24da786e43f797bf7be7187efdbdd3",
+    "benchmarks/checkpoints/relative.json": "7ca3603c90c6e34f2e36f92a939b41bbfb95f974ab04938743664d58979b011d",
+    "benchmarks/data/baseline.json": "d68bdd464d6f0351a66a17f880315fca48d99486b192b0e418bc1c9fbb205678",
+    "benchmarks/data/ranking.json": "d03883f2343170233fe493ba412210d922630937bd5d5370e551c626a90ccbb0",
+    "benchmarks/evaluation/iscas85/analysis.json": "87bace5d1e1d6235f0a8c315646878f1c5a891737137c0e1be91b842567034b1",
+    "benchmarks/evaluation/iscas85/probes.json": "de9ab15ffb7e43382cc235740095d0a4402c93e44dc5ddc05f2d2101b9c9f9fa",
+    "benchmarks/evaluation/iscas85/runs.jsonl": "5d612e70e7705d1b9d8a7e20b1de13f28dad5fad38cd3de701cd296c7ba08b2e",
+    "benchmarks/evaluation/iscas85/summary.json": "9e1328d4156d8d95c30ebffaae08ee78a9d0c4c4cbe03fb6df19a6ea648e317d",
+    "benchmarks/selection/cross-validation.json": "ca0d457c6dc90e866430556d90e0d18034e143ad3ff1ffbd56520753e3a11f2f",
+    "benchmarks/selection/ranking-policy.json": "d443cc7aedf76c4abb95b1055e9fcefce8cb756d8b9a95990882904ef11081bc",
+    "benchmarks/suite.json": "019181418e51f77cbaf5503db1ce4a34d6553a951ddc2ce6d9b4b2cf5a79623b"
+  },
+  "privacy_note": "Private absolute paths in dataset diagnostic strings are redacted. Source-artifact digests and distributed-digest mappings are retained. Training rows, measurements, model weights, candidate identities and proof statuses are unchanged.",
+  "diagnostic_strings_redacted": 17,
+  "dataset_digest_mapping": {
+    "ba457b25bb4366ec35d63fa2bb4cf7d4352f6fefc1caa8c4ddba98c52d8a92b2": "d68bdd464d6f0351a66a17f880315fca48d99486b192b0e418bc1c9fbb205678",
+    "261c58cd7d0ed93919f56de1a931a5d5215a4982390f3fcd021c48d4ad54370e": "d03883f2343170233fe493ba412210d922630937bd5d5370e551c626a90ccbb0"
+  },
+  "checkpoint_digest_mapping": {
+    "3ff64b53f49b8ac2c5115ad59416c5f96fd1d353832a12e6f7d1c03b6f567338": "9ad9eb6c0358505536ad12acf98ae27b7a44c1165f11fa24327a7d21254be96e",
+    "9909edeb1bc56b0089d975e0647d4ca0cd5fae131833e060745c4725722ac9ec": "adb4cba6a1c51ab7115e8619a3c1fc83ea24da786e43f797bf7be7187efdbdd3",
+    "d3e69a23e69ec78205bdca674b8f057be585b88374a9bf1c17b86095be7bf546": "7ca3603c90c6e34f2e36f92a939b41bbfb95f974ab04938743664d58979b011d"
+  }
+}

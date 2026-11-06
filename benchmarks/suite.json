@@ -1,0 +1,121 @@
+{
+  "schema": "iscas-ranking-v6",
+  "archive": {
+    "url": "https://ddd.fit.cvut.cz/www/prj/Benchmarks/ISCAS.7z",
+    "sha256": "398f9c8c59e14f342f2257284a96273a6cde0b0a7b064d22966b4e6aed4a3b47",
+    "bytes": 6896149
+  },
+  "test": [
+    {
+      "path": "blif/c432.blif",
+      "family": "priority-decoder",
+      "sha256": "01b3a87cd3e65fca8109fbc08a80fcd15852e33d0d449c5cbed31a7ce1da7045"
+    },
+    {
+      "path": "blif/c499.blif",
+      "family": "error-correction",
+      "sha256": "925ac377786dc2c9771cedf9fe9467f11cd9d62f12e439b0b2f44b15bfc0b500"
+    },
+    {
+      "path": "blif/c880.blif",
+      "family": "alu-control",
+      "sha256": "402a1f79bb6a13006cd2d86a723320cb67649d719e693959d56d89a3619782ca"
+    },
+    {
+      "path": "blif/c1908.blif",
+      "family": "error-correction",
+      "sha256": "1568273aaf0779d784bc1c7d7a0451795b0c7288df23c65d9272c693d3e18ce7"
+    },
+    {
+      "path": "blif/c2670.blif",
+      "family": "alu-control",
+      "sha256": "254e3575fe76dad0373ef8fbd85d5650b47a842b72f246182ded1f9b85c6ecc3"
+    },
+    {
+      "path": "blif/c3540.blif",
+      "family": "alu-control",
+      "sha256": "87e7ebaa2b6b9fa2d889ecdfadfd3018da51c3b98a3944ce431e9d1c5b238786"
+    },
+    {
+      "path": "blif/c5315.blif",
+      "family": "alu-control",
+      "sha256": "e1024748cb91d81fe39c2869b4895e37e3bd8aa1dc3b3bbad23b88ad98f3c2d0"
+    },
+    {
+      "path": "blif/c6288.blif",
+      "family": "multiplier",
+      "sha256": "0077c65a577c22de2534ce84db89b84cd620581b066805e7e45f939e9f8fa937"
+    },
+    {
+      "path": "blif/c7552.blif",
+      "family": "alu-control",
+      "sha256": "7c95cb8974ef8592aca4a9523a8e8d2d51d0a1abebd5855fc413781b6afc2681"
+    }
+  ],
+  "duplicate_reference": "https://ddd.fit.cvut.cz/www/prj/Benchmarks/iscas85.pdf",
+  "protocol": {
+    "library": "libraries/nangate45/NangateOpenCellLibrary_typical.lib",
+    "library_sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+    "development_on_policy_samples_per_control": 8,
+    "development_seed": 4811,
+    "cv_folds": [
+      [
+        "ctrl",
+        "i2c",
+        "mem_ctrl",
+        "router"
+      ],
+      [
+        "arbiter",
+        "priority",
+        "int2float"
+      ],
+      [
+        "cavlc",
+        "dec",
+        "voter"
+      ]
+    ],
+    "configs": [
+      "centered-summary4",
+      "centered-topology28",
+      "centered-load40"
+    ],
+    "hidden": 4,
+    "epochs": 300,
+    "pair_weight": 0.1,
+    "weight_decay": 0.002,
+    "blends": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "minimum mean out-of-fold circuit selection regret; pair accuracy tie-break; smaller blend and feature count final tie-break",
+    "training_seed": 271828,
+    "data_only_epochs": 1500,
+    "data_only_seed": 314159,
+    "test_methods": [
+      "structural",
+      "previous-neural",
+      "data-only-neural",
+      "selected-ranker"
+    ],
+    "search_seeds": [
+      11,
+      23,
+      37
+    ],
+    "iterations": 24,
+    "depth": 3,
+    "choice": "best",
+    "widening": 1,
+    "finalists": 3,
+    "command_timeout": 10,
+    "total_proof_budget": 30,
+    "test_probes": "baseline plus eight seeded root actions, seed83+case index; after model freeze",
+    "analysis": "paired circuit/seed comparison; mean seeds within circuit; circuit bootstrap and descriptive family sensitivity; failures zero improvement"
+  },
+  "limits": "Nine circuits, four descriptive clusters; ALU/control dominates. Arithmetic functions relate to older training. New source designs, not claims of arbitrary semantic independence.",
+  "selection_policy": "highest out-of-fold pair accuracy subject to no more than 0.5 percentage point additional mean top-choice regret versus the previous model; then regret and smaller correction"
+}

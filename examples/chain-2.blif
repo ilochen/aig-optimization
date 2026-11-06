@@ -1,0 +1,15 @@
+.model example_2
+.inputs a b c d0 d1
+.outputs F
+.names a b ab
+11 1
+.names a c ac
+11 1
+.names ab ac left
+1- 1
+-1 1
+.names left d0 n0
+11 1
+.names n0 d1 F
+11 1
+.end

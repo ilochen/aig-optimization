@@ -1,0 +1,1 @@
+{"name":"technology-aware-aig-optimization","private":true,"type":"module","scripts":{"test":"node --test tests/browser-model.test.js"}}

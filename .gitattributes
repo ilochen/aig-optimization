@@ -1,0 +1,8 @@
+*.aig binary
+*.aiger binary
+# Preserve upstream characterization data byte-for-byte without enormous diffs.
+libraries/nangate45/*.lib binary
+libraries/nangate45/LICENSE -whitespace
+
+# Preserve the supplied course archive without whitespace normalization.
+legacy/** -whitespace

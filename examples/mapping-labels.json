@@ -1,0 +1,564 @@
+{
+  "feature_version": "aiger-combinational-v1",
+  "library_sha256": "24c7774027bb4ed2a55a4e00f3a218b435cbe05c46993a38bac63b8f86d20836",
+  "label_source": "ABC map + print_stats; illustrative GENLIB unless replaced",
+  "abc_sha256": "875d4c1c2069d289726edea035ab45a26dfc303ddcf6095be730325ef80331af",
+  "seed": 314159,
+  "attempted_candidates": 119,
+  "duplicate_candidates": 86,
+  "rows": [
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [],
+      "aig_sha256": "039a0c4ab26f76a32b0f37705c6995f1b0eddb589643579c05f452bced8adf66",
+      "graph_sha256": "53b53f2c49bdd865495f0a8ee475d94aaf3c72ec9cb9f7b4f15a6046060a6b94",
+      "features": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "area": 5.15,
+      "delay": 3.75
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "b2dc7390c12602af50469d4b8747fad319505556c4e7bc532624cbd365c1b519",
+      "graph_sha256": "b9adbea0e2a400b6d674a25e98254cf7f61218a822bf105e219f672fe2574340",
+      "features": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "area": 4.05,
+      "delay": 2.25
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "aig_sha256": "45b90e62c2a93f6786a07ce78b8e202830f539778f8f96172b9311c41ea9bb1e",
+      "graph_sha256": "aeb59a74ecbb8f77901c80970a33ea06c12b194bf57190987626c610940c75d1",
+      "features": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "area": 5.05,
+      "delay": 3.75
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "e3bfe5e8c03c724f41bce3dc28bb33fe29d1222ba14ecc07c30e1f9ff8438fb2",
+      "graph_sha256": "282ca3967d8aed2b7198ed0ca6282de4ee31f2374b6c16524a4fa08f3b1e7ebc",
+      "features": [
+        5,
+        3,
+        3,
+        2
+      ],
+      "area": 5.7,
+      "delay": 3.5
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "balance",
+        "resub -K 8 -N 2"
+      ],
+      "aig_sha256": "b06bd6437f2d66bce412dcc70c9f2e1e5308fb2138a5cb7016c7a644db81b572",
+      "graph_sha256": "4b1f5eeaad6c57a160e17c1a493c04f1d3a2bfdcb26de7e86a3db2a2b4061771",
+      "features": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "area": 5.35,
+      "delay": 3.25
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [],
+      "aig_sha256": "f325e542e383a4d00282d892d13a5901cd59797e6007e375d41d0c5ae4b9d644",
+      "graph_sha256": "dd5fa4299bf31bc32afc5c9b98a3b3235646c39792e9c693c60a3f1d91c55279",
+      "features": [
+        6,
+        5,
+        3,
+        2
+      ],
+      "area": 6.35,
+      "delay": 4.25
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "refactor"
+      ],
+      "aig_sha256": "92ea831565021a4f6253b48f0e757c6856b3caba9b8b6e9d97b2c0d88f6c7257",
+      "graph_sha256": "fd48ebd5f1bc6805abeaaea13a7a79a84aa78a32a5bbbff7841a8fd23697c0df",
+      "features": [
+        5,
+        5,
+        3,
+        1
+      ],
+      "area": 6.25,
+      "delay": 4.25
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "6633b489f7a5ccfa0518743cac0599bac44ba9491c027a9d37d31fb0ece3f8dc",
+      "graph_sha256": "2027bf159a968bb8e5ca0a512b92c6ac5e9caa8806ea8bb7645f532efa9005d5",
+      "features": [
+        6,
+        3,
+        3,
+        2
+      ],
+      "area": 6.35,
+      "delay": 3.5
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "136bcf6e51a0d38c0cfe4fefd7bb907cba68d4c7b573adf39da03922e9905056",
+      "graph_sha256": "036c35dbe0943d96067f20e57dedee3a5155d85af8ecb6b7f065503eeea17a13",
+      "features": [
+        5,
+        3,
+        3,
+        1
+      ],
+      "area": 6.85,
+      "delay": 3.25
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [],
+      "aig_sha256": "ca57b61b30d4dc74ba6c22dda54841474eb2130920f3b2060f5d5ac7bef5febc",
+      "graph_sha256": "96ea9ec13e00da11c8a8197f89448c272d7f4b5f25f367925ef6797b2d1a31de",
+      "features": [
+        7,
+        6,
+        3,
+        2
+      ],
+      "area": 7.3,
+      "delay": 5.5
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "a4019dd9003d191f313ba8260db018eab9eae630162bb021cefe55351ee75826",
+      "graph_sha256": "38d9677d1e9438d2a88bb8d60c4887c55e01c473db918661a86a85ba0d97bd6a",
+      "features": [
+        7,
+        3,
+        3,
+        2
+      ],
+      "area": 7.7,
+      "delay": 3.5
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "resub -K 10 -N 2"
+      ],
+      "aig_sha256": "679d66c9c12cc18fc9b644233842773d6462e7c39b617a4036ebb06eb9c96bdc",
+      "graph_sha256": "b501c2c8f9ef9c7c929585d1ac7923516fb560255d6d1e3045be7b98d23530bf",
+      "features": [
+        6,
+        6,
+        3,
+        1
+      ],
+      "area": 7.2,
+      "delay": 5.5
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "balance",
+        "resub -z",
+        "resub -K 10 -N 2"
+      ],
+      "aig_sha256": "3b8e219e5de807bc484d9ef0d6a08401c659b97d46862d6997806af205594a2e",
+      "graph_sha256": "e763c7d7331d4919d9191f5cad4fea757316fa868b85b366f2dbb79c56bcab86",
+      "features": [
+        6,
+        3,
+        3,
+        1
+      ],
+      "area": 7.6,
+      "delay": 3.5
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [],
+      "aig_sha256": "bb9cde0668f2ccf0d82891f2c8796ea95675ab9c2b01654e2779b33b0abf8437",
+      "graph_sha256": "624a0ae384a0152f5aab6d0da4649211dc30ea8f01675ad8a948b788b0d8a933",
+      "features": [
+        8,
+        7,
+        3,
+        2
+      ],
+      "area": 8.5,
+      "delay": 6.0
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "a47bf69dad9df4d45b8b3234909b8dc5dcf0fd2a4ee6df0fdf3c4daed217c104",
+      "graph_sha256": "994a6ebb0abd26d34bb4c714ece5b9ce5a699c01d0fd719366c105b6e80a96eb",
+      "features": [
+        7,
+        3,
+        3,
+        1
+      ],
+      "area": 8.1,
+      "delay": 3.5
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "aig_sha256": "9e076967e6b47401b0e5e304b413b318ef101f98e23ee6d84f5165182e2d0c03",
+      "graph_sha256": "06a6f78eec8e05600d4cc07b64d96d40cafcf1f0191b77dca6d0b80c1cdcfb1c",
+      "features": [
+        7,
+        7,
+        3,
+        1
+      ],
+      "area": 8.4,
+      "delay": 6.0
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "f3ec78136d54e5f61f88b8d840a92e550273f952dd1f9b23a109b2535baff46c",
+      "graph_sha256": "4a5da610af3035c0e693d3f6879e3677b65139a8afdd3989b85cc4f36513eed8",
+      "features": [
+        8,
+        4,
+        3,
+        2
+      ],
+      "area": 8.35,
+      "delay": 3.75
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "aig_sha256": "b057aaf6b28de7414169f5221c116fe98e948ed592d01b91e6c9f5fb972914a2",
+      "graph_sha256": "692e1adac5fb6413ea414fef3333e7aa4aa60e7c9411946d82d08896942c52a8",
+      "features": [
+        7,
+        3,
+        3,
+        1
+      ],
+      "area": 8.1,
+      "delay": 3.5
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [],
+      "aig_sha256": "ba83a234ce3fb54b77e4d371edabd4a2794ed340118c88495c64007bf41ebbad",
+      "graph_sha256": "091d70e62e2e1e593ae516f0af6a635e912d06aea64a13697c348cc7b1f8f0e3",
+      "features": [
+        9,
+        8,
+        3,
+        2
+      ],
+      "area": 9.7,
+      "delay": 6.5
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "6f5fe12e41dd5e171220892b48223e0c844991a9849b6b60922dcab6e3242e2b",
+      "graph_sha256": "6a3cd29c26a8166b83b99991ea9c070020bbb91dd099b17c1c8dc9e9f9afeef5",
+      "features": [
+        8,
+        4,
+        3,
+        1
+      ],
+      "area": 9.2,
+      "delay": 3.75
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "aig_sha256": "2c9feb7fb368aa5ff857ad734e463572fb74b35d788e0000d353e728323cff0d",
+      "graph_sha256": "0e0df718781a271063628031ce7a59aba26a31f98ac063c3fc37d3ba2c5f4868",
+      "features": [
+        8,
+        8,
+        3,
+        1
+      ],
+      "area": 9.6,
+      "delay": 6.5
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "b5e850c9db59141ab132d953148886905951f2ec757a4f4f31014ae936c0cd81",
+      "graph_sha256": "17654afdbc522292adf6f1f74e5aace1a7b557a6067200d7a7c0a488105894b6",
+      "features": [
+        9,
+        4,
+        3,
+        2
+      ],
+      "area": 9.85,
+      "delay": 3.75
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "aig_sha256": "704ea81983a50e4e6fbf2dc9434fd939d733399db6ca565159bc654505f147a6",
+      "graph_sha256": "ea7b5fb72f8b96052f4fccb1602e3bb0fd882caf4083036152e86276397330d4",
+      "features": [
+        8,
+        4,
+        3,
+        1
+      ],
+      "area": 9.2,
+      "delay": 3.75
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [],
+      "aig_sha256": "f8aba267e723e6fadd967c7d8783b1b09b642bee5a4b36645db8fea94f8c35d2",
+      "graph_sha256": "e564888d14f8ac5d590ab740e56d788af3bc214c57a6d417a238f2f72f1a4522",
+      "features": [
+        10,
+        9,
+        3,
+        2
+      ],
+      "area": 10.65,
+      "delay": 7.75
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "8070172d3f355cf351f5cbeb7868bc91dcc4fea2b23597d9c20d53c8ca9812d8",
+      "graph_sha256": "ad5f1fdf3bfbcd795d62f93285ea49985e865cf853fa32507861a6c28a3b420b",
+      "features": [
+        9,
+        4,
+        3,
+        1
+      ],
+      "area": 10.25,
+      "delay": 3.75
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "aig_sha256": "ecb2f94e07cf5fe16a7c7cd1c83da514f73b2656160c7ada37f82292f9de0ccd",
+      "graph_sha256": "c1f40fea4716c80f17b4cd7bd7a871d2fe10027370f926144aab462d70da5f32",
+      "features": [
+        9,
+        9,
+        3,
+        1
+      ],
+      "area": 10.55,
+      "delay": 7.75
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "fdb9fd7cb128b58f2be2a661601bf5977c2a98a35e4c53273ec1c10db7cf16c4",
+      "graph_sha256": "a92034533ab84d7826fa52752fa9e6f9172989593e8f6f7ed91256fceb561a01",
+      "features": [
+        10,
+        4,
+        3,
+        2
+      ],
+      "area": 10.5,
+      "delay": 3.75
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [],
+      "aig_sha256": "b06a22eedee4f24f84bca7962dd3eaa275d3257e40d936a524152bdf247c1d0d",
+      "graph_sha256": "f7888a30024f76a5438c4945581699b9f92bfc11d54d2ec8fb90a34f28cea143",
+      "features": [
+        11,
+        10,
+        3,
+        2
+      ],
+      "area": 11.85,
+      "delay": 8.25
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "balance"
+      ],
+      "aig_sha256": "d7b05a59f14a020c1205752490a9597041b408bfdf96fbf651da9aee976050e6",
+      "graph_sha256": "7d6a4e8ca884c5bc0a93daa4948b7bc9c6474ad1a1a1de71d7c8de039d056c21",
+      "features": [
+        11,
+        4,
+        3,
+        2
+      ],
+      "area": 11.55,
+      "delay": 3.75
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "resub -K 8 -N 2"
+      ],
+      "aig_sha256": "a69679dfa9a0d6ba5a9b02fbe7735be93e11f8bf06e2af34ebdb2a13e2aa780c",
+      "graph_sha256": "aef3e30771357c8d9f8576cb79401ab28d94f5ee422d10de1d6cf54464bdb9c8",
+      "features": [
+        10,
+        10,
+        3,
+        1
+      ],
+      "area": 11.75,
+      "delay": 8.25
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "aig_sha256": "26ea8c60b7d253ba8bb92bd244fcbf63baf3028d69bf952dbc4547a3c60abfda",
+      "graph_sha256": "42207864a4b11b2754f7d54473918dfd87042e0141307f965d3d4dd5d7a29d4a",
+      "features": [
+        10,
+        5,
+        3,
+        1
+      ],
+      "area": 11.9,
+      "delay": 4.25
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "aig_sha256": "925ad664053296fd311cea7f9f4c95da117bb27a4a7027ac8ba8ac9820b22c34",
+      "graph_sha256": "f79e71bb4c1f7ca2c9fd1c2c508d8c00be7869654a91f22595c6c35eb082a503",
+      "features": [
+        10,
+        4,
+        3,
+        1
+      ],
+      "area": 10.9,
+      "delay": 3.75
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite"
+      ],
+      "aig_sha256": "119c6c0899017d096276b13e7eb1e1bc207ed5754a5e3bca7b757d11bf5e7d99",
+      "graph_sha256": "cde531cf4f06a564161b5259052ba43ebdead6d22340317687d6b1c78431dfa5",
+      "features": [
+        10,
+        4,
+        3,
+        1
+      ],
+      "area": 10.9,
+      "delay": 3.75
+    }
+  ]
+}

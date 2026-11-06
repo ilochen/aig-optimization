@@ -1,0 +1,211 @@
+{
+  "runs": 108,
+  "verified_outputs": 108,
+  "failures": [],
+  "per_circuit": {
+    "c432": {
+      "structural": 0.5426972147370509,
+      "previous-neural": 0.5102172863670665,
+      "data-only-neural": 0.5426972147370509,
+      "selected-ranker": 0.5298801846286456
+    },
+    "c499": {
+      "structural": 0.18231586404162534,
+      "previous-neural": 0.1639237574214438,
+      "data-only-neural": 0.061978299723196496,
+      "selected-ranker": 0.17159725955707372
+    },
+    "c880": {
+      "structural": 0.007234193989346031,
+      "previous-neural": 0.01950673398493748,
+      "data-only-neural": 0.0,
+      "selected-ranker": 0.01950673398493748
+    },
+    "c1908": {
+      "structural": 0.2181630306247788,
+      "previous-neural": 0.21940251754541487,
+      "data-only-neural": 0.22067471779818318,
+      "selected-ranker": 0.21940251754541487
+    },
+    "c2670": {
+      "structural": 0.31514820894086487,
+      "previous-neural": 0.3427734573242433,
+      "data-only-neural": 0.3409868020130858,
+      "selected-ranker": 0.3427734573242433
+    },
+    "c3540": {
+      "structural": 0.13583058855283114,
+      "previous-neural": 0.1460410818951002,
+      "data-only-neural": 0.14795222992079463,
+      "selected-ranker": 0.15980270445268707
+    },
+    "c5315": {
+      "structural": 0.34458919092604035,
+      "previous-neural": 0.33199306577380555,
+      "data-only-neural": 0.3434043857600839,
+      "selected-ranker": 0.3434043857600839
+    },
+    "c6288": {
+      "structural": 0.27029408754024004,
+      "previous-neural": 0.2423401519913162,
+      "data-only-neural": 0.2545634818118541,
+      "selected-ranker": 0.2697478525292567
+    },
+    "c7552": {
+      "structural": 0.27731087885805944,
+      "previous-neural": 0.3034847223952383,
+      "data-only-neural": 0.30365045580899913,
+      "selected-ranker": 0.30864771636770605
+    }
+  },
+  "comparisons": {
+    "structural": {
+      "mean_difference": 0.007908839326579093,
+      "circuit_bootstrap_95": [
+        -0.0023816758796699725,
+        0.018253746006873395
+      ],
+      "per_circuit": {
+        "c432": -0.012817030108405292,
+        "c499": -0.010718604484551614,
+        "c880": 0.012272539995591449,
+        "c1908": 0.0012394869206360792,
+        "c2670": 0.02762524838337843,
+        "c3540": 0.023972115899855928,
+        "c5315": -0.0011848051659564263,
+        "c6288": -0.0005462350109833314,
+        "c7552": 0.03133683750964661
+      },
+      "per_family": {
+        "alu-control": 0.018804387324503197,
+        "error-correction": -0.004739558781957767,
+        "multiplier": -0.0005462350109833314,
+        "priority-decoder": -0.012817030108405292
+      },
+      "equal_family_difference": 0.00017539085578920175,
+      "family_bootstrap_95": [
+        -0.009749331334049802,
+        0.012918400797887957
+      ],
+      "paired_wins": 6,
+      "paired_losses": 5,
+      "paired_ties": 16,
+      "same_final_graph": 15
+    },
+    "previous-neural": {
+      "mean_difference": 0.009453337494609162,
+      "circuit_bootstrap_95": [
+        0.003910749694533739,
+        0.015767252709208437
+      ],
+      "per_circuit": {
+        "c432": 0.019662898261579076,
+        "c499": 0.007673502135629923,
+        "c880": 0.0,
+        "c1908": 0.0,
+        "c2670": 0.0,
+        "c3540": 0.013761622557586867,
+        "c5315": 0.011411319986278368,
+        "c6288": 0.027407700537940505,
+        "c7552": 0.005162993972467722
+      },
+      "per_family": {
+        "alu-control": 0.0060671873032665915,
+        "error-correction": 0.0038367510678149613,
+        "multiplier": 0.027407700537940505,
+        "priority-decoder": 0.019662898261579076
+      },
+      "equal_family_difference": 0.014243634292650284,
+      "family_bootstrap_95": [
+        0.004951969185540776,
+        0.02353529939975979
+      ],
+      "paired_wins": 9,
+      "paired_losses": 0,
+      "paired_ties": 18,
+      "same_final_graph": 18
+    },
+    "data-only-neural": {
+      "mean_difference": 0.016539469397422287,
+      "circuit_bootstrap_95": [
+        4.0547928072278326e-05,
+        0.04194245179712422
+      ],
+      "per_circuit": {
+        "c432": -0.012817030108405292,
+        "c499": 0.10961895983387723,
+        "c880": 0.01950673398493748,
+        "c1908": -0.0012722002527683074,
+        "c2670": 0.0017866553111575145,
+        "c3540": 0.011850474531892446,
+        "c5315": 0.0,
+        "c6288": 0.015184370717402584,
+        "c7552": 0.004997260558706917
+      },
+      "per_family": {
+        "alu-control": 0.007628224877338872,
+        "error-correction": 0.05417337979055446,
+        "multiplier": 0.015184370717402584,
+        "priority-decoder": -0.012817030108405292
+      },
+      "equal_family_difference": 0.016042236319222657,
+      "family_bootstrap_95": [
+        -0.005816679901953323,
+        0.042537091062250565
+      ],
+      "paired_wins": 11,
+      "paired_losses": 3,
+      "paired_ties": 13,
+      "same_final_graph": 13
+    }
+  },
+  "probe_ranking": {
+    "structural": {
+      "mean_pair_accuracy": 0.7696942974720753,
+      "circuits_with_comparable_pairs": 9
+    },
+    "previous-neural": {
+      "mean_pair_accuracy": 0.7833627278071722,
+      "circuits_with_comparable_pairs": 9
+    },
+    "data-only-neural": {
+      "mean_pair_accuracy": 0.6984126984126984,
+      "circuits_with_comparable_pairs": 9
+    },
+    "selected-ranker": {
+      "mean_pair_accuracy": 0.7957084068195179,
+      "circuits_with_comparable_pairs": 9
+    }
+  },
+  "probe_choice_regret": {
+    "structural": 0.019538959874727337,
+    "previous-neural": 0.016572859250913292,
+    "data-only-neural": 0.061370953836493415,
+    "selected-ranker": 0.019538959874727337
+  },
+  "probe_ranking_comparisons": {
+    "structural": {
+      "mean_difference": 0.026014109347442686,
+      "circuit_bootstrap_95": [
+        0.00617283950617283,
+        0.05026455026455027
+      ]
+    },
+    "previous-neural": {
+      "mean_difference": 0.012345679012345685,
+      "circuit_bootstrap_95": [
+        -0.004850088183421512,
+        0.028659611992945335
+      ]
+    },
+    "data-only-neural": {
+      "mean_difference": 0.09729570840681953,
+      "circuit_bootstrap_95": [
+        0.023809523809523836,
+        0.19135802469135801
+      ]
+    }
+  },
+  "verified_probe_labels": 75,
+  "probe_failures": []
+}

@@ -1,0 +1,1423 @@
+{
+  "candidates": [
+    {
+      "feature": "summary4",
+      "blend": 0.0,
+      "mean_selection_regret": 0.055684697883694255,
+      "mean_pair_accuracy": 0.871409151171737,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8095238095238095,
+          "area_mape": 0.4510630363036102,
+          "delay_mape": 0.9703982138574515,
+          "adp_mape": 0.9567360615442342,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.4835242266108894,
+          "delay_mape": 0.9703875366722063,
+          "adp_mape": 0.9559915684920179,
+          "selection_regret": 0.3244259249312875
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8636363636363636,
+          "area_mape": 0.5716346569456727,
+          "delay_mape": 0.986580510055694,
+          "adp_mape": 0.9789108725518498,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.9375,
+          "area_mape": 0.31779635516655386,
+          "delay_mape": 0.9458067137499341,
+          "adp_mape": 0.9281703769826088,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.6761473937749037,
+          "delay_mape": 0.9477378670326551,
+          "adp_mape": 0.9127580077645874,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8605263157894737,
+          "area_mape": 0.5872225811441124,
+          "delay_mape": 0.9557875649150241,
+          "adp_mape": 0.9297365525273702,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.3270667617629563,
+          "delay_mape": 0.9305227840277801,
+          "adp_mape": 0.90811721873651,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 4,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5670588239867975,
+          "delay_mape": 0.9716865897040317,
+          "adp_mape": 0.95562752206267,
+          "selection_regret": 0.14429956711783976
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21177486975154625,
+          "delay_mape": 0.9887342533776021,
+          "adp_mape": 0.9863237007231098,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9421052631578948,
+          "area_mape": 0.06468131644961209,
+          "delay_mape": 0.9550173400981066,
+          "adp_mape": 0.9578685916925914,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "summary4",
+      "blend": 0.25,
+      "mean_selection_regret": 0.04462009040581187,
+      "mean_pair_accuracy": 0.8719596796765998,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8095238095238095,
+          "area_mape": 0.4665900004126175,
+          "delay_mape": 0.9725685390020992,
+          "adp_mape": 0.9593768629007207,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.4839582575724505,
+          "delay_mape": 0.9704490851012293,
+          "adp_mape": 0.9560697682046052,
+          "selection_regret": 0.3244259249312875
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8490909090909091,
+          "area_mape": 0.5718290517656506,
+          "delay_mape": 0.9865951610209371,
+          "adp_mape": 0.9789314633966658,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9411764705882353,
+          "area_mape": 0.31287026065229495,
+          "delay_mape": 0.9443994873978073,
+          "adp_mape": 0.9266338506517634,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.6764006227122146,
+          "delay_mape": 0.9478114978719376,
+          "adp_mape": 0.9128505276648403,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.881578947368421,
+          "area_mape": 0.5887734038907644,
+          "delay_mape": 0.9564684311711864,
+          "adp_mape": 0.9307490591939612,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.32926087282962324,
+          "delay_mape": 0.9320460874030513,
+          "adp_mape": 0.9099611344256638,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8304093567251462,
+          "area_mape": 0.5698259669650728,
+          "delay_mape": 0.9719158905803259,
+          "adp_mape": 0.9559060492432304,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21191610644621722,
+          "delay_mape": 0.9888127579615695,
+          "adp_mape": 0.9864190136667539,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9315789473684211,
+          "area_mape": 0.06152405208623983,
+          "delay_mape": 0.9564430671980566,
+          "adp_mape": 0.958985462499986,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "summary4",
+      "blend": 0.5,
+      "mean_selection_regret": 0.04607040132680984,
+      "mean_pair_accuracy": 0.8678876550828362,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8095238095238095,
+          "area_mape": 0.48231081344251503,
+          "delay_mape": 0.9745568627110758,
+          "adp_mape": 0.9618286270184674,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8260869565217391,
+          "area_mape": 0.48439876134138066,
+          "delay_mape": 0.9705045902421888,
+          "adp_mape": 0.9561414493499896,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8345454545454546,
+          "area_mape": 0.5720235605009711,
+          "delay_mape": 0.9866097664375778,
+          "adp_mape": 0.978952001163481,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9411764705882353,
+          "area_mape": 0.30799232970706075,
+          "delay_mape": 0.9428911592668815,
+          "adp_mape": 0.9250029676265165,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.6766540716364089,
+          "delay_mape": 0.9478846676456611,
+          "adp_mape": 0.9129425480902604,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8763157894736842,
+          "area_mape": 0.5903266227405973,
+          "delay_mape": 0.9571345826717266,
+          "adp_mape": 0.9317412580686519,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9181286549707602,
+          "area_mape": 0.3314603138479489,
+          "delay_mape": 0.9335173008708914,
+          "adp_mape": 0.9117472566788806,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5726028373179626,
+          "delay_mape": 0.9721415851202537,
+          "adp_mape": 0.9561809997373788,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21205770177427052,
+          "delay_mape": 0.9888890703770761,
+          "adp_mape": 0.9865118105658686,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9263157894736842,
+          "area_mape": 0.058439798417894304,
+          "delay_mape": 0.9578057292632585,
+          "adp_mape": 0.9600598364540336,
+          "selection_regret": 0.14600821151428933
+        }
+      }
+    },
+    {
+      "feature": "summary4",
+      "blend": 1.0,
+      "mean_selection_regret": 0.04607040132680984,
+      "mean_pair_accuracy": 0.8680001101335063,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8181818181818182,
+          "area_mape": 0.514344001673106,
+          "delay_mape": 0.9780490522420281,
+          "adp_mape": 0.9662199151399165,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.83399209486166,
+          "area_mape": 0.4852992475266625,
+          "delay_mape": 0.9705978150599398,
+          "adp_mape": 0.9562655689369423,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.7945454545454546,
+          "area_mape": 0.5724129198244414,
+          "delay_mape": 0.9866388410480217,
+          "adp_mape": 0.9789929179029733,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9411764705882353,
+          "area_mape": 0.2983791348719013,
+          "delay_mape": 0.9395422333132172,
+          "adp_mape": 0.921435425839234,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.677161630210048,
+          "delay_mape": 0.948029635526853,
+          "adp_mape": 0.9131251012878379,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8763157894736842,
+          "area_mape": 0.5934402641199229,
+          "delay_mape": 0.9584241126966996,
+          "adp_mape": 0.9336664964932733,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9181286549707602,
+          "area_mape": 0.3358752375194254,
+          "delay_mape": 0.9363097263608225,
+          "adp_mape": 0.9151524665925356,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8596491228070176,
+          "area_mape": 0.5781859177019296,
+          "delay_mape": 0.9725824321891363,
+          "adp_mape": 0.9567203908315665,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21234196923947407,
+          "delay_mape": 0.9890353345351974,
+          "adp_mape": 0.9866900956813048,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9157894736842105,
+          "area_mape": 0.05461324565044274,
+          "delay_mape": 0.9603537620229518,
+          "adp_mape": 0.9620880031398347,
+          "selection_regret": 0.14600821151428933
+        }
+      }
+    },
+    {
+      "feature": "topology28",
+      "blend": 0.0,
+      "mean_selection_regret": 0.055684697883694255,
+      "mean_pair_accuracy": 0.871409151171737,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8095238095238095,
+          "area_mape": 0.4510630363036102,
+          "delay_mape": 0.9703982138574515,
+          "adp_mape": 0.9567360615442342,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.4835242266108894,
+          "delay_mape": 0.9703875366722063,
+          "adp_mape": 0.9559915684920179,
+          "selection_regret": 0.3244259249312875
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8636363636363636,
+          "area_mape": 0.5716346569456727,
+          "delay_mape": 0.986580510055694,
+          "adp_mape": 0.9789108725518498,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.9375,
+          "area_mape": 0.31779635516655386,
+          "delay_mape": 0.9458067137499341,
+          "adp_mape": 0.9281703769826088,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.6761473937749037,
+          "delay_mape": 0.9477378670326551,
+          "adp_mape": 0.9127580077645874,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8605263157894737,
+          "area_mape": 0.5872225811441124,
+          "delay_mape": 0.9557875649150241,
+          "adp_mape": 0.9297365525273702,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.3270667617629563,
+          "delay_mape": 0.9305227840277801,
+          "adp_mape": 0.90811721873651,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 4,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5670588239867975,
+          "delay_mape": 0.9716865897040317,
+          "adp_mape": 0.95562752206267,
+          "selection_regret": 0.14429956711783976
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21177486975154625,
+          "delay_mape": 0.9887342533776021,
+          "adp_mape": 0.9863237007231098,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9421052631578948,
+          "area_mape": 0.06468131644961209,
+          "delay_mape": 0.9550173400981066,
+          "adp_mape": 0.9578685916925914,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "topology28",
+      "blend": 0.25,
+      "mean_selection_regret": 0.03146958017538091,
+      "mean_pair_accuracy": 0.8328590816536031,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8008658008658008,
+          "area_mape": 0.468192333617099,
+          "delay_mape": 0.9723810477607042,
+          "adp_mape": 0.9590349410394167,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.841897233201581,
+          "area_mape": 0.5044733823996405,
+          "delay_mape": 0.9708620345172555,
+          "adp_mape": 0.9561355900394667,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.7654545454545455,
+          "area_mape": 0.5723941052813646,
+          "delay_mape": 0.9865905226768916,
+          "adp_mape": 0.9789168597529583,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9338235294117647,
+          "area_mape": 0.302189655480486,
+          "delay_mape": 0.9432170028509143,
+          "adp_mape": 0.9256514600409758,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.669101820319169,
+          "delay_mape": 0.9475415280901334,
+          "adp_mape": 0.9128941649773563,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8736842105263158,
+          "area_mape": 0.583897839739568,
+          "delay_mape": 0.9572314326168087,
+          "adp_mape": 0.932154281043238,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.3283784131066151,
+          "delay_mape": 0.9327758747368087,
+          "adp_mape": 0.9110021264577136,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8128654970760234,
+          "area_mape": 0.5722201132848358,
+          "delay_mape": 0.9724269639479396,
+          "adp_mape": 0.9566389461540467,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.2218296917197638,
+          "delay_mape": 0.9885691556776938,
+          "adp_mape": 0.985990937552911,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9315789473684211,
+          "area_mape": 0.06041006152787212,
+          "delay_mape": 0.9541105702078734,
+          "adp_mape": 0.9562155647586423,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "topology28",
+      "blend": 0.5,
+      "mean_selection_regret": 0.041736169928483925,
+      "mean_pair_accuracy": 0.8223879737318962,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.7965367965367965,
+          "area_mape": 0.4858431590709267,
+          "delay_mape": 0.974202801311307,
+          "adp_mape": 0.9611792417997299,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.83399209486166,
+          "area_mape": 0.5258582351602064,
+          "delay_mape": 0.9713078886296048,
+          "adp_mape": 0.9562496049566962,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.7036363636363636,
+          "area_mape": 0.573163052217039,
+          "delay_mape": 0.986600384063712,
+          "adp_mape": 0.978922585097578,
+          "selection_regret": 0.03934557704134689
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9411764705882353,
+          "area_mape": 0.2869819069051645,
+          "delay_mape": 0.9404674508958001,
+          "adp_mape": 0.9230077545325033,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.6622289344254559,
+          "delay_mape": 0.9473418322586251,
+          "adp_mape": 0.913029264570623,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8736842105263158,
+          "area_mape": 0.5806213921709024,
+          "delay_mape": 0.9586141571319746,
+          "adp_mape": 0.9344584522125601,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9122807017543859,
+          "area_mape": 0.32975803914050555,
+          "delay_mape": 0.9349285067235448,
+          "adp_mape": 0.9137431840869169,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8128654970760234,
+          "area_mape": 0.5774460531040249,
+          "delay_mape": 0.9731359470600602,
+          "adp_mape": 0.957613581698004,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.23207447726564895,
+          "delay_mape": 0.9883980202861571,
+          "adp_mape": 0.9856425967647866,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9052631578947369,
+          "area_mape": 0.06701752457874262,
+          "delay_mape": 0.9531754918757473,
+          "adp_mape": 0.9544569362024644,
+          "selection_regret": 0.10223668603441793
+        }
+      }
+    },
+    {
+      "feature": "topology28",
+      "blend": 1.0,
+      "mean_selection_regret": 0.055305733653672993,
+      "mean_pair_accuracy": 0.8034056140312029,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8051948051948052,
+          "area_mape": 0.5227820556059162,
+          "delay_mape": 0.9774175646160009,
+          "adp_mape": 0.9650489239750708,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.5699763646210112,
+          "delay_mape": 0.9721196636648444,
+          "adp_mape": 0.9563893822973517,
+          "selection_regret": 0.32861645987886856
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.6,
+          "area_mape": 0.5747296832003231,
+          "delay_mape": 0.9866196523489571,
+          "adp_mape": 0.97893324780329,
+          "selection_regret": 0.03934557704134689
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9485294117647058,
+          "area_mape": 0.2577273233541332,
+          "delay_mape": 0.9344467959123623,
+          "adp_mape": 0.917315213340952,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.6489845156655586,
+          "delay_mape": 0.9469321421349748,
+          "adp_mape": 0.9132963240619377,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8789473684210526,
+          "area_mape": 0.5742123225734571,
+          "delay_mape": 0.9612073544312163,
+          "adp_mape": 0.9387491772818684,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9005847953216374,
+          "area_mape": 0.3327228678756291,
+          "delay_mape": 0.9389513619382936,
+          "adp_mape": 0.9188243381606825,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8421052631578947,
+          "area_mape": 0.5880950224338012,
+          "delay_mape": 0.9744657584443007,
+          "adp_mape": 0.9594586120779041,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.2531497627436343,
+          "delay_mape": 0.9880366040817884,
+          "adp_mape": 0.9848961008885391,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.7842105263157895,
+          "area_mape": 0.08820725313334732,
+          "delay_mape": 0.9512160556026973,
+          "adp_mape": 0.9505918743245804,
+          "selection_regret": 0.10223668603441793
+        }
+      }
+    },
+    {
+      "feature": "load40",
+      "blend": 0.0,
+      "mean_selection_regret": 0.055684697883694255,
+      "mean_pair_accuracy": 0.871409151171737,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8095238095238095,
+          "area_mape": 0.4510630363036102,
+          "delay_mape": 0.9703982138574515,
+          "adp_mape": 0.9567360615442342,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.4835242266108894,
+          "delay_mape": 0.9703875366722063,
+          "adp_mape": 0.9559915684920179,
+          "selection_regret": 0.3244259249312875
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8636363636363636,
+          "area_mape": 0.5716346569456727,
+          "delay_mape": 0.986580510055694,
+          "adp_mape": 0.9789108725518498,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.9375,
+          "area_mape": 0.31779635516655386,
+          "delay_mape": 0.9458067137499341,
+          "adp_mape": 0.9281703769826088,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 5,
+          "pair_accuracy": 0.7222222222222222,
+          "area_mape": 0.6761473937749037,
+          "delay_mape": 0.9477378670326551,
+          "adp_mape": 0.9127580077645874,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 1,
+          "pair_accuracy": 0.8605263157894737,
+          "area_mape": 0.5872225811441124,
+          "delay_mape": 0.9557875649150241,
+          "adp_mape": 0.9297365525273702,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.3270667617629563,
+          "delay_mape": 0.9305227840277801,
+          "adp_mape": 0.90811721873651,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 4,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5670588239867975,
+          "delay_mape": 0.9716865897040317,
+          "adp_mape": 0.95562752206267,
+          "selection_regret": 0.14429956711783976
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21177486975154625,
+          "delay_mape": 0.9887342533776021,
+          "adp_mape": 0.9863237007231098,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9421052631578948,
+          "area_mape": 0.06468131644961209,
+          "delay_mape": 0.9550173400981066,
+          "adp_mape": 0.9578685916925914,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "load40",
+      "blend": 0.25,
+      "mean_selection_regret": 0.03146958017538091,
+      "mean_pair_accuracy": 0.8442255980958363,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8051948051948052,
+          "area_mape": 0.48046369596408556,
+          "delay_mape": 0.971370208339197,
+          "adp_mape": 0.9572533318050558,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.83399209486166,
+          "area_mape": 0.5035019302921284,
+          "delay_mape": 0.9698902780728806,
+          "adp_mape": 0.9547060079114391,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8472727272727273,
+          "area_mape": 0.5723337232844725,
+          "delay_mape": 0.9866582928752909,
+          "adp_mape": 0.97902441160001,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9411764705882353,
+          "area_mape": 0.3117878683072688,
+          "delay_mape": 0.9426745110640548,
+          "adp_mape": 0.9243793038888068,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.6704359785200312,
+          "delay_mape": 0.9469016487255321,
+          "adp_mape": 0.9119003305979053,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8789473684210526,
+          "area_mape": 0.5967427670122718,
+          "delay_mape": 0.9560912013425209,
+          "adp_mape": 0.9298289651644436,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9298245614035088,
+          "area_mape": 0.3265294535532245,
+          "delay_mape": 0.9317361159206554,
+          "adp_mape": 0.9097949980712464,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5644985510284509,
+          "delay_mape": 0.9722135823796347,
+          "adp_mape": 0.9565260534698912,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.2112225578226587,
+          "delay_mape": 0.9887760081635699,
+          "adp_mape": 0.9863894133616065,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9368421052631579,
+          "area_mape": 0.06048533254955691,
+          "delay_mape": 0.9558205723665999,
+          "adp_mape": 0.9582157393042801,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "load40",
+      "blend": 0.5,
+      "mean_selection_regret": 0.03146958017538091,
+      "mean_pair_accuracy": 0.8416055341212831,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8138528138528138,
+          "area_mape": 0.5105901476276873,
+          "delay_mape": 0.9722929497210365,
+          "adp_mape": 0.9577443917382111,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.83399209486166,
+          "area_mape": 0.5239240756730126,
+          "delay_mape": 0.9693775336628349,
+          "adp_mape": 0.9533603841938292,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8109090909090909,
+          "area_mape": 0.5730375799379408,
+          "delay_mape": 0.9867349824159968,
+          "adp_mape": 0.9791365621710851,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9485294117647058,
+          "area_mape": 0.30587109065648743,
+          "delay_mape": 0.9392997973567254,
+          "adp_mape": 0.9203071653198147,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.6648372188574303,
+          "delay_mape": 0.946005403690952,
+          "adp_mape": 0.9109991459901751,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8842105263157894,
+          "area_mape": 0.6063972529545134,
+          "delay_mape": 0.9563820458571227,
+          "adp_mape": 0.9298948959815503,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9239766081871345,
+          "area_mape": 0.3260207602299214,
+          "delay_mape": 0.9328528756698515,
+          "adp_mape": 0.9113419427968417,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8245614035087719,
+          "area_mape": 0.5619767200894864,
+          "delay_mape": 0.9727239896960258,
+          "adp_mape": 0.9573920014654734,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 1.0,
+          "area_mape": 0.21069202322162184,
+          "delay_mape": 0.9888077029582729,
+          "adp_mape": 0.9864388786320988,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9315789473684211,
+          "area_mape": 0.057538701577327524,
+          "delay_mape": 0.9565921297769205,
+          "adp_mape": 0.9585451220590101,
+          "selection_regret": 0.0
+        }
+      }
+    },
+    {
+      "feature": "load40",
+      "blend": 1.0,
+      "mean_selection_regret": 0.04607040132680984,
+      "mean_pair_accuracy": 0.8088369195677716,
+      "per_circuit": {
+        "ctrl.aig": {
+          "examples": 22,
+          "comparable_pairs": 231,
+          "predicted_tied_pairs": 2,
+          "pair_accuracy": 0.8398268398268398,
+          "area_mape": 0.5730985971586416,
+          "delay_mape": 0.9740017823793728,
+          "adp_mape": 0.958651401557902,
+          "selection_regret": 0.0
+        },
+        "i2c.aig": {
+          "examples": 23,
+          "comparable_pairs": 253,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8300395256916996,
+          "area_mape": 0.5661449197945491,
+          "delay_mape": 0.9683031034597093,
+          "adp_mape": 0.9504746528486245,
+          "selection_regret": 0.19292082262697785
+        },
+        "mem_ctrl.aig": {
+          "examples": 24,
+          "comparable_pairs": 275,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8109090909090909,
+          "area_mape": 0.574459734182035,
+          "delay_mape": 0.9868851536947963,
+          "adp_mape": 0.9793567725229184,
+          "selection_regret": 0.038916365544734655
+        },
+        "router.aig": {
+          "examples": 17,
+          "comparable_pairs": 136,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9485294117647058,
+          "area_mape": 0.29430883303210237,
+          "delay_mape": 0.9317412193254456,
+          "adp_mape": 0.9112253076985016,
+          "selection_regret": 0.0
+        },
+        "arbiter.aig": {
+          "examples": 5,
+          "comparable_pairs": 9,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.4444444444444444,
+          "area_mape": 0.6539688511421513,
+          "delay_mape": 0.9440153721495276,
+          "adp_mape": 0.9090573758727869,
+          "selection_regret": 0.0
+        },
+        "int2float.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8894736842105263,
+          "area_mape": 0.62611804545692,
+          "delay_mape": 0.9569256014269809,
+          "adp_mape": 0.9299439758097945,
+          "selection_regret": 0.04920512124308063
+        },
+        "priority.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9005847953216374,
+          "area_mape": 0.325089351555136,
+          "delay_mape": 0.9347993658668027,
+          "adp_mape": 0.914049369539183,
+          "selection_regret": 0.0
+        },
+        "cavlc.aig": {
+          "examples": 19,
+          "comparable_pairs": 171,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.8421052631578947,
+          "area_mape": 0.5570475683385381,
+          "delay_mape": 0.9736975244180455,
+          "adp_mape": 0.9590315990202775,
+          "selection_regret": 0.033653492339015934
+        },
+        "dec.aig": {
+          "examples": 4,
+          "comparable_pairs": 3,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.6666666666666666,
+          "area_mape": 0.20969606688044196,
+          "delay_mape": 0.9888412722773029,
+          "adp_mape": 0.9864898381860865,
+          "selection_regret": 0.0
+        },
+        "voter.aig": {
+          "examples": 20,
+          "comparable_pairs": 190,
+          "predicted_tied_pairs": 0,
+          "pair_accuracy": 0.9157894736842105,
+          "area_mape": 0.0596256333033738,
+          "delay_mape": 0.9580442927427376,
+          "adp_mape": 0.9591513432444266,
+          "selection_regret": 0.14600821151428933
+        }
+      }
+    }
+  ],
+  "winner": {
+    "feature": "load40",
+    "blend": 0.25,
+    "mean_selection_regret": 0.03146958017538091,
+    "mean_pair_accuracy": 0.8442255980958363,
+    "per_circuit": {
+      "ctrl.aig": {
+        "examples": 22,
+        "comparable_pairs": 231,
+        "predicted_tied_pairs": 2,
+        "pair_accuracy": 0.8051948051948052,
+        "area_mape": 0.48046369596408556,
+        "delay_mape": 0.971370208339197,
+        "adp_mape": 0.9572533318050558,
+        "selection_regret": 0.0
+      },
+      "i2c.aig": {
+        "examples": 23,
+        "comparable_pairs": 253,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.83399209486166,
+        "area_mape": 0.5035019302921284,
+        "delay_mape": 0.9698902780728806,
+        "adp_mape": 0.9547060079114391,
+        "selection_regret": 0.19292082262697785
+      },
+      "mem_ctrl.aig": {
+        "examples": 24,
+        "comparable_pairs": 275,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.8472727272727273,
+        "area_mape": 0.5723337232844725,
+        "delay_mape": 0.9866582928752909,
+        "adp_mape": 0.97902441160001,
+        "selection_regret": 0.038916365544734655
+      },
+      "router.aig": {
+        "examples": 17,
+        "comparable_pairs": 136,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.9411764705882353,
+        "area_mape": 0.3117878683072688,
+        "delay_mape": 0.9426745110640548,
+        "adp_mape": 0.9243793038888068,
+        "selection_regret": 0.0
+      },
+      "arbiter.aig": {
+        "examples": 5,
+        "comparable_pairs": 9,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.4444444444444444,
+        "area_mape": 0.6704359785200312,
+        "delay_mape": 0.9469016487255321,
+        "adp_mape": 0.9119003305979053,
+        "selection_regret": 0.0
+      },
+      "int2float.aig": {
+        "examples": 20,
+        "comparable_pairs": 190,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.8789473684210526,
+        "area_mape": 0.5967427670122718,
+        "delay_mape": 0.9560912013425209,
+        "adp_mape": 0.9298289651644436,
+        "selection_regret": 0.04920512124308063
+      },
+      "priority.aig": {
+        "examples": 19,
+        "comparable_pairs": 171,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.9298245614035088,
+        "area_mape": 0.3265294535532245,
+        "delay_mape": 0.9317361159206554,
+        "adp_mape": 0.9097949980712464,
+        "selection_regret": 0.0
+      },
+      "cavlc.aig": {
+        "examples": 19,
+        "comparable_pairs": 171,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.8245614035087719,
+        "area_mape": 0.5644985510284509,
+        "delay_mape": 0.9722135823796347,
+        "adp_mape": 0.9565260534698912,
+        "selection_regret": 0.033653492339015934
+      },
+      "dec.aig": {
+        "examples": 4,
+        "comparable_pairs": 3,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 1.0,
+        "area_mape": 0.2112225578226587,
+        "delay_mape": 0.9887760081635699,
+        "adp_mape": 0.9863894133616065,
+        "selection_regret": 0.0
+      },
+      "voter.aig": {
+        "examples": 20,
+        "comparable_pairs": 190,
+        "predicted_tied_pairs": 0,
+        "pair_accuracy": 0.9368421052631579,
+        "area_mape": 0.06048533254955691,
+        "delay_mape": 0.9558205723665999,
+        "adp_mape": 0.9582157393042801,
+        "selection_regret": 0.0
+      }
+    }
+  },
+  "controls": {
+    "structural": {
+      "mean_selection_regret": 0.055684697883694255,
+      "mean_pair_accuracy": 0.871409151171737
+    },
+    "previous-neural": {
+      "mean_selection_regret": 0.02915833694784,
+      "mean_pair_accuracy": 0.8670898397081598
+    },
+    "data-only-neural": {
+      "mean_selection_regret": 0.09079613076793676,
+      "mean_pair_accuracy": 0.8174888095034144
+    }
+  },
+  "test_labels_used": false
+}

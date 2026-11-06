@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "technology-aware-aigopt"
+version = "0.2.0"
+description = "Verified technology-aware AIG search with Berkeley ABC"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+aigopt = "aigopt.__main__:main"
+
+[tool.setuptools]
+packages = ["aigopt"]

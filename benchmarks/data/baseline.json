@@ -1,0 +1,6468 @@
+{
+  "complete": true,
+  "feature_version": "aiger-combinational-v1",
+  "library_sha256": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1",
+  "mapping_profile": {
+    "schema": "abc-liberty-map-stime-v1",
+    "library_format": "liberty",
+    "mapping": "map",
+    "timing": "topo; stime",
+    "input_driver": "BUF_X1",
+    "output_load_ff": 10.0,
+    "wire_load": false,
+    "area_unit": "um^2",
+    "delay_unit": "ps"
+  },
+  "abc_sha256": "de543f9e6a3e4c41fdef9afce24964be93e349698d5d7fea079f0078eabf2e26",
+  "attempted_candidates": 600,
+  "duplicate_candidates": 226,
+  "failures": [
+    {
+      "source": "square.aig",
+      "sample": 2,
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "square.aig",
+      "sample": 11,
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "square.aig",
+      "sample": 18,
+      "sequence": [
+        "balance",
+        "balance",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "square.aig",
+      "sample": 19,
+      "sequence": [
+        "balance",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "multiplier.aig",
+      "sample": 5,
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 7,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 10,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 11,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 17,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z",
+        "rewrite -z"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 18,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sqrt.aig",
+      "sample": 24,
+      "sequence": [
+        "resub -z",
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read_lib \"<tool-path>\"; cec \"<scratch-path>\" \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sin.aig",
+      "sample": 7,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sin.aig",
+      "sample": 9,
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sin.aig",
+      "sample": 12,
+      "sequence": [
+        "resub -K 6",
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    },
+    {
+      "source": "sin.aig",
+      "sample": 18,
+      "sequence": [
+        "resub -z",
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "error": "TimeoutExpired: Command '['<tool-path>', '-s', '-c', 'read \"<scratch-path>\"; &get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance; write_aiger \"<scratch-path>\"']' timed out after 10 seconds"
+    }
+  ],
+  "rows": [
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [],
+      "graph_sha256": "4859f0bda9c2811000b3c336757864c41ab4c31ea68b7e81a0091806ce78b4ff",
+      "aig_sha256": "77a8d17e2928cb7ab8ae00bd1015c79a2439904aa25eb9998181aa07fce9f857",
+      "features": [
+        14711,
+        32,
+        16603,
+        1079
+      ],
+      "area": 8640.48,
+      "delay": 14615.34
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "2ea13e943a24d2156c33d6a3a04d580eb34234a5f34e23697c47effd73ad2140",
+      "aig_sha256": "42314f81ed6f3a0daad535f0cf41b960ad2bd0bf91e370ec888aec053e0fd483",
+      "features": [
+        10862,
+        19,
+        11434,
+        329
+      ],
+      "area": 6958.29,
+      "delay": 3395.28
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "3d09804e5ab2449ae8dccf06387341e02517d95e68c2d7e748a180d34c2d6871",
+      "aig_sha256": "156d52158129c0e5d083f34feccef0ce9bd418e0f8ecc3e5c6b4de0bd1412394",
+      "features": [
+        12127,
+        31,
+        12891,
+        584
+      ],
+      "area": 7373.25,
+      "delay": 6197.95
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "9ca3eb78d79f7fa88d0c4235122cd3a64d4651c1874a490e7c5c4b2dd78f0095",
+      "aig_sha256": "8fbb01d4a05fa5ec558743c4244f77a705f2de13957564bf64c8223f5bd1b224",
+      "features": [
+        13992,
+        32,
+        15886,
+        1006
+      ],
+      "area": 8385.65,
+      "delay": 13656.35
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "dfa413f67edf7ed65b987d47b83e2a39591fdad3256d97b6c4bf2f980e4ea678",
+      "aig_sha256": "3195d0b0d5a30036a4c236e3090fe878feed27f9dc2adc5f544fd2ee594b3099",
+      "features": [
+        13587,
+        32,
+        15227,
+        874
+      ],
+      "area": 8072.3,
+      "delay": 10836.43
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "572a4ae30fcadf5090eb6e8aad5a4585389fe726f5b8fdc712bc45e3c703b822",
+      "aig_sha256": "4c189702fff64229bc6a0f30ab45ab8b923887c52ddb0d6cea96842bb45c0b93",
+      "features": [
+        12077,
+        31,
+        14334,
+        656
+      ],
+      "area": 7509.18,
+      "delay": 8544.04
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "46eefb1ae0fd1826c21b85d0d593c2c29566025b005b049d75f19529745146ba",
+      "aig_sha256": "8dda06055d5345d6707399bfc623bf402d81c59626ac90c68c11713c69f60513",
+      "features": [
+        13601,
+        31,
+        15501,
+        945
+      ],
+      "area": 8230.57,
+      "delay": 12434.62
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "ddec7fd2299662432131f04140beb60de4985286771cd88f93ce7c9cae02834a",
+      "aig_sha256": "800d0625d5315c5c6cc81b67cce74baef64246f0df4d63ed110f56e30fc7de68",
+      "features": [
+        12993,
+        23,
+        15302,
+        723
+      ],
+      "area": 8047.03,
+      "delay": 8612.02
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "92fbbe6f6607de4477db49b1d0a50928e546143f6f06e28653294458adae66e4",
+      "aig_sha256": "c756583902ee06cc31c0fc46c7bcbe040c5d294db322375fe7d765a7123edf49",
+      "features": [
+        13600,
+        31,
+        15408,
+        860
+      ],
+      "area": 8120.71,
+      "delay": 11400.2
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "refactor -z",
+        "resub -z"
+      ],
+      "graph_sha256": "263c0d85e78b4406c3be89cdee14a3ce27785e193de511aded880c2f5b91c2a6",
+      "aig_sha256": "486519f79da4eff94689fec678314d5c597c8feda84f4e373a207fcb017b3ebd",
+      "features": [
+        13044,
+        32,
+        14757,
+        834
+      ],
+      "area": 7877.06,
+      "delay": 10601.04
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "65f4a407fc928f23fbbef82d687fa1cd644ce02d47e47a045a6a8f1d433e0b98",
+      "aig_sha256": "5493a71ec52a1eca9db51e665214cc2aca224f3017cd71896d39919f7f8fac8f",
+      "features": [
+        10620,
+        18,
+        10942,
+        291
+      ],
+      "area": 6714.9,
+      "delay": 2842.69
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "resub -z",
+        "resub -z"
+      ],
+      "graph_sha256": "1c21a980857b7b2a98a9170d74c099250fcfcc8f713d179a0ec0b040ed308359",
+      "aig_sha256": "5a1160e33da9127d037391feaeca1f76983b047b20e44259ab263dfd50de4a76",
+      "features": [
+        13964,
+        32,
+        15841,
+        1003
+      ],
+      "area": 8380.86,
+      "delay": 13583.35
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "b2568335dca4b345d52727e4878c7ad2fa15085d7266e7400108521398fa63d6",
+      "aig_sha256": "b595e75ad86ad91da62f6617d6acc6b7af449e3acea00cf1d5bb0738f4e53a03",
+      "features": [
+        11961,
+        31,
+        12766,
+        574
+      ],
+      "area": 7304.89,
+      "delay": 6043.4
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite"
+      ],
+      "graph_sha256": "145e265cf5dce83286368ff641fe8dd09f361f4266cacb9c8beca3ed3b639222",
+      "aig_sha256": "05fa252294ae57c41188eece1e04d67bed2af0695429ed46d472aed225eb3f3d",
+      "features": [
+        10467,
+        18,
+        10827,
+        283
+      ],
+      "area": 6630.05,
+      "delay": 2752.26
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite"
+      ],
+      "graph_sha256": "7d6cf17fc9ff36f9accf7363f474cd43760ea52240bb1fa84a0f731c32a732a2",
+      "aig_sha256": "754e38a5895d9219cfe2d76880a4acb7bd52dc88d63333b097789b722177793c",
+      "features": [
+        11995,
+        31,
+        14227,
+        642
+      ],
+      "area": 7486.3,
+      "delay": 8247.43
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "balance",
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "9a3d73ada9d13c0828cad377ed7893f08cb9f78f43b56eee07cc8b87d7608e02",
+      "aig_sha256": "42a9294b338d07a3299f8e890bb2218e759ecb137e52c479df4034f517700be7",
+      "features": [
+        12237,
+        23,
+        14585,
+        646
+      ],
+      "area": 7785.55,
+      "delay": 7357.31
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "46f6a7cadebff52255e85ebe2e05906ab3eb055bd9f34305fdd3bbab7eefcde0",
+      "aig_sha256": "c349e0706c3362536d2984c965ee8a9f04ee7c583c97842aa35fc699a3403a04",
+      "features": [
+        10583,
+        18,
+        11099,
+        297
+      ],
+      "area": 6728.47,
+      "delay": 3066.92
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "1ddbf880c35491bad3570d81fdd43c5569bc2147b8bb9903a9dcc0e26dee57ad",
+      "aig_sha256": "72ecd107a259a71872b555e7462fd02240498e531552cc525652bb8a9cc07f3c",
+      "features": [
+        11854,
+        30,
+        12559,
+        560
+      ],
+      "area": 7230.94,
+      "delay": 6042.01
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "refactor -z",
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "3a01877807a7f930dc1fba9ab6fd740d2ba47c25eddd6cb49c56a7d4fe21692d",
+      "aig_sha256": "7a5b108e17f63612710a3992d13a2397d30cf2c2f36b596ce303bda172a709d8",
+      "features": [
+        11658,
+        32,
+        13476,
+        626
+      ],
+      "area": 7214.45,
+      "delay": 7168.8
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "ab39a4e5d42841f94341cb626c99d4d6c627e54fae227ce5b8c9ee5141aa3b21",
+      "aig_sha256": "e432a7848763d7284ef21947581747e0c8f0abe77ebf705b8b5276c97e41c1a6",
+      "features": [
+        11798,
+        30,
+        12655,
+        558
+      ],
+      "area": 7243.71,
+      "delay": 5967.46
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "balance",
+        "rewrite"
+      ],
+      "graph_sha256": "e653ac43602a39b75bc690e0923a9fef12d6d13a553be25e6587a9337dae473f",
+      "aig_sha256": "36c607f995dc98d0e4fb27960053b0e9fe2ec6e3fd40aa9ef8e35d03f1b9dab0",
+      "features": [
+        12104,
+        23,
+        14376,
+        595
+      ],
+      "area": 7596.69,
+      "delay": 6573.39
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "47c13a11bacdd9eb6ecab6f0f5dbd9180b0f6d8a848c68da2b5197d55c1ccc98",
+      "aig_sha256": "afe8699a2396f1367866abf22e0b29b6bc6a2ac08b7cc8342fae55a9c2c1bb41",
+      "features": [
+        11882,
+        31,
+        14050,
+        668
+      ],
+      "area": 7461.03,
+      "delay": 8317.49
+    },
+    {
+      "circuit": "396da935c9455eb92a250e183789715a908760a6d440ee28a0b7aea07b575995",
+      "source_name": "ex101.truth",
+      "sequence": [
+        "refactor -z",
+        "resub -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "bc1a31e281969ca012a59a81f2b4784b57fe9481a18366fe2b61cab007c5cf1f",
+      "aig_sha256": "32ec337345ab90e18aa3568296d05448c49c1cab083bbe678898ddf3a7094352",
+      "features": [
+        12871,
+        30,
+        14554,
+        808
+      ],
+      "area": 7764.27,
+      "delay": 9512.08
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [],
+      "graph_sha256": "8da451578b2e49ab79a38082393e8c32dee9ed734473621233b6ffa01b526de8",
+      "aig_sha256": "fb5d95e8e4392779b7378c427dccb3f4feff599d335bda190699af72a3947913",
+      "features": [
+        8004,
+        32,
+        8967,
+        577
+      ],
+      "area": 4755.28,
+      "delay": 5440.42
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "b85fda94504292085ba5c55558c19c9e1b26d211e2f6fe3ed694743e61c38b0f",
+      "aig_sha256": "e5dcc64c53b3d162562b6a3d7d2244a8926d0f9598b7b514fe32e34b11a91204",
+      "features": [
+        6390,
+        18,
+        6242,
+        184
+      ],
+      "area": 3964.46,
+      "delay": 1629.6
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "fbb76d3faa3c842860cbd69440a05cdf3eff8fd1ba0d18a7696c820702254486",
+      "aig_sha256": "38b924593843341391ca1e51b5a55445389389575fe614c312e842284ad57892",
+      "features": [
+        7431,
+        32,
+        8291,
+        487
+      ],
+      "area": 4480.5,
+      "delay": 4508.14
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "04211d4535aff4e5b723e87a3efd0557a8fa220789635fd32bfea9da0ea0a460",
+      "aig_sha256": "a321c3ce5f1d2240eb966054db45f5e51acf022d9915776830daadcfd1713139",
+      "features": [
+        7423,
+        32,
+        8215,
+        482
+      ],
+      "area": 4445.39,
+      "delay": 4359.45
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "89a146c3938691144a4a34b8c1c87ab8b0d60375be92d009316b159f3d47c42f",
+      "aig_sha256": "7272e274f0fba70b6113e008d34a27aad931571af58d836254cba53bd614d979",
+      "features": [
+        7716,
+        32,
+        8672,
+        555
+      ],
+      "area": 4656.6,
+      "delay": 5287.94
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "8cdb92c405442130024e470fd7f14b8e5a24960c1adcd3f0073e9dbe1c6e4198",
+      "aig_sha256": "06a20e0e52dbd8c967ece436e00368f51a50e0281513ebaaef0e6dc7ddf69648",
+      "features": [
+        7208,
+        22,
+        8344,
+        407
+      ],
+      "area": 4477.05,
+      "delay": 3596.77
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "2a6e0bbb0cdbb7cf72bc6b219657dd03f5b7efdcdce2d1e6be09fb18646aafef",
+      "aig_sha256": "454465215b084b99881c105f479095e4a6672321269492cf3044f3a27a4cefd5",
+      "features": [
+        6682,
+        30,
+        7028,
+        350
+      ],
+      "area": 4126.72,
+      "delay": 2845.98
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -K 6"
+      ],
+      "graph_sha256": "ba010418f57549eb266888b7a09820c325e0746c8befd3136dc4782a97a43996",
+      "aig_sha256": "4c86607577b290ee9b1777a9edb3754578ba58ee116247d01f44493128efa96d",
+      "features": [
+        7727,
+        32,
+        8685,
+        556
+      ],
+      "area": 4657.93,
+      "delay": 5256.17
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "7939c219ddfb38be0f66dc50e1c89c71100e9b81e612a528efde1bfa6aab8d24",
+      "aig_sha256": "cc25d0bc6f653bb59946843d7d87367686162a9ace92d986b928957cc594c861",
+      "features": [
+        6647,
+        32,
+        7670,
+        381
+      ],
+      "area": 4168.22,
+      "delay": 3203.35
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -K 6",
+        "rewrite -z"
+      ],
+      "graph_sha256": "09e9d7db582cf272984c7aae06dc3abebb678176d70e4f53794507770b7f475b",
+      "aig_sha256": "f8025c963479e021d019497ddebee0af90a76647d6d2ccc40520eab7cd1952be",
+      "features": [
+        6609,
+        30,
+        7051,
+        339
+      ],
+      "area": 4118.21,
+      "delay": 2778.25
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -K 6",
+        "refactor"
+      ],
+      "graph_sha256": "f0f290e35aa5097111b6609f91f6b7a742e7d5b19fb9a2467c3b567f6129b90f",
+      "aig_sha256": "0013c1e3f813701555b0a6255e01ba0fd11cefdb0ba340d5bfcbbc7d2dfe7efe",
+      "features": [
+        7221,
+        32,
+        8057,
+        467
+      ],
+      "area": 4404.43,
+      "delay": 4275.01
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "balance"
+      ],
+      "graph_sha256": "a32bb244a16015f18fb0c04a37f95d06caab6cb0ba7f4e27fbd76d2fcd835225",
+      "aig_sha256": "4cc3040be785da41b98f658e42aff19e60f6f8c67928cf79b806562f8d88dae3",
+      "features": [
+        6388,
+        18,
+        6240,
+        183
+      ],
+      "area": 3941.06,
+      "delay": 1623.45
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "graph_sha256": "1ac646c8a7189ae7559d694bca861a1a75f28fb3ace15de99ce0423d8db58360",
+      "aig_sha256": "e95ae9294786f7259bd7e59f784e7f96ce0b924655d738142966a3ae0d842b4e",
+      "features": [
+        6314,
+        18,
+        6250,
+        185
+      ],
+      "area": 3929.88,
+      "delay": 1617.19
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "04fb932a9f4a1dbf956a062025475f348d8bf348eb1c3ab6eea3eec5eae2f933",
+      "aig_sha256": "11dfd023020ce25e392617c9afca28b581e91585207b578c5bc9cf0c1810920f",
+      "features": [
+        6388,
+        18,
+        6240,
+        183
+      ],
+      "area": 3976.97,
+      "delay": 1627.48
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "52dd3234b5032a383f52aa12ed8615b0b903ec5c91aac48ac409421db079eb35",
+      "aig_sha256": "e6bf62d6cab17d001ac34edc64aea08fc2b644b82e9472708884746fad5264b1",
+      "features": [
+        6607,
+        30,
+        7051,
+        340
+      ],
+      "area": 4124.33,
+      "delay": 2752.04
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "refactor",
+        "resub -K 6"
+      ],
+      "graph_sha256": "78c1f218a5f3c99bfc5c537de1209095f5303c0577295497099233e6c65a180a",
+      "aig_sha256": "769712dd3c7881f24e45f7159fbca17b395cbf8aaa1973b3e01afc13c489d2ee",
+      "features": [
+        7214,
+        32,
+        8063,
+        476
+      ],
+      "area": 4387.67,
+      "delay": 4379.65
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "refactor",
+        "resub -K 6",
+        "refactor -z"
+      ],
+      "graph_sha256": "dc60bda0fb3165583fa2401eb1d7f8f2f914a776b2068a0e97fc63641b80ccb9",
+      "aig_sha256": "a4afac03ab7271b4a2593ef6c4ed981e793311028ca6e958597a42299d87cf0d",
+      "features": [
+        7109,
+        32,
+        7917,
+        456
+      ],
+      "area": 4307.6,
+      "delay": 3928.35
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "balance",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "36701ceab1501d78eed4f622888044101ddbaa6a0aca4f45dde305e5aa259bb1",
+      "aig_sha256": "2fa1f597b1be464e01aa0edfa7f6fd337e992747a211e70e14b072dfb1403bc2",
+      "features": [
+        6450,
+        18,
+        6347,
+        177
+      ],
+      "area": 4018.73,
+      "delay": 1650.18
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -z"
+      ],
+      "graph_sha256": "e83f4428b7eff4af1d660ebaafa856d9ed2cb2b8a91403df11112df5772d3958",
+      "aig_sha256": "717c7f99e036772c433a808e3f649c4c61873a8d5dc8fc48333d99379fdfaabd",
+      "features": [
+        6223,
+        18,
+        6103,
+        179
+      ],
+      "area": 3907.54,
+      "delay": 1513.69
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "resub -K 6",
+        "rewrite -z",
+        "resub -K 6"
+      ],
+      "graph_sha256": "a63bedf2114aa36760529bdd483a2d7462e3ada711f506caef3484c12b1f246a",
+      "aig_sha256": "62c2ff361053e154538133c6bb0abc6118f8c8348f87178b64cceac27be315f8",
+      "features": [
+        6590,
+        30,
+        7042,
+        338
+      ],
+      "area": 4113.42,
+      "delay": 2777.46
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor",
+        "resub -K 6"
+      ],
+      "graph_sha256": "a0e5e21333bca0ea75ebf9c97d1170c8663d3fb414e216ac4af7b07dfee797d5",
+      "aig_sha256": "393fe97322a17bc9f85fa30c2d3fde8cbf2accf8bc4b3e959a03cb6703e30dc4",
+      "features": [
+        6168,
+        18,
+        6119,
+        180
+      ],
+      "area": 3885.99,
+      "delay": 1554.05
+    },
+    {
+      "circuit": "6280a4cb639e2a2be006cf8f5924d7246c73274f634f223d76fd723018e366e1",
+      "source_name": "ex105.truth",
+      "sequence": [
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "dad2b8bee2772d050d0748df396c0acee95ade0dc981cec71667770c50812819",
+      "aig_sha256": "f9c0e9ca2d5a1c628e80411d256c3f8a68ae588c7e596fca9791e1bf2d158222",
+      "features": [
+        6675,
+        22,
+        7071,
+        328
+      ],
+      "area": 4216.9,
+      "delay": 2702.61
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [],
+      "graph_sha256": "bc99bd14f31b9256d4d2d4c854db3d9a9c057997883f3214eb60b4f8a7507ea7",
+      "aig_sha256": "97d844507d71a782e7969079a5fe6fcd23e103d6fe1bb0fe828d1e8f1173c4a1",
+      "features": [
+        8650,
+        27,
+        10029,
+        630
+      ],
+      "area": 5077.94,
+      "delay": 5926.0
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "resub -K 10 -N 2"
+      ],
+      "graph_sha256": "0aa3791b1102639f9036656dd6760efc661c6956331fcf50f90784a1b330cf74",
+      "aig_sha256": "b368c44d3f0a9b108897ce7fe2dc97227ac87794c62ebb7feac3d9ceedaf5aa1",
+      "features": [
+        8124,
+        27,
+        9436,
+        574
+      ],
+      "area": 4921.8,
+      "delay": 5244.5
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "235f6d878aa31ff0a6a8a26de0ebabd1383f355f235ef1d313dce60d2b697917",
+      "aig_sha256": "ba1c536987e29f4e653f6da28190cbb8562a3c5190b643b8e940b5a7cea7f1d0",
+      "features": [
+        6211,
+        18,
+        6523,
+        194
+      ],
+      "area": 3964.73,
+      "delay": 1652.34
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "e5ff436eb5b4e39dac45797636c7422be515b9e46d90b25e9a02a2ed99076dac",
+      "aig_sha256": "c61327d81238f2d5f80c197eacbb928f33b1104e18f9e4729336cf1cfc168c15",
+      "features": [
+        7006,
+        27,
+        7514,
+        357
+      ],
+      "area": 4265.58,
+      "delay": 2995.37
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "485a63e7f37d8f67a78f86b7dfabf19f6e549c68e3e1eae5ce444bf34e3c5676",
+      "aig_sha256": "4828f67c1f0bf79d3ee05eca8f38c844f18a2aa89e36f3d3f908d79afa778e35",
+      "features": [
+        7767,
+        27,
+        8990,
+        499
+      ],
+      "area": 4660.85,
+      "delay": 4347.28
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "82c478c2db9785704c9374c1ed15c8cf3c6ffcf3aaaa15c9335e5c97b0acab16",
+      "aig_sha256": "544c89f0aaf5d9925f22b2e482a48aedd32a134e8f3842bc4e172b35839514dc",
+      "features": [
+        6980,
+        27,
+        8199,
+        384
+      ],
+      "area": 4367.72,
+      "delay": 3265.11
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "8fd4367ca7fb9f6efbdd0b5685cd4d3875f696820b2fb1cd6a6446ed64fa504d",
+      "aig_sha256": "0810723c7c40cb412baa0ddee0115073e29c942fabde1f4e97bfec21c18964ed",
+      "features": [
+        7784,
+        27,
+        9002,
+        487
+      ],
+      "area": 4694.63,
+      "delay": 4172.22
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "25e4d71214322f5f8c6579772fed0ea7593471eab5717ea2d500cbb8b194491e",
+      "aig_sha256": "869a2694649c94ac78144b7e6d58b1c65aeef08862a1c308d621319fc7b061e2",
+      "features": [
+        7669,
+        21,
+        9137,
+        430
+      ],
+      "area": 4793.32,
+      "delay": 3771.84
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "48d25eb65afcfcdf0642f6afe550421f04a42986593e6a29bbe4e439ff4119e0",
+      "aig_sha256": "328d4f8fc007a6dbdff99ca46203a7d98bcaa870788f63084d37b1594dea0f35",
+      "features": [
+        8342,
+        27,
+        9657,
+        600
+      ],
+      "area": 4983.24,
+      "delay": 5424.96
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor",
+        "balance"
+      ],
+      "graph_sha256": "010d9c46b9552bf4182025d00f5149929ce75e0576bf027a63fe2fc8c1a295a8",
+      "aig_sha256": "2cd8a39d45991820a113da5ab0fd690e3fcb13e8b82755f8481d8cadbfbe6748",
+      "features": [
+        7216,
+        21,
+        8506,
+        374
+      ],
+      "area": 4552.59,
+      "delay": 3273.98
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor",
+        "rewrite -z"
+      ],
+      "graph_sha256": "69530e61ac7b0834b95b780e9757af225b3816193594f79aea006dce5a318bf0",
+      "aig_sha256": "cf3ec10b250aaaf41a714ebd5ac8251be559628ddee23848f2446fae86704496",
+      "features": [
+        6767,
+        27,
+        7267,
+        315
+      ],
+      "area": 4146.67,
+      "delay": 2582.54
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "resub -K 10 -N 2",
+        "balance"
+      ],
+      "graph_sha256": "cecdef611e42cdcf9e580379299f19085a8be726e2330d7c0f412e542e8d63ea",
+      "aig_sha256": "4ac9c762303cf25598bb1c0a258b19ef0ec18367a7db990e8e6dcf4620bbbf71",
+      "features": [
+        7282,
+        21,
+        8652,
+        402
+      ],
+      "area": 4641.17,
+      "delay": 3586.35
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "balance",
+        "resub -K 10 -N 2"
+      ],
+      "graph_sha256": "6afcbe36c354c57a034a5c4568b0ff608bc8213d9b14332dbff51eb9191d3e18",
+      "aig_sha256": "33d0d6bcaea037a7f9e43f7aa0d53f9a3369f00a0ea245bc2e6de2ee199e830a",
+      "features": [
+        7251,
+        21,
+        8663,
+        387
+      ],
+      "area": 4636.38,
+      "delay": 3306.94
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite"
+      ],
+      "graph_sha256": "8e3185dc8bd32085b5bdb74ed2fed117f6cdfb02fdb81661afb365b8bdc73f5a",
+      "aig_sha256": "73d01627818943e84b68712c10821af1b68d0c03c3aa305683ce56eac0edf5ff",
+      "features": [
+        6857,
+        27,
+        7396,
+        337
+      ],
+      "area": 4201.74,
+      "delay": 2813.37
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -K 10 -N 2"
+      ],
+      "graph_sha256": "9bd1a7288a52290b0648c2653a3a71d27d344bafbd4ebc23a75b12a61e97ef68",
+      "aig_sha256": "a7fc7ec3d18fa0be9a197ac562673fd49212bccdc0ffdd3e8ce0f81118119267",
+      "features": [
+        6116,
+        18,
+        6434,
+        188
+      ],
+      "area": 3939.46,
+      "delay": 1679.71
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "b9c0e7aed24ed0bfd91fc7a815d02e30b4f14ea0f14fe950203d118502d06e46",
+      "aig_sha256": "4afe9afdae4826808ce520778cccb157ffacad2179373238aef8f61884c6aa24",
+      "features": [
+        7663,
+        21,
+        9136,
+        429
+      ],
+      "area": 4802.9,
+      "delay": 3762.66
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "rewrite -z",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "c9cd8d91c2f2a0da0ba7b1c4c36bd75189e0ca7a3e2dee66afb81d86351cb40e",
+      "aig_sha256": "33b90c4255d60be0499f14f8ef61d13a893e855e3fc15a4ff06dc765f0858a56",
+      "features": [
+        6060,
+        17,
+        6214,
+        165
+      ],
+      "area": 3893.97,
+      "delay": 1563.44
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor",
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "38701541d56261c0ec3784ca9f38765e5213517483e2706f87b0829550f6b0b4",
+      "aig_sha256": "32ff718581553398df0dd69f4a0a34665c1f7c17dc9ae22df8784eab1ab6619e",
+      "features": [
+        7213,
+        21,
+        8505,
+        373
+      ],
+      "area": 4556.85,
+      "delay": 3258.57
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "resub -K 10 -N 2",
+        "balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "c2748f7692e6b3a8c269c76789febed4c0c5fe72f6f636a1051b479dd7023d5a",
+      "aig_sha256": "ade496b80a18c162f23bfa2061872247be3f11a68df40c5eb142a90a4fdd81eb",
+      "features": [
+        7047,
+        21,
+        8260,
+        393
+      ],
+      "area": 4453.37,
+      "delay": 3165.84
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "f93ee68c46cc99e10855411f621a418537959653c8f9a7af7af4b70201a14eaf",
+      "aig_sha256": "98f85fc8766cd630a44ab3e304ce0bbd4a6ad55768f127cdc3995db21e445920",
+      "features": [
+        6744,
+        27,
+        7272,
+        310
+      ],
+      "area": 4104.65,
+      "delay": 2415.87
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "resub -K 10 -N 2",
+        "refactor"
+      ],
+      "graph_sha256": "2e5875e2e5a2a1e6be5567d8a98a40e0dfb9484499d00430e5d27973b7da29e4",
+      "aig_sha256": "5cc242e1e7a7c399aece301769ec16832dfb3bf28069e6aa0a67ac8cc6ac252b",
+      "features": [
+        7488,
+        27,
+        8695,
+        477
+      ],
+      "area": 4610.58,
+      "delay": 4270.36
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "refactor",
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "a18a0358568942d4aec8f9fc23eea547b6e74b125e3306691e49e293e7f5676c",
+      "aig_sha256": "94493ef20066d666a8547514f70a18680e6cc249c21094b25864ce81933e08cc",
+      "features": [
+        6620,
+        27,
+        7123,
+        294
+      ],
+      "area": 4079.91,
+      "delay": 2488.97
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite"
+      ],
+      "graph_sha256": "ad1f60dd92804d710f1e8e1042a6ed16e0353e452b47a582359a9664af28d054",
+      "aig_sha256": "79e1734afc9311cf469168f95e9e3c68e0b95d351f96f47293ad6c3a457a2580",
+      "features": [
+        6908,
+        27,
+        8113,
+        370
+      ],
+      "area": 4338.19,
+      "delay": 3129.16
+    },
+    {
+      "circuit": "089d78eaffd8b2c1bfdff855f1871640ba2073abafd83480d43aa556f1291512",
+      "source_name": "ex109.truth",
+      "sequence": [
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "f782099cc6c263cea32dfd11908709f481bc47d4fefe1fb79406c58562c16a42",
+      "aig_sha256": "28bf06ef4dc474f4a99339abb8f4194b94cc2ad81493b9ebcd209616332182ea",
+      "features": [
+        7026,
+        21,
+        7650,
+        323
+      ],
+      "area": 4392.99,
+      "delay": 2706.28
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [],
+      "graph_sha256": "84afc9701e17564320aeb7f7ec97a412604d5f966bdee096684b65460f8aab6e",
+      "aig_sha256": "cda4db3d24e423cefd6cd59280333549d7f49db4f610de9dff2defa20d9480ac",
+      "features": [
+        308,
+        13,
+        253,
+        97
+      ],
+      "area": 206.42,
+      "delay": 598.85
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "resub -K 8"
+      ],
+      "graph_sha256": "a3d8b04a45ded14c7748e1e1fceb561b24bba59794d92b31c50d82664accf248",
+      "aig_sha256": "ac7382167bade432ac5cd05fd8fefa93f38f9f06cc558e9226b36524a91b21ad",
+      "features": [
+        297,
+        13,
+        244,
+        90
+      ],
+      "area": 202.43,
+      "delay": 582.95
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "2929861d5277d3f1e426881fd63ac53d27e481c233c575aa4fe88781cf0dc705",
+      "aig_sha256": "bb986a3f68958c9d074c650da04c645a0fdd1674b6b3c6af6535c140542a9647",
+      "features": [
+        182,
+        9,
+        173,
+        31
+      ],
+      "area": 129.54,
+      "delay": 297.18
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "88b1820622f051ddf2ce2a125f8c87666c93e8a37a7bf9d17a3cd0aba669bde6",
+      "aig_sha256": "ad3b5f5b3b92d525ecff0248e1cff041d6f817aea1d15bc1e2e09bf4c36670ce",
+      "features": [
+        283,
+        12,
+        228,
+        62
+      ],
+      "area": 193.65,
+      "delay": 494.96
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "c598834d157dd36352c766752c0e12d4a371e4874de8c74c51bea3d88a27fcc9",
+      "aig_sha256": "3201cffc3420cf4ed5f3f6dfcc469d350b1a462e44585ee11080384a3b6553f8",
+      "features": [
+        268,
+        11,
+        268,
+        43
+      ],
+      "area": 179.55,
+      "delay": 375.44
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "c7986822e4abfc9db9526c765254dd5281613d300e7f0b1d7c9511321f298a45",
+      "aig_sha256": "53e8fcec796c3f83c356ccddef95d6e774d6f14ba009f073ece0e0fbb01aa5b1",
+      "features": [
+        297,
+        8,
+        240,
+        93
+      ],
+      "area": 208.81,
+      "delay": 504.25
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "de2e6f93001ce7009672c0ffbeef5b7e14e9b470ead8f7f383672f082395ac64",
+      "aig_sha256": "1bc3d5195d43e53b78ddf829ae4b017d82fd9a5bd1a5f883766e35e06f4a7889",
+      "features": [
+        277,
+        11,
+        245,
+        77
+      ],
+      "area": 187.0,
+      "delay": 516.14
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "a458007a21709cf665f70ab09574f92a175d81b437ad2b02e09f8c22edbc03d1",
+      "aig_sha256": "f0b04b6e093220d00b33856cf200b9da38f9dfb3e56257d3b8eb37f0e4b1a88c",
+      "features": [
+        251,
+        11,
+        262,
+        55
+      ],
+      "area": 168.91,
+      "delay": 424.38
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "2226d166cf208e6edc61a2e588cff23f3bcc1458cc00d75a87219d30120c192b",
+      "aig_sha256": "b6e7f4a3d0f7dcbbd876904143a58ca47e542846c04a12ecd041bf85c2c19a99",
+      "features": [
+        262,
+        12,
+        232,
+        38
+      ],
+      "area": 174.5,
+      "delay": 381.0
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite"
+      ],
+      "graph_sha256": "157031bb38575201ea36c0594f989d99edc8f4d041fb6e5a2cfea57122e1f540",
+      "aig_sha256": "ef41124ed2fcb015ec6d14fab6b66e43b3d49a6cf9fba4287aad0a1d6b5ebf62",
+      "features": [
+        273,
+        11,
+        239,
+        77
+      ],
+      "area": 184.87,
+      "delay": 539.91
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "resub -z"
+      ],
+      "graph_sha256": "b6e654ca24a2af580e79d5b79ae767a563fb696e457c9d1ab2b91221dfa2e98f",
+      "aig_sha256": "d17bb9385327bf80fc50de269b9f146ed105aea60a932b23a353c37797a062d3",
+      "features": [
+        275,
+        11,
+        245,
+        77
+      ],
+      "area": 186.73,
+      "delay": 527.84
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite -z",
+        "balance"
+      ],
+      "graph_sha256": "56cf5a51d4f68d673052fbac7b02e733ba51ece491936ecc79092b12bb640bb2",
+      "aig_sha256": "fc55cbc9b545e976e6677be6a077b6061ecc8dc1d37600537a65bad980eb84ca",
+      "features": [
+        278,
+        8,
+        228,
+        59
+      ],
+      "area": 200.03,
+      "delay": 440.91
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "resub -z",
+        "refactor"
+      ],
+      "graph_sha256": "5aaadb0e43e465e8b2fa510957c2420f02efb4c883caab614e36bff134bb3968",
+      "aig_sha256": "9829d397db877c45bd013559326d6d4218d4d9190bb47f58e6dc9b0387658c28",
+      "features": [
+        237,
+        10,
+        239,
+        46
+      ],
+      "area": 159.6,
+      "delay": 392.11
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "resub -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "13f0fc3e1ce024828f490d74f64afa6935293be3468c1c61a4ffa2a5f9af0707",
+      "aig_sha256": "bda8741fbb208a37bddfe73966c4b2abb0db66aa7e0fa2e0637b18dce8e2e8e8",
+      "features": [
+        257,
+        11,
+        251,
+        41
+      ],
+      "area": 168.11,
+      "delay": 363.75
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "refactor -z"
+      ],
+      "graph_sha256": "3be4e7928e121766829b0b6e94aa6ca88028a9f53f4b8bfbbde719f56f44d17f",
+      "aig_sha256": "c88b976f127090f38559d5012bf61ad983e6b721d8d42c88cca5921dca6a1ff4",
+      "features": [
+        246,
+        10,
+        243,
+        38
+      ],
+      "area": 163.59,
+      "delay": 360.33
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "a73698130cd78b16b73c649b8fbac5f0b294413ffce71e696a9f5426ef2a8102",
+      "aig_sha256": "62d97cf807b7f6808491ee39734ad1c7dfafd82be127d47a93bbb5bcbf67b218",
+      "features": [
+        179,
+        8,
+        186,
+        31
+      ],
+      "area": 125.29,
+      "delay": 302.97
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "b1d6dc3df8968b488f0d8c4105cf2adf11a1d3bdd6718b606e91b1da500d451e",
+      "aig_sha256": "b4e9962231ed0efe85051580b0f9410c657749267a3b320ab2227031d5ceb50a",
+      "features": [
+        297,
+        8,
+        240,
+        93
+      ],
+      "area": 206.15,
+      "delay": 473.91
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "balance",
+        "balance",
+        "resub -K 8"
+      ],
+      "graph_sha256": "d90f149f46d86ca4d89ebdf29ad25c32d760e365b2e2ffd12464e6140600e810",
+      "aig_sha256": "6247b927a14f59cbd794fd598e2ed695bb7ab7772108bc33bf759b72300448a6",
+      "features": [
+        291,
+        8,
+        233,
+        89
+      ],
+      "area": 200.56,
+      "delay": 472.95
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "refactor -z",
+        "rewrite"
+      ],
+      "graph_sha256": "ebc4901b78016fca588fb32218c6b213f57ab5f3795a01608413fb5d1a439fa6",
+      "aig_sha256": "987f606c4ce50f6be9bfdebf4ce7fbaec5f8339a12bd7d6f4d2189f6bba9faf6",
+      "features": [
+        237,
+        10,
+        236,
+        35
+      ],
+      "area": 160.93,
+      "delay": 350.09
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z",
+        "balance"
+      ],
+      "graph_sha256": "97a6b32ad0bfd64c8f71c0e4938eacc7c005f0aabca795273ef787f8d172a2df",
+      "aig_sha256": "48f062788038a1401a334a7041c72689f3bb0bfc515e5455a335ae776af34502",
+      "features": [
+        179,
+        8,
+        186,
+        31
+      ],
+      "area": 126.88,
+      "delay": 299.75
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite",
+        "rewrite -z"
+      ],
+      "graph_sha256": "93b90614f368cd6ad53819d75b32f838cd56f6c3129f3c45108551dc8694d044",
+      "aig_sha256": "a026f10a9a00a7618903ac0456fb01ba8fe02b6fce18857fe6b188200d6c75dc",
+      "features": [
+        260,
+        11,
+        229,
+        55
+      ],
+      "area": 178.49,
+      "delay": 469.97
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "d7d447688027740969c453eed0c776ac23eff0f3439d2ea81c4812f064ba680e",
+      "aig_sha256": "2c5fe29cf6f5ccbcb9d333f7b8fe32da031a5e42ec63dd9e472bb9373c49a76f",
+      "features": [
+        180,
+        8,
+        166,
+        31
+      ],
+      "area": 129.28,
+      "delay": 301.69
+    },
+    {
+      "circuit": "8a574bb4a5577e8b11b1fb73fe661d6acba5aa1b205f16bc5ccec505895884b1",
+      "source_name": "ex113.truth",
+      "sequence": [
+        "rewrite",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "7cd5cf0932fafd4d5de1496d76341f65f92dc1737859ad913415f684b308f032",
+      "aig_sha256": "aebf36a71896ccb120048b349b83f14627dcbbb9cf5f41f006116e7c2adab4b8",
+      "features": [
+        174,
+        8,
+        181,
+        33
+      ],
+      "area": 124.75,
+      "delay": 311.22
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [],
+      "graph_sha256": "bba6f2ac5e90bb9bf6b7c2a92e5a3a6f72d05e9e6e0a83ddbc191d1a6ba2de39",
+      "aig_sha256": "e6da62f228a7db1143214332ffbf426a51c7738c5bae7e61277d158a99a5f587",
+      "features": [
+        658,
+        14,
+        738,
+        99
+      ],
+      "area": 401.66,
+      "delay": 650.06
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -K 12 -N 2"
+      ],
+      "graph_sha256": "ad87a899c5858e7b3e8f5736f0696dc3854720c6aef7360df4840cba0b32f903",
+      "aig_sha256": "a2a804865b4f1ecb8494c52efbfa95cb77254e1b3cfd3d5bf432f4bbf94bf175",
+      "features": [
+        500,
+        14,
+        533,
+        52
+      ],
+      "area": 347.93,
+      "delay": 549.24
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "567a5e86e74daf5b85a79d36aa1e15baca1c29429041b731955a8d49d69f2c8c",
+      "aig_sha256": "a08eea7c194965cbcec4f66edf800e5c1715cd9c4f0c0ba9f130785cbd44d233",
+      "features": [
+        563,
+        14,
+        616,
+        66
+      ],
+      "area": 372.4,
+      "delay": 571.4
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "486538cb4c041886603a7403a9785589d0bacffc0e7cc46d1d38b590bdb3558f",
+      "aig_sha256": "f2e922b4512ffd9a60bc201256eeee05e7f4c2abc2a09ce83e13b5a71bc1d37a",
+      "features": [
+        595,
+        13,
+        676,
+        85
+      ],
+      "area": 391.29,
+      "delay": 604.72
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "e285ed02947f5c5e63662dcc4c136aa71b6a1a74cdef237f1f03e32fcced7db3",
+      "aig_sha256": "4ae4947841526d1ab2eeb87e9fb9231c372b9d06b5adeb797a4075c8ee261ba4",
+      "features": [
+        599,
+        14,
+        674,
+        80
+      ],
+      "area": 383.31,
+      "delay": 566.92
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "0c7ec5150b880991e0531173b3d88988913ae64c8759078f54e2bb7b44cf03b4",
+      "aig_sha256": "23eea1e93a94dcde84136d187ab6f7e7acb7a2c4f4997042402263d2b7a84ab8",
+      "features": [
+        559,
+        14,
+        643,
+        69
+      ],
+      "area": 372.13,
+      "delay": 524.93
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "bf9984d200d98ff2f1805b68be2e9a7066cd52236f05876581f32652066a8c66",
+      "aig_sha256": "37d879e10318b9e62e26797de067b49c394489ef401b47ae9ccd0b6c4e586426",
+      "features": [
+        543,
+        14,
+        606,
+        69
+      ],
+      "area": 368.68,
+      "delay": 545.74
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "bc6ba6bb9ac2e80d50ea11381425e60ea4708e5aaf1700b88e94cbbfb665acc7",
+      "aig_sha256": "945d8487674b9095295ce64109e9754ba9fcd281636c5d15835b29c6ecf3c298",
+      "features": [
+        582,
+        12,
+        665,
+        60
+      ],
+      "area": 412.03,
+      "delay": 520.44
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "19d4cfcb4299704d67062a434269b4fb87527ff959b47e08dad16638fadb982e",
+      "aig_sha256": "bcb1c4e19cfeba5f9633a5a25c516835b9274c2a37b1fa36f9be623029c693f9",
+      "features": [
+        515,
+        10,
+        498,
+        44
+      ],
+      "area": 366.55,
+      "delay": 487.59
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "24a6d726dbc2e1bf4f7b45287eebe0a42075d3ca98fe9ef1dc73cda318e5e20a",
+      "aig_sha256": "0d604cd9bf76cdf7eaf47aaacdc3d499db71b9e4f7d046aa4a16690438f4c866",
+      "features": [
+        536,
+        14,
+        585,
+        58
+      ],
+      "area": 363.62,
+      "delay": 508.16
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -K 12 -N 2",
+        "refactor -z"
+      ],
+      "graph_sha256": "6bb8a38203ec714694d7d17933db48bdedbf91a7ab973478571a691c976c62b7",
+      "aig_sha256": "6bceee1e2417037e8b791667dc53afec45adcc5818b32b35d76c52f70660f742",
+      "features": [
+        491,
+        14,
+        529,
+        53
+      ],
+      "area": 338.35,
+      "delay": 510.76
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "84c67c58ba011c3ceb8dea4b04e952b719a9bd9d66b854901721c84cda88e075",
+      "aig_sha256": "d0ed1055225bb71e4819c24a31268f512bd97a42d0d0705cf2184ea42007546d",
+      "features": [
+        556,
+        12,
+        641,
+        60
+      ],
+      "area": 387.56,
+      "delay": 499.02
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -z",
+        "resub -K 12 -N 2"
+      ],
+      "graph_sha256": "994947777554944ede2bd36c3f4bdad2cf723ace9d72440d6a2a0981aee32efb",
+      "aig_sha256": "2be6112360a6622f1b226f1ef9473e89f16c6e1e4feab77dcbd5dcedd235ffd1",
+      "features": [
+        499,
+        14,
+        541,
+        55
+      ],
+      "area": 351.12,
+      "delay": 499.02
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z",
+        "refactor"
+      ],
+      "graph_sha256": "8a801503cec3b36bcbbb93eff2215e220b894049998e11a0be3c636c02948ff2",
+      "aig_sha256": "8d35dd56cb0c98ad1a396e7d057a05ace3a146639139f24bfd630f9ccd459309",
+      "features": [
+        530,
+        14,
+        579,
+        57
+      ],
+      "area": 358.3,
+      "delay": 493.06
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor",
+        "resub -z"
+      ],
+      "graph_sha256": "485e9dc4d38c6865909e6dece366c41e5aa3131ed9e7a6054fe5390c3240c0b4",
+      "aig_sha256": "0503e9068e856265d31895135bbc23a8dbadeb0c10e6839b5e90a73b01fe2065",
+      "features": [
+        508,
+        14,
+        557,
+        57
+      ],
+      "area": 348.99,
+      "delay": 531.73
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "90ae93acace1272fd9013ec60ef4030f7c5b78ab20a8b73c24c821ab197adaaf",
+      "aig_sha256": "4d577f632ff8e6a409a8ab26192bd8fcefe4533b503091aee39a6db60afb1144",
+      "features": [
+        540,
+        12,
+        627,
+        60
+      ],
+      "area": 373.46,
+      "delay": 521.59
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -z",
+        "resub -K 12 -N 2",
+        "refactor"
+      ],
+      "graph_sha256": "897cfb27e803ed50d134bee6e7e2d9e4e461160993bb8d86a012503be36e6b3a",
+      "aig_sha256": "9dd0df4a704851ec1ee3ce2c526650903028acec7e63ea80ea8e544202b8b18f",
+      "features": [
+        495,
+        14,
+        537,
+        55
+      ],
+      "area": 348.99,
+      "delay": 499.83
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor",
+        "refactor -z"
+      ],
+      "graph_sha256": "9377e036efb715901ee40c9dae784a2930db5dc9e30d77e358bc30864801664b",
+      "aig_sha256": "fb4d4a8035a7576913d54dcb139235f1b153a599adabc9366cf3699391a39aed",
+      "features": [
+        593,
+        14,
+        676,
+        80
+      ],
+      "area": 375.33,
+      "delay": 568.04
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite"
+      ],
+      "graph_sha256": "6bb614cfde7f004f1468efcb12d0647de6b1b40eab3196e8664bca3c359f79ed",
+      "aig_sha256": "42cc32e6b2eeece90ea30e91b6a2a60a6031f91db5a57dbd93b8656e87860f3c",
+      "features": [
+        544,
+        14,
+        600,
+        62
+      ],
+      "area": 363.62,
+      "delay": 522.32
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "graph_sha256": "92ef2461b4fed76d9ae8d409dc6fda8fbdefce1b9a0dc149d7cf1a74a4716fe4",
+      "aig_sha256": "4fd06341fb04bc2ffdc596a9c3419e34460c3e00b7eca6c0a3ee25789c52cd90",
+      "features": [
+        514,
+        10,
+        498,
+        44
+      ],
+      "area": 364.95,
+      "delay": 471.82
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor",
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "9f197a9c162f88360d5fb7430f318fbc8c1d7e0472d92fa805eb39110d27791b",
+      "aig_sha256": "5aef5601c8ef4571d5a597a4ae8e584fb06673050c4403c514ac90e602827bc7",
+      "features": [
+        586,
+        14,
+        666,
+        79
+      ],
+      "area": 381.18,
+      "delay": 573.55
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "refactor -z",
+        "resub -K 12 -N 2"
+      ],
+      "graph_sha256": "a06b5a4dc9ced3642095dab958d1701dc18b43c523425e6732021023d592b4ba",
+      "aig_sha256": "912995d9539114d30472ebf605340f0bf8255a7b598de2bec05ad0a2c1787dab",
+      "features": [
+        475,
+        13,
+        520,
+        50
+      ],
+      "area": 335.69,
+      "delay": 505.17
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor",
+        "resub -z"
+      ],
+      "graph_sha256": "b645426b42c90e54b29c6737f46a1fc8817317cc2b319077917ffd7c19b9ba6c",
+      "aig_sha256": "50fa9ee4524bde3945ba920f3ae6a17c2412caa5e96ea59c8458439cb867cd4e",
+      "features": [
+        483,
+        10,
+        468,
+        40
+      ],
+      "area": 357.24,
+      "delay": 455.18
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "rewrite",
+        "refactor -z"
+      ],
+      "graph_sha256": "2992fa498d033b6a7190e535f19f3abcdd8aca0a3522de800db30c4f60402472",
+      "aig_sha256": "a1d45bdd52584f4d06575f00d139698447bc05d7095fae99d1c04ad033808391",
+      "features": [
+        549,
+        13,
+        638,
+        72
+      ],
+      "area": 372.93,
+      "delay": 514.67
+    },
+    {
+      "circuit": "b84bf22210d690507804a6eb5bb680a4d88d87878116f3084b4a41d3cf8943b8",
+      "source_name": "ex116.truth",
+      "sequence": [
+        "resub -K 12 -N 2",
+        "balance"
+      ],
+      "graph_sha256": "490734bd13ec143eff5069d1cef42df91a3a45442e42b3b55d9599e59ca2e20a",
+      "aig_sha256": "636bfba4f0370acc87ee19526b53f2bb5d86d1813bc3e188e6613f3541d5a33c",
+      "features": [
+        480,
+        12,
+        516,
+        45
+      ],
+      "area": 349.52,
+      "delay": 458.04
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [],
+      "graph_sha256": "b0f485765a85b401b792add6666822115df84cb872160d2704889ce4c43201c3",
+      "aig_sha256": "6a4aec64b831543d0f897bdb4d59febe5ce51cfe3697db83991d1606b258c11c",
+      "features": [
+        456,
+        16,
+        504,
+        57
+      ],
+      "area": 279.83,
+      "delay": 463.82
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "a3361d5767562bb833151f5d65969ff8a9c73ebfe3d7b1a263514d3db2389fe7",
+      "aig_sha256": "04873dcf64e37377185d36480897e7eaab685cd1dd675ab25a69ac5c03d78c26",
+      "features": [
+        386,
+        16,
+        417,
+        44
+      ],
+      "area": 251.64,
+      "delay": 444.9
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "fca1ac9adb9e76adc225d97402b8cc44bdeef43ec802660b7f97b8d9adbafa6c",
+      "aig_sha256": "397eee1df4e2dc6ead6114096a0689680a0c3f9cdc628cafdbe284fefc34e44c",
+      "features": [
+        347,
+        11,
+        351,
+        27
+      ],
+      "area": 240.2,
+      "delay": 387.03
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "73a3589ec4744ad30b99ac97185cad4aa70d4c214f2129f28ccb34e422a91e25",
+      "aig_sha256": "90e5a9176c344168ba8042464cc2afe51dad71ac5f9c5b4b8946d6a6e95f6fd6",
+      "features": [
+        413,
+        15,
+        443,
+        49
+      ],
+      "area": 263.61,
+      "delay": 459.85
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "4425dc5688b4b4c15b41be9ad2dadb7077f6097c6ff6c01065a997ea8407ccef",
+      "aig_sha256": "a3a1f239e1911ac98a8e164ff7a2cc4303b8e7ec91a19f96a1bcface8cbceca4",
+      "features": [
+        376,
+        15,
+        410,
+        33
+      ],
+      "area": 240.73,
+      "delay": 446.55
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "777bf5f2cdda3691afa5678bd2dd6e932e10f5bb896c26a51d61fb6146bfb627",
+      "aig_sha256": "a7db5c6074a3dc349e5f6f5fcc7e443daa47ae3a63c35a6901e8d020ad58974f",
+      "features": [
+        375,
+        15,
+        409,
+        37
+      ],
+      "area": 248.18,
+      "delay": 417.76
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "57a25f75a7488552b61288771ce3e37308674db730cc9bdd2b3d4d0209578594",
+      "aig_sha256": "8338dbb6109bf5830adeb06e727ac0b9061b7877ccbf600615e14bf21d2cfb78",
+      "features": [
+        421,
+        13,
+        477,
+        42
+      ],
+      "area": 271.32,
+      "delay": 448.02
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "246b958b35a80bbef5e1edb62d4c6fc9249c3b43c9192e06c5113032f74cd8ca",
+      "aig_sha256": "efdd9d32483d2e9cad598a294932d22a00b526b230fb3b148373e120d82b61a4",
+      "features": [
+        417,
+        16,
+        447,
+        51
+      ],
+      "area": 262.01,
+      "delay": 445.8
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "refactor -z",
+        "balance"
+      ],
+      "graph_sha256": "33fa12ddccb28c787b9398819ed0c610d0e6acdab96e966cf71daabf21a145bf",
+      "aig_sha256": "c6edb752b10a8ccf2262580bbca08e512ee635447993ea5400f716aff5ab2315",
+      "features": [
+        385,
+        12,
+        424,
+        38
+      ],
+      "area": 251.37,
+      "delay": 420.47
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "refactor",
+        "resub -K 10"
+      ],
+      "graph_sha256": "d2d87c0134a9a36fd7fdb9567a03447df617ec9d61e2461adb53c2519caa2b8f",
+      "aig_sha256": "08981193fe0de4cea430509edc293fc7a376c1451f6fc081cd5589e6ba8e00b3",
+      "features": [
+        374,
+        15,
+        402,
+        40
+      ],
+      "area": 247.91,
+      "delay": 433.83
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "b05cef387e4f69b0cc230efc5b546f640bfebce1e7e24918be6c65328ec8b6a1",
+      "aig_sha256": "bf2e4b1c39a35024e36768c6578e2f3988c11d59b42e8e97a807b3e14df38bd2",
+      "features": [
+        387,
+        13,
+        430,
+        37
+      ],
+      "area": 257.75,
+      "delay": 410.27
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "0262914dbf9a221b1efba0524942698ad45151fa3c8055ca73cbf9bd27d5edf4",
+      "aig_sha256": "aac3ce11672fd8e53d2ed6696995c2be8f0915ac4057877b008ab99cf9d2ea1c",
+      "features": [
+        367,
+        13,
+        395,
+        32
+      ],
+      "area": 252.17,
+      "delay": 459.2
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "resub -K 10",
+        "refactor"
+      ],
+      "graph_sha256": "674c0bec99f281e0bc1b60d627b92a1726a9b6d629c9ecc9591e1489f95fb37a",
+      "aig_sha256": "a810029a5b5537357b16087a085a62783883d6b102c69fb512f9612d0977a0db",
+      "features": [
+        374,
+        16,
+        408,
+        40
+      ],
+      "area": 249.24,
+      "delay": 436.4
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "balance",
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "85c6695058653d1afbd130610980e65937684923af0ef2bcd98f4f568d03939a",
+      "aig_sha256": "8177d7c2880fe451810d24cacf9c8c06b29ce35c7381b041f6386c0e8898cc93",
+      "features": [
+        359,
+        13,
+        388,
+        30
+      ],
+      "area": 241.26,
+      "delay": 410.08
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "refactor -z",
+        "rewrite"
+      ],
+      "graph_sha256": "20b44b265f0030ae39a897f6fa6ecbdb720396c6c12571030ac5bb933a3cdace",
+      "aig_sha256": "b38927d9e159a5dd1306f59e07f037c5f1c20b29e7895454ecaba36ceaf46e93",
+      "features": [
+        367,
+        16,
+        388,
+        35
+      ],
+      "area": 243.12,
+      "delay": 435.62
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "resub -z",
+        "refactor",
+        "resub -z"
+      ],
+      "graph_sha256": "43563e2b9d8a364267ae6f377f893f4d7275b56ad89323efbd1c7c3bf017f275",
+      "aig_sha256": "f01bd96d77a47f678c0447abd0432bcf8c419963ec288b97fe896fa869b78405",
+      "features": [
+        371,
+        16,
+        406,
+        38
+      ],
+      "area": 244.99,
+      "delay": 443.31
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "resub -K 10",
+        "refactor -z"
+      ],
+      "graph_sha256": "7713144b68b4acd700bbb070f766425953e34088dfec755de4c84e041b587c06",
+      "aig_sha256": "ac07fd5b7056b461b0d346cd534882f9ecfbf105c7bad852ef083ad7894f9c59",
+      "features": [
+        372,
+        16,
+        400,
+        40
+      ],
+      "area": 242.86,
+      "delay": 480.52
+    },
+    {
+      "circuit": "67fab318a9de73c133e62945fe27c2765d414f4cc1ce7d933d0b9a7327f437c7",
+      "source_name": "ex120.truth",
+      "sequence": [
+        "balance",
+        "refactor",
+        "refactor -z"
+      ],
+      "graph_sha256": "cc1e4331a8b32b586b8dbb3d6097743c4ae7ecc4795f08037ae2b9ad39c24ed0",
+      "aig_sha256": "13c76fa50a240919387b074f0e8f8833e4ef79a7471bd6ab7ee2bc50ed416c19",
+      "features": [
+        381,
+        13,
+        424,
+        41
+      ],
+      "area": 254.56,
+      "delay": 442.74
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [],
+      "graph_sha256": "4b95ead3f9f583ca30f1962d8614aa753406df2c062208a4b2717b2b6c233993",
+      "aig_sha256": "557bc3c6dd8e009a6484254cd3df7f1ca012945d9a0f98c14b50588cd898f805",
+      "features": [
+        18484,
+        250,
+        23414,
+        75
+      ],
+      "area": 12818.27,
+      "delay": 4665.75
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "174262840f56d48fd70b3dc5d97b9688fd7308bf3fe9d392f5d19a8391e0cb1b",
+      "aig_sha256": "5542b276095f3b1f5bb2522db4dafe04af580a63efb6d1841e4de154f5205829",
+      "features": [
+        17879,
+        248,
+        21209,
+        77
+      ],
+      "area": 13216.74,
+      "delay": 4555.91
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "b77ae32e3bd1ed6c07e5c5b721d11551dc744ce88f24da1beeb70f06138c162b",
+      "aig_sha256": "da41dcb2e23e4c859028377302dc661960aaf0563e340e18e55f90ac421c9c77",
+      "features": [
+        18293,
+        250,
+        23044,
+        76
+      ],
+      "area": 12754.43,
+      "delay": 4677.74
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "914d9595d71c25a323b9f93a25b7685907896da2ab4af7977eec98af525f834d",
+      "aig_sha256": "a54e9b4e7d00bb81dbb627efbca26b59c85d0bc9792a50cb958ec70d3210872d",
+      "features": [
+        18174,
+        250,
+        22990,
+        75
+      ],
+      "area": 12824.66,
+      "delay": 4627.2
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "b7dea6e22b376cc287cf5e6c673628e70d2aeb5010858bea71e405a8fe89ce88",
+      "aig_sha256": "06f2df9cc7849710784d8bb87acbb31da34c5109d3725be19bb8e81230ed5af4",
+      "features": [
+        18302,
+        250,
+        23066,
+        76
+      ],
+      "area": 12854.72,
+      "delay": 4494.77
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "f9c58a08b514189b51d3be72b8db63f213c88ced377c985276ae2dbbf8efbdc5",
+      "aig_sha256": "6ea6048d37c7a6ef340723d51bc823f06557516327537ebf8007b32edbab9e27",
+      "features": [
+        16859,
+        250,
+        20170,
+        75
+      ],
+      "area": 12544.83,
+      "delay": 4577.02
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "8c4548d96a60d2b85207741ec720412bbe054037537ce6c12be60c64aaeb98a1",
+      "aig_sha256": "52b58389a2f9b31c68f62e0482a4d84ae1bebee0fb39781120ff1ffaf570fc5b",
+      "features": [
+        18363,
+        250,
+        23122,
+        75
+      ],
+      "area": 12712.67,
+      "delay": 4666.15
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "845b076e7a054def5775ed19bd65b04ce4087a07fc160fb35ba5ff1770312b5c",
+      "aig_sha256": "28aa957dbc973ef0cf00d1b4cca022dc79482c8d55de802f41b42b5e28d56366",
+      "features": [
+        18309,
+        250,
+        23304,
+        74
+      ],
+      "area": 12934.52,
+      "delay": 4513.45
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance",
+        "rewrite"
+      ],
+      "graph_sha256": "b763977ece383ca92f4baf20ae4051717cae38cbe63b90a4009da8d4928f3d17",
+      "aig_sha256": "10ef66da111db739217f46566c3cde2b164ecfa6b380c0010f202e5d6ad1b820",
+      "features": [
+        18074,
+        250,
+        22813,
+        74
+      ],
+      "area": 12836.63,
+      "delay": 4502.44
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance",
+        "rewrite",
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "ca6b50d67455d7ede69676b964806b58581e9c4c85e772108050e80370ef479d",
+      "aig_sha256": "e2ec5c64fdeb7b9e2013a3bdce33f0358358d90a0a88daed3c32c01c9bc66f26",
+      "features": [
+        16554,
+        249,
+        19887,
+        74
+      ],
+      "area": 12185.19,
+      "delay": 4791.44
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite -z",
+        "resub -z"
+      ],
+      "graph_sha256": "13162e06de0aec517de71859fe553be1f0f7e6390d3bb93749dfa473e5dc8ee4",
+      "aig_sha256": "d355aa63cd3e07ed62983fc911bdec2ed2494db8124034a2a7735034f1823d63",
+      "features": [
+        17517,
+        248,
+        20737,
+        76
+      ],
+      "area": 13121.25,
+      "delay": 4536.49
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite -z",
+        "resub -z",
+        "resub -z"
+      ],
+      "graph_sha256": "d65d9f1dee70e40649c11db9c783b11bdb4167669af06b6174ca1816a8bb5ecb",
+      "aig_sha256": "fca51dd08309b88ddea3eeb9b8ad29c5299a254d4f85869b47aad4087b337f54",
+      "features": [
+        17517,
+        248,
+        20737,
+        76
+      ],
+      "area": 13121.25,
+      "delay": 4536.49
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "0c735e459a8bfd09139b60eff5864df9e59c390f5f205a51a6a1984c30c83b9c",
+      "aig_sha256": "fb0b55b874d03f271c6deaf1164ac90dedbb41509099048511705c86c27ac134",
+      "features": [
+        18289,
+        250,
+        23058,
+        76
+      ],
+      "area": 12753.37,
+      "delay": 4675.32
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "526f0e586d9320e0e9b8c251c87538f8f6702b4063cb8f0e7ab958d8209d6055",
+      "aig_sha256": "8956c9566c64d9dace1a5d315936f0df557e8f2391f8726bd57765391bc84afa",
+      "features": [
+        18309,
+        250,
+        23304,
+        74
+      ],
+      "area": 12937.44,
+      "delay": 4522.55
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance",
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "1736db2fc37d5fe8852e01bc5dc0d31dea9a89065ce0bd59c84e63f07adcd0e7",
+      "aig_sha256": "8dc1f100b3c869456aba981909c8f04d95714920cd823d85076fdf840c511aa3",
+      "features": [
+        18309,
+        250,
+        23304,
+        74
+      ],
+      "area": 12934.52,
+      "delay": 4513.45
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "2d098ae5451d4e5a174fac8673759770b48842fcdfe0dad2c13c746c388ac1f0",
+      "aig_sha256": "11fd3e79659d3829c609cd9bba6eeae951427146d06d1e398831867f8720dc17",
+      "features": [
+        17762,
+        248,
+        21066,
+        78
+      ],
+      "area": 12985.06,
+      "delay": 4458.41
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "rewrite -z",
+        "resub -K 8 -N 2"
+      ],
+      "graph_sha256": "c2ebb5d32f46e6272660846e203aee88edbc7ebc4b9df5928d57ae9f4d0e4bb2",
+      "aig_sha256": "6e8260d6da731f5cddc45ed92e6616d21e49b51a7abb49c470d28e4d280daada",
+      "features": [
+        16892,
+        248,
+        19973,
+        93
+      ],
+      "area": 12614.52,
+      "delay": 4584.18
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "balance",
+        "rewrite",
+        "rewrite -z"
+      ],
+      "graph_sha256": "98a6d67196ba13250101509ec2bd2208ac68681421ad65696e8658e83d09aec1",
+      "aig_sha256": "b2385ed8f6e773db7afa61cdaf144e9b2ec1098c9508d0e4ce2a926776d3fe41",
+      "features": [
+        16984,
+        248,
+        20915,
+        79
+      ],
+      "area": 12549.08,
+      "delay": 4541.7
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "resub -K 8 -N 2",
+        "refactor -z"
+      ],
+      "graph_sha256": "03915eeb44754a1a2019554594ad65bb7a352744232b8114af1bb3cf9c81817b",
+      "aig_sha256": "5420e4611c7ded24a54bf39a0515052b34e456d51c282ede847d4af687bb14b6",
+      "features": [
+        16814,
+        250,
+        20132,
+        76
+      ],
+      "area": 12483.38,
+      "delay": 4596.74
+    },
+    {
+      "circuit": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+      "source_name": "square.aig",
+      "sequence": [
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "5d3cf18d73c01fb5d0740c425716a61a1c1ad8575258ac13e006d64087682597",
+      "aig_sha256": "44b8f57d4b3bc41c482e9db833ef08cc5f11dcf479f29d02fe4846aeb1725926",
+      "features": [
+        18055,
+        250,
+        22712,
+        75
+      ],
+      "area": 12777.58,
+      "delay": 4605.79
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [],
+      "graph_sha256": "4e58b9b3c9f12f0a287e59684b0a9e7e5410aae347264b3ca6ff7ebb4d74e6e9",
+      "aig_sha256": "014b60c80b80d32afc6a32e13401e252f27c7c3d7e0ee25f0a5a433717cfafc5",
+      "features": [
+        27062,
+        274,
+        32086,
+        145
+      ],
+      "area": 20250.85,
+      "delay": 5439.27
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "e4c525961609ed03b6c56e3b03a67ff5e519b605f664b189b92e95adb97080a9",
+      "aig_sha256": "564ec3c505e6fc4c4a9235c645ca15be887e2c13b275c8533749b8ff1dcff0a2",
+      "features": [
+        26814,
+        274,
+        31542,
+        143
+      ],
+      "area": 20299.26,
+      "delay": 5407.17
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "b89c284941313cd184990165cec1d41c0204f49d745e4c7a0f8ccdfd436690dc",
+      "aig_sha256": "a37530c66fc2719883f8d9636d4e4de73656eee69376d350f84fa8489aa81dcc",
+      "features": [
+        26906,
+        274,
+        31723,
+        145
+      ],
+      "area": 20643.2,
+      "delay": 5319.73
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "resub -K 10"
+      ],
+      "graph_sha256": "ed1e36ba4e08eb135001fb8ee6a0112319fa937ece0371ff7e4ab3548eb17575",
+      "aig_sha256": "270dadad2c931752aa93878d5541c8ce29ba07c3ae4d3dae366be1f5f0159aeb",
+      "features": [
+        26975,
+        274,
+        31918,
+        144
+      ],
+      "area": 19996.02,
+      "delay": 5376.49
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "941b2052133dedc28d1db40ae4a665658cdee7c30d672021963dbc32c0313789",
+      "aig_sha256": "96c47a94f8f16c05cbc0d352f66dd5ff09dafa048bbd6993f8b95720067d3cb0",
+      "features": [
+        25346,
+        264,
+        27585,
+        145
+      ],
+      "area": 20065.71,
+      "delay": 5764.08
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "de2a8418311fd4cba7492341ba279aa0d98c7381e10da37b4917a06a7f07c793",
+      "aig_sha256": "14f007ecdeb0f2ef25f50364d577ecb66d0bdd75c3d72fc59a7af8f65c0a102b",
+      "features": [
+        26953,
+        266,
+        31870,
+        145
+      ],
+      "area": 20082.73,
+      "delay": 5498.37
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "ea32860508a1535250bcbee60791643d0816e18d408297befb4e2eba94555795",
+      "aig_sha256": "ec1b29321b12b5d2a83919d7642e9ce2aee8c1fd0cee8a491fef8ccf0e11d2c2",
+      "features": [
+        26976,
+        274,
+        31920,
+        144
+      ],
+      "area": 20069.43,
+      "delay": 5376.15
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "ef5f0a70afd3a07253057476d81807b34546e6b3857a34c58bc66d56ccb9af2b",
+      "aig_sha256": "afadf7a486206cc591c7a54f7d731fe5bd0995ae8d8483863506bd6e13a24b5a",
+      "features": [
+        26794,
+        273,
+        31418,
+        209
+      ],
+      "area": 20218.66,
+      "delay": 5350.7
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "resub -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "c2b559e2ed2a5682e799ac799ba24e7beb776dca4d05b4dd27c60263561118c8",
+      "aig_sha256": "7a09427075bb59ff89f0ade79ef9c6e9afd76195127dc623fdb252ea55e4eef3",
+      "features": [
+        26714,
+        273,
+        31280,
+        201
+      ],
+      "area": 19996.55,
+      "delay": 5546.7
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite",
+        "resub -K 10"
+      ],
+      "graph_sha256": "b9873b04264c9ed9a5f02c60ecafbfa7419c6aec49406425437063b77db7a6b7",
+      "aig_sha256": "a58af55782d8f00943282b81a78433e12b42ee5336c4970f6a71fe276644f7bc",
+      "features": [
+        26898,
+        274,
+        31713,
+        144
+      ],
+      "area": 20640.8,
+      "delay": 5319.73
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite",
+        "resub -K 10",
+        "balance"
+      ],
+      "graph_sha256": "341cd4d6fc738513f66ac96d3f6c7f58a65a9df38727f76b610823b533b62851",
+      "aig_sha256": "3272772d0fe52b4e53ee052dbc15fd9bf3ea37c53ea68db007d14a553a3f5d80",
+      "features": [
+        26863,
+        266,
+        31643,
+        144
+      ],
+      "area": 20627.24,
+      "delay": 5329.68
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "balance",
+        "resub -z"
+      ],
+      "graph_sha256": "ee0fa2ced2259012ab68f3dcfbfaa46123821a8f043a2c118bbc6ecfe9336b06",
+      "aig_sha256": "ffd08d671a55b4377ac79798ad9a09f640950cb66aacf66467640b17d01eb370",
+      "features": [
+        26939,
+        266,
+        31847,
+        144
+      ],
+      "area": 20077.41,
+      "delay": 5305.55
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "resub -z",
+        "refactor -z",
+        "refactor"
+      ],
+      "graph_sha256": "5b76103c33a84a67f8fe678c0105b9d633bea69dc9213b25b76a1ef8ec624061",
+      "aig_sha256": "514b3699dc636bf9b413f50278cb45df50c21b7364fd889c43d271c43f22d0a8",
+      "features": [
+        26712,
+        273,
+        31278,
+        201
+      ],
+      "area": 19994.69,
+      "delay": 5544.71
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite",
+        "balance"
+      ],
+      "graph_sha256": "b7f04f7a2c9add5a2ddebb44729334d2c232f620367612cb881f795b348ac2a6",
+      "aig_sha256": "ba414f569287c61d7683c8c5b58fa7ee96270b319d15187bce2598002f057893",
+      "features": [
+        26870,
+        266,
+        31653,
+        145
+      ],
+      "area": 20623.51,
+      "delay": 5356.83
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "refactor -z",
+        "refactor"
+      ],
+      "graph_sha256": "351a6b7fdd86ae45d6b7d4922b968519673c5bb07e3eb1a7f58b31986b98d71c",
+      "aig_sha256": "0443657844cf606619cb1e5ad2afdc18964825adcb33e3e9e11e14d509e2ae1b",
+      "features": [
+        26794,
+        273,
+        31418,
+        209
+      ],
+      "area": 20218.66,
+      "delay": 5350.7
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite",
+        "resub -K 10",
+        "refactor -z"
+      ],
+      "graph_sha256": "b489de4a500f659597584b893e21e6f5fd972a6f71b49a40c9abe526cc9f0570",
+      "aig_sha256": "77087c5fac0fa039882e1e34e9bf7c85691bb45f0489d42c89a97afa110cd238",
+      "features": [
+        26704,
+        273,
+        31250,
+        201
+      ],
+      "area": 19994.95,
+      "delay": 5534.18
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "balance",
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "29f1fbdcc7a27b7328213c45433a59b7bde31181856fe2ea2cd9ece696a3fb15",
+      "aig_sha256": "537e528826f8b49c06c31c010975a03343399fa1a61a019462a1196dad71159c",
+      "features": [
+        26720,
+        266,
+        31300,
+        144
+      ],
+      "area": 20738.69,
+      "delay": 5451.18
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "refactor -z",
+        "refactor",
+        "resub -K 10"
+      ],
+      "graph_sha256": "18cf7c1efed5fc7f8bbf58b23f95ac29d146f859ab88275a9d59a4564ed67d3c",
+      "aig_sha256": "92ee2fd0d8108ac0c88db6164bfed714084984ec778f2537ed206512744858cf",
+      "features": [
+        25452,
+        273,
+        28737,
+        145
+      ],
+      "area": 20186.47,
+      "delay": 5359.59
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "rewrite -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "4a07e1b888c5456f55bd8fc5391c44b1b1546e7dd41850d11449c170ba98831c",
+      "aig_sha256": "ec78e7693c76216ee4c978fd1c457878bffad0edc42d42555902ccc214b07ddb",
+      "features": [
+        25233,
+        263,
+        27213,
+        145
+      ],
+      "area": 20350.06,
+      "delay": 5757.4
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "refactor -z",
+        "resub -z"
+      ],
+      "graph_sha256": "5c2cabd68578a464e61cae257a916d0e014db5e3f71abcc7b40580a68b853794",
+      "aig_sha256": "3bef433d7791fb2dbb83d1fbc046d63f63225359cc44cc6a040c7255d617dfe7",
+      "features": [
+        25452,
+        273,
+        28737,
+        145
+      ],
+      "area": 20172.11,
+      "delay": 5393.09
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "resub -z",
+        "balance"
+      ],
+      "graph_sha256": "30e1d248f6e2bf2b3593c66608f4412bfe59801f3b81208607eb978cab813532",
+      "aig_sha256": "d579dbc3aadd269acd6babfbf36fc7f602438f68d16c9a4fc2d1f2086c0b7073",
+      "features": [
+        26938,
+        266,
+        31844,
+        144
+      ],
+      "area": 20064.65,
+      "delay": 5317.61
+    },
+    {
+      "circuit": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+      "source_name": "multiplier.aig",
+      "sequence": [
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "a3c7bef284f4597250d7574d6230c70f55d38dec5ac4f8e4c56f7f359ed0ea0c",
+      "aig_sha256": "a0adc043687b981a2ed1fe18097d49acf00dc03ecae5a1b329262e661813e019",
+      "features": [
+        25297,
+        266,
+        27561,
+        145
+      ],
+      "area": 19617.5,
+      "delay": 5748.53
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [],
+      "graph_sha256": "bd19fd1162e834627ac93b1ac5273698237a9e2d41df3c6280a8ad987101de1f",
+      "aig_sha256": "f2e347a7152a92276ad3c08c69a857c6df369c8613edc5321be1ef8bbbc7fa1e",
+      "features": [
+        24618,
+        5058,
+        36517,
+        125
+      ],
+      "area": 23700.87,
+      "delay": 184699.11
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "ef8f3ade7a9ce96b6e64b873a1c98ff3de4051fc4a9be29db134cfbcbfe6df54",
+      "aig_sha256": "1b92339dda1525e98cc3639319892a088fa6964b26eb6118df66adf26e0a5682",
+      "features": [
+        19877,
+        5058,
+        27917,
+        126
+      ],
+      "area": 20666.07,
+      "delay": 179607.28
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "resub -K 10"
+      ],
+      "graph_sha256": "ecc1821e55256f63256c4cfa08bb36c9f944fd97281a5900a4848576cf5b20f3",
+      "aig_sha256": "9b844ca1a4072d7743ec8d7de209c52fdf9a40b76776c47c79fe009a88174aba",
+      "features": [
+        21564,
+        5058,
+        30591,
+        126
+      ],
+      "area": 22607.07,
+      "delay": 187960.38
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "68e92c6c71837b6d25680ae040f60723aede8ea1b44934f506a8ba0d3d38a1b4",
+      "aig_sha256": "b4d2c7504b7edecf7551acb40ffbb0ac7c875aad52822d7b07984471c02f3fa8",
+      "features": [
+        24614,
+        5058,
+        36509,
+        125
+      ],
+      "area": 23594.73,
+      "delay": 185251.17
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "2c4725e71b87b9678d494a4777f7f7b46f9b7fb7bd4e2888982e744f32ee5a3d",
+      "aig_sha256": "80302550c626b6cfa736f1dda42ca43591e2780529c00f0d5b3b7dacbbbb37ee",
+      "features": [
+        22808,
+        5058,
+        32049,
+        125
+      ],
+      "area": 23246.27,
+      "delay": 205442.16
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "ca2e1eb6f1b638f06256a8eef738a28f03049e4f687b09fd193efd19b32d4518",
+      "aig_sha256": "7c4365107fedb9b74c67d3a91e5ce62b8a0efe68d8d56e5a2d52dba538cfb2f8",
+      "features": [
+        19441,
+        5058,
+        28309,
+        127
+      ],
+      "area": 20910.53,
+      "delay": 183786.28
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "a78b13bb474e4e45c8c49d2d7b5aebd099d3933bba0718b7c2189989943c986c",
+      "aig_sha256": "9523d55372f166b1a2eeed819db2de3940e65710a7dd0cb5190452cbb8514248",
+      "features": [
+        23685,
+        5058,
+        34652,
+        125
+      ],
+      "area": 23033.74,
+      "delay": 200355.98
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "1f815750dd61bccad082f618ef9bdfa3761edc99feb2eaaf8787d718b5dd88ed",
+      "aig_sha256": "e7e9efa7940e6227694ebd282cb42ad0d31c15f22c2205fcb780e2301c370251",
+      "features": [
+        21690,
+        5058,
+        30745,
+        127
+      ],
+      "area": 22749.65,
+      "delay": 190362.7
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "balance",
+        "resub -z"
+      ],
+      "graph_sha256": "159ea55f0346947992a4b5652eaf36ab33bb85c2ad428aa59fcc930760b2b91d",
+      "aig_sha256": "9b67390a8a72c95e057b186b648df1af8d23c2bce7fe939e06d493b308692e1c",
+      "features": [
+        21690,
+        5058,
+        30745,
+        127
+      ],
+      "area": 22749.65,
+      "delay": 190362.7
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor -z",
+        "resub -K 10"
+      ],
+      "graph_sha256": "4614dfca1ebffa2615d95d53ca54c7eaac543fcedf622f3fb1e9d9459314a8bc",
+      "aig_sha256": "3b0f91e32643d534c7c9cf4ced943185404835392613cb8407a4404cdb166427",
+      "features": [
+        20866,
+        5058,
+        28410,
+        125
+      ],
+      "area": 23383.53,
+      "delay": 180009.17
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor",
+        "resub -z"
+      ],
+      "graph_sha256": "94517cd6cb3ca493b6deb5b6720016dee72eecf258cb8a9d365eb20141ea72a0",
+      "aig_sha256": "e12573ff6dabf077ab49dd0e4b45960de2c136b3dfde28635e45ea909014d9eb",
+      "features": [
+        21634,
+        5058,
+        30631,
+        127
+      ],
+      "area": 22274.04,
+      "delay": 202066.27
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor",
+        "refactor -z"
+      ],
+      "graph_sha256": "e306ec9859aa1e9979133aad976fad3be850337ade02582aca9f2eedaad8757a",
+      "aig_sha256": "bf15809f4ef76cabdb240d4942bd2b9324f37547b64b5d866df9b2eb5824a07a",
+      "features": [
+        22807,
+        5058,
+        32047,
+        125
+      ],
+      "area": 23191.21,
+      "delay": 193648.66
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "resub -z",
+        "resub -K 10"
+      ],
+      "graph_sha256": "7f515050955882204cb04df6e2cb5aca6921156054c5c8c7828bd3274ef93a9c",
+      "aig_sha256": "28bf7fac8ba5f26e66b0761f3155eef6922850df00b54d20deafddddcd6b7227",
+      "features": [
+        21573,
+        5058,
+        30574,
+        126
+      ],
+      "area": 22608.14,
+      "delay": 189884.67
+    },
+    {
+      "circuit": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+      "source_name": "sqrt.aig",
+      "sequence": [
+        "refactor",
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "a2d91f1bf75b856bec442d3768750018c116656b568edb755fc2660fa7b38a0d",
+      "aig_sha256": "ca70cddadd9643866bbac80df3ad40112fdd0ee7513e48a3165e3a22218ad730",
+      "features": [
+        19332,
+        5058,
+        28122,
+        127
+      ],
+      "area": 19712.73,
+      "delay": 182758.38
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [],
+      "graph_sha256": "4111b011f6f97477cdb33f7b15016a5ccd71e219db248f4d60cafc70a75fd001",
+      "aig_sha256": "a609fa8d419debd60140f44ce33eb9cd1dfbf43375311926a1bec728018cddff",
+      "features": [
+        4468,
+        25,
+        5245,
+        393
+      ],
+      "area": 2695.91,
+      "delay": 3238.33
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "74b88efd5c0e226e38f5901ae7b51d1e9399522353b6bfd89e3ae86e38a12286",
+      "aig_sha256": "cb44bb81f0e59f37f824be4061f46a24384cb5d594bd63602ea2c012670ddf97",
+      "features": [
+        4164,
+        24,
+        4853,
+        318
+      ],
+      "area": 2552.8,
+      "delay": 2595.18
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "ac9eb623d7de574d0536c329b7a2b86115514f93dc92c054128a92d3cb5e3992",
+      "aig_sha256": "1caac3a4f658150b2dd4d89e7a11327bf883839dacec9f3f141083706d83758a",
+      "features": [
+        3712,
+        24,
+        4510,
+        227
+      ],
+      "area": 2367.13,
+      "delay": 1848.35
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "d711709f5b02f69e33a905a5b46fca8cf47c9a4849806a7fcd727a512c27c8a4",
+      "aig_sha256": "9ac039c14b050a0de5306a03b6b07276b64880a3f4dfb34155957a33c346e9c0",
+      "features": [
+        4088,
+        18,
+        4979,
+        280
+      ],
+      "area": 2578.6,
+      "delay": 2274.96
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "0be7f42111dbaa5c8037d856a64a22e6f5acfb83069e07e25f560493bd60a03f",
+      "aig_sha256": "3ea6f9b1f50ad8cd8a93bcefe32a26561d0c946f61165bdff88ecd9d19fb16b8",
+      "features": [
+        4137,
+        23,
+        4719,
+        328
+      ],
+      "area": 2512.9,
+      "delay": 2587.17
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -K 12"
+      ],
+      "graph_sha256": "afa198ed6b7215421fc0283e42651f0c50b4fc5978d0ccbd123e7c85743c2677",
+      "aig_sha256": "e5d6115711ef5cb01f9cd8fb697844e85dd3e611c300dfe32234c626ec312b0f",
+      "features": [
+        4273,
+        25,
+        5024,
+        373
+      ],
+      "area": 2607.86,
+      "delay": 2979.88
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "ad8ac55f5f51411e716a4f522dbe2a0c6cefa6da1c3f88cd3479aa041a7ccb6b",
+      "aig_sha256": "7f7ba51f9f08c823d99ed3389c595e7f1944d2327c24d0e2bc26e99606d428bd",
+      "features": [
+        3684,
+        23,
+        4022,
+        212
+      ],
+      "area": 2286.0,
+      "delay": 1720.82
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "518b0a5850a0d4a10b1715af4726dda75b66cd381e4e54f67e8a4971a022d230",
+      "aig_sha256": "de708aa6df945494bf6913e642d84f5a32e063aa0a9ff2052d7b212774c0dde8",
+      "features": [
+        3303,
+        15,
+        3582,
+        150
+      ],
+      "area": 2131.19,
+      "delay": 1382.81
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "be16d8424302485457f0a5b66fc28d901a783344f1650a5263ec3224f872aee5",
+      "aig_sha256": "0f7ac131e3106bda926f065649c5fec283403a179ae97e78e3488bb9223a017a",
+      "features": [
+        3217,
+        15,
+        3500,
+        142
+      ],
+      "area": 2115.5,
+      "delay": 1173.4
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -K 12",
+        "rewrite"
+      ],
+      "graph_sha256": "0920e25f566faacef1616a0779ea0890dd3da53b16f9f080d20f4d6e7e1c93f3",
+      "aig_sha256": "20cab02eeb7845a3ef161fe25fba594ffde17c43f54f396af6d5f2ba3c1465b5",
+      "features": [
+        3669,
+        24,
+        4467,
+        233
+      ],
+      "area": 2358.36,
+      "delay": 1908.43
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "balance",
+        "resub -K 12"
+      ],
+      "graph_sha256": "66d914205d38ce5bc9a6e42292c7ca271a53559002d6a5a5f9141de3ff780cdf",
+      "aig_sha256": "1dbf19037a79290d0ec52a15b36699e106d32140f8535722bb0b4d7d25eb374b",
+      "features": [
+        3903,
+        18,
+        4761,
+        261
+      ],
+      "area": 2521.41,
+      "delay": 2068.59
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z",
+        "rewrite"
+      ],
+      "graph_sha256": "c9d1d719ce94bc51bffd995fcd58b259848bc5f4fd6132d12bd73d196812bdd9",
+      "aig_sha256": "5446d8cffe6a37291c0ea866ace74a3657f6a88a29c40979eebf38ffad02b01d",
+      "features": [
+        3199,
+        15,
+        3485,
+        141
+      ],
+      "area": 2112.84,
+      "delay": 1129.61
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "48ec3f02d23b2c5c3fa9fecd3729163680afab4dab8499f0518e38c23ea58ce4",
+      "aig_sha256": "5a778993c9cf4edf2add4d1d86a011b307f7f3a6d78c6f45a8df97b0c4b10327",
+      "features": [
+        3647,
+        25,
+        4032,
+        210
+      ],
+      "area": 2284.41,
+      "delay": 1627.17
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "refactor",
+        "refactor"
+      ],
+      "graph_sha256": "1deba7919fb5c39b1736197cfd0977183caef02fa60e111073a88e3d60be75d3",
+      "aig_sha256": "0a939bab2ccc07e3552c4d5bdf253426652e0aefdf63324578097218f26fa59a",
+      "features": [
+        4137,
+        24,
+        4825,
+        307
+      ],
+      "area": 2538.7,
+      "delay": 2462.06
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "refactor",
+        "refactor",
+        "balance"
+      ],
+      "graph_sha256": "b6feafc08deb9e69e64332cd81ced47a2e8772fe57a1adc745a26d33693c41c0",
+      "aig_sha256": "734e90b26ef5662e61d5088ada3ca5966c33e2ea573052525157dad2a5ec97fc",
+      "features": [
+        3895,
+        18,
+        4669,
+        245
+      ],
+      "area": 2492.69,
+      "delay": 1865.27
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite"
+      ],
+      "graph_sha256": "f0c53c8ac9c5241155f339f00c75e450319f5941d2278276b6d67a9f4605a487",
+      "aig_sha256": "eaee1ae1a3368791cbfd40be87affbab98c602d6207e645f1e79eede76c2504e",
+      "features": [
+        3227,
+        15,
+        3514,
+        143
+      ],
+      "area": 2114.17,
+      "delay": 1291.68
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -K 12",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "09257db70db3a09c9d744a752d8e7f1341c1c621c925c17184309ba5df446b3f",
+      "aig_sha256": "9624941c76144b98b26ca3d147719405da8f664e9583ab6f6a2769c91660e860",
+      "features": [
+        3290,
+        16,
+        3556,
+        153
+      ],
+      "area": 2147.42,
+      "delay": 1162.73
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -K 12",
+        "resub -K 12"
+      ],
+      "graph_sha256": "9996b220a348688c3d06a81ad183e0b99af008bffdb434e706ad1924b158fba3",
+      "aig_sha256": "403ea5acf1a7a70c18f006343192c5002e6b27645aeb50f3f7b0fb0bc219dfbb",
+      "features": [
+        4270,
+        25,
+        5022,
+        373
+      ],
+      "area": 2606.53,
+      "delay": 2978.14
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite"
+      ],
+      "graph_sha256": "7f8178b2d4ab13862d3676249211fe4d175fc1c1aff2803fbb4f440526c1a37c",
+      "aig_sha256": "968855224f4a6bcd6cba4b3dcfb78f9cb427ae162039138479c394a50b35df89",
+      "features": [
+        3675,
+        24,
+        4442,
+        223
+      ],
+      "area": 2351.17,
+      "delay": 1801.63
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "3cbe1b6a8768c2992168f99282f90ddf6ecfdaa959d9f1d1919e819a48d303fd",
+      "aig_sha256": "2321ef597353cf7e7b8821ea03204e8c2a058352f8a58748d87cc0c008e55db7",
+      "features": [
+        4052,
+        23,
+        4639,
+        298
+      ],
+      "area": 2456.24,
+      "delay": 2170.7
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "resub -K 12",
+        "refactor"
+      ],
+      "graph_sha256": "1bd5560390511d1a57a3b3293d3c23e34f390dcf29597aeeec1642a2e2acbb86",
+      "aig_sha256": "28cd2b64fc43ea5a6b1e18c3172c5eabcbd8b9f8bb9cff280398b9bbcff1d093",
+      "features": [
+        4023,
+        25,
+        4693,
+        307
+      ],
+      "area": 2513.97,
+      "delay": 2491.72
+    },
+    {
+      "circuit": "0aa2dc84b414c455833f7c55bafedc46d23f69551f42906b21cf95232e26e3c6",
+      "source_name": "ex100.truth",
+      "sequence": [
+        "rewrite",
+        "resub -K 12"
+      ],
+      "graph_sha256": "1db19a300be588ccdbf2dc00c7749c09377e314a5b770fc0ecc145461557c66b",
+      "aig_sha256": "69e46a6c4d5f5fc01a61ffd51f760db2b1f1fb08b6708e8722b89ce25a5be141",
+      "features": [
+        3596,
+        24,
+        4278,
+        218
+      ],
+      "area": 2306.75,
+      "delay": 1757.45
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [],
+      "graph_sha256": "678013ba5983618d1bda16921aff54ca1154d15a16713fc707688d2b70596a36",
+      "aig_sha256": "97b580fbbe2ed5ddc3d93bc8f40d443c801ec10ff8978c44f7c95cd8a2cb1367",
+      "features": [
+        3612,
+        24,
+        4198,
+        287
+      ],
+      "area": 2172.16,
+      "delay": 2055.12
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "b26fd724f97b0af0a98d3e541e4b3fa9ab5929e05ad7d3c724c7fb6fbb5b72d6",
+      "aig_sha256": "58ce39e9c8ffb9d480363765e04f4687a1c8bf926b7013f613a9443f2cac80d6",
+      "features": [
+        2633,
+        15,
+        2866,
+        120
+      ],
+      "area": 1781.4,
+      "delay": 1032.9
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "8bbe9fca54e374bedec7ce61aa4bcd266301e4387d9444ea87d971d72823a3c0",
+      "aig_sha256": "bf2d0ef474b95706d1b200d0f2877364f58fe9d68727bc888bfba05f24731f86",
+      "features": [
+        3338,
+        24,
+        3843,
+        244
+      ],
+      "area": 2052.46,
+      "delay": 1742.92
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "45c5ca9889a50e07728a82bf8082b73d23879de1eeed3f8a6861bc2ed91c43ef",
+      "aig_sha256": "3586f73f90f9c282e72b255f5b18e74253d6a6b69b0aa4df53e3e3365ce42262",
+      "features": [
+        3450,
+        24,
+        3999,
+        270
+      ],
+      "area": 2109.65,
+      "delay": 1946.47
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "b9d5c60c70f9f87f9e088ae36b7096856c7c57faa592914fb4726636b4a81a5f",
+      "aig_sha256": "3f4595608d7f7f771d1ea2e0a6c098310c67cd14042f05a37fe3d91d48ce12ce",
+      "features": [
+        2970,
+        24,
+        3163,
+        171
+      ],
+      "area": 1872.11,
+      "delay": 1347.14
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "a558f3a594876499ce1eb465a9a191df3107b3e1ff883150c07749c300f9c227",
+      "aig_sha256": "9f25b19aa679c6c6043c688819fc85ad3190780c79ff5f90143d4e99d503ad31",
+      "features": [
+        2969,
+        24,
+        3485,
+        189
+      ],
+      "area": 1896.85,
+      "delay": 1427.26
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "45785baa126612176e68f3c1ad7044548e15776f6c018ddf442de0e2765f8077",
+      "aig_sha256": "14ac772d92dcd90583ec381e639bdca116198c93e6d36291c9a5699762f3e4ce",
+      "features": [
+        3273,
+        17,
+        3919,
+        208
+      ],
+      "area": 2129.33,
+      "delay": 1497.91
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "8c9f1be2085b6fb30488c3eb434e1be817e13f1095f54b65cb69f6dea56f06bc",
+      "aig_sha256": "707430a348ab9b5117cf901ada3d2c584177c7848948f9ec58b6243235e69d4a",
+      "features": [
+        3326,
+        23,
+        3827,
+        240
+      ],
+      "area": 2037.83,
+      "delay": 1764.33
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor -z",
+        "balance"
+      ],
+      "graph_sha256": "6b5334e6f01f0c53bcae79fb1425c93035bc5cee1ad5890c26c4438e747132ee",
+      "aig_sha256": "ccb23c29420a7d1d46567feba557a0e64955284cd530518488f10de3d47f025a",
+      "features": [
+        3090,
+        17,
+        3643,
+        178
+      ],
+      "area": 1995.8,
+      "delay": 1315.02
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor",
+        "refactor -z"
+      ],
+      "graph_sha256": "da755d961bfbebfa28fc3c4a15faabd0926ad3b603d08bedc3664960ddcc9f15",
+      "aig_sha256": "753580b8a3aa3e0095a6df0eb23c3efbaecf41ba91399798184f02254bd849e8",
+      "features": [
+        3286,
+        23,
+        3753,
+        226
+      ],
+      "area": 2021.07,
+      "delay": 1752.95
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "rewrite",
+        "rewrite -z"
+      ],
+      "graph_sha256": "e12dc59da55d3b64d46c8aec8ac604397ad683d0be9acf12200a67827dc90ca2",
+      "aig_sha256": "753da1c05766c705b9836da36da1c35026c8942f35ad79d43ff8f09daa78f6d2",
+      "features": [
+        2898,
+        24,
+        3100,
+        164
+      ],
+      "area": 1817.84,
+      "delay": 1243.35
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor",
+        "resub -K 12"
+      ],
+      "graph_sha256": "69a1a9c2735f7dd8cc9c50d644be25e2380858e6314ac37f325504487994e6ea",
+      "aig_sha256": "d4b559a364089836ad8b2841b28da6baeda8112c54fa094c737381f085a507a8",
+      "features": [
+        3151,
+        24,
+        3583,
+        226
+      ],
+      "area": 1968.67,
+      "delay": 1622.69
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "d71a9617b72df9412436a6ee30a59973a383dfe8b1b39d6daad11f0e57ae6413",
+      "aig_sha256": "dd32459e29a5b09f319fc87b3b85284174474b91124453f4f712611d2e463cd4",
+      "features": [
+        2610,
+        15,
+        2903,
+        121
+      ],
+      "area": 1772.89,
+      "delay": 1071.93
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "bc33c3b77df0c04a503d71bf95f7056f7f8a671c7d4fcb0154b82a1b981c6333",
+      "aig_sha256": "2efe32847f228e0be4be132a98f8b0e6a86a58e0cbcd275824011f1a99557999",
+      "features": [
+        2537,
+        15,
+        2715,
+        113
+      ],
+      "area": 1722.88,
+      "delay": 995.83
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "rewrite -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "cac7ff51af3d955eb5fd4bdc2e08b16d45d5c5cc1541e0e72da69591a55ab10b",
+      "aig_sha256": "a2fe07326bcc6c3740ec568ee4cf2b8fe4756986daf6703cb2cb61ae7668b506",
+      "features": [
+        2941,
+        23,
+        3173,
+        170
+      ],
+      "area": 1856.68,
+      "delay": 1315.13
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor -z",
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "cbbefa0e299224f272a1e0131e5e7bd846c4fb78e0c75193a77f37b0af48f3cb",
+      "aig_sha256": "cf82e46eb9276efcbc271d98b79453fedace9394a6c53c44d3447df915b410a3",
+      "features": [
+        3074,
+        17,
+        3607,
+        177
+      ],
+      "area": 1982.23,
+      "delay": 1308.32
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor -z",
+        "resub -K 12"
+      ],
+      "graph_sha256": "72a8ff2cdbdc7d5b3a6d86750dc20d709663c69b0a2ac5b8725a5faa42bf1b1b",
+      "aig_sha256": "84bf246e85189080e31c147195e3f90cde5623fdcca9c2341d5a192cb65475de",
+      "features": [
+        2438,
+        15,
+        2679,
+        101
+      ],
+      "area": 1686.17,
+      "delay": 946.49
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite"
+      ],
+      "graph_sha256": "536aefcb170e54c560e31aff61941a65414678b5c23c87a4ce64afaccb5e913d",
+      "aig_sha256": "c94d4001609e17a201d6e468af013f225c6b0b3e5e8350672f7d98cc961e0460",
+      "features": [
+        2531,
+        15,
+        2759,
+        111
+      ],
+      "area": 1705.59,
+      "delay": 968.3
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "refactor",
+        "refactor -z",
+        "refactor"
+      ],
+      "graph_sha256": "3d0f2e2284be9c8de92b8eb17a3234890b109752ebf3809c33cc77e14609aced",
+      "aig_sha256": "fcf5089c9d0ebf9137a962a95c504ef6b51601951030aef75bbbd053ed2c763b",
+      "features": [
+        3262,
+        23,
+        3717,
+        222
+      ],
+      "area": 2013.62,
+      "delay": 1742.71
+    },
+    {
+      "circuit": "aa310a07da234f6e94b515ecbbbd9724a5085946a87db1d5e634870056e8df9c",
+      "source_name": "ex104.truth",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "101902585791f659fc5de71e4aebe32ffbd42320e80d822bf7d98f08a3fd838d",
+      "aig_sha256": "8fd6ab92c72f27f0587a8200079fd0241591c19d0cf0175aa88143df6c2fc7c4",
+      "features": [
+        2435,
+        14,
+        2635,
+        96
+      ],
+      "area": 1656.65,
+      "delay": 952.1
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [],
+      "graph_sha256": "c1b37c4895f77f455cda7090841d71b35ff5e518ddd87f39ee02ad39fc9c1897",
+      "aig_sha256": "804af3de71352e059db66c41df554e671b17e5f2becd75bd2db5f9d6e4280af3",
+      "features": [
+        2933,
+        23,
+        3386,
+        237
+      ],
+      "area": 1736.45,
+      "delay": 1647.66
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "fe5e8417d879c2633f9f8e2d5fda9954af87ef2f9393f59481ce847abc535781",
+      "aig_sha256": "23ff4e7bd7cf35188fa7e571f567b50fe9de70d3ca30d45a98244480f74510ec",
+      "features": [
+        2619,
+        22,
+        2988,
+        196
+      ],
+      "area": 1604.78,
+      "delay": 1389.39
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "2651e3cbb45ffbc4abf4c317b5b03421b8b2fb32e3a327106c7a2c3a7a2b886d",
+      "aig_sha256": "734719e8bd67d274f531cf0431607901642b5619e2873a98caaeac6a46c9a3f1",
+      "features": [
+        2854,
+        23,
+        3297,
+        229
+      ],
+      "area": 1714.37,
+      "delay": 1624.54
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "bcb27c909adb1125705ce006b722c4c561bc60cc62e7978e3e0d5f248faacd2e",
+      "aig_sha256": "8747985ee0a8fccab693c79b0ee104529d6931afaed672af84e424e026b09e50",
+      "features": [
+        2639,
+        18,
+        3105,
+        172
+      ],
+      "area": 1644.94,
+      "delay": 1194.64
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2"
+      ],
+      "graph_sha256": "32ce7177ef92d10007ad67212502ecd48ce8753e22baacf7c4baf998839467d2",
+      "aig_sha256": "75d1ad40b1a36e3fb08a3d052cfe3f61514c2325b2802d82169e3fc03bb334c4",
+      "features": [
+        2755,
+        23,
+        3180,
+        222
+      ],
+      "area": 1675.0,
+      "delay": 1595.0
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "3ca96802aaf0c7c0d4d0a53f306809ee7718d19687429ddfc9ae4b7678bb9ecc",
+      "aig_sha256": "01e7515064188a8bae22fe83d1ee5f175393573f9586188ed595529f978e22d5",
+      "features": [
+        2603,
+        23,
+        2958,
+        184
+      ],
+      "area": 1592.01,
+      "delay": 1309.72
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "970ca167f99234a7dda1c551e33339290a691125e2da2ae48a3d088307296057",
+      "aig_sha256": "a288032d95a1c3dde1ad8c29aecbb1ac93bd0c99a8f7d42765452e879e3b7fe5",
+      "features": [
+        2215,
+        15,
+        2216,
+        92
+      ],
+      "area": 1421.24,
+      "delay": 892.19
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "b5611b4afc0b02a43a83b2f821c51875ccfb84fa1b8b1c09ba27efc8dadab44e",
+      "aig_sha256": "24998356968621fd423cb1ff122474351900075ff6495d5f9b5be67995631332",
+      "features": [
+        2346,
+        23,
+        2689,
+        143
+      ],
+      "area": 1500.77,
+      "delay": 1129.28
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "760ee417493f2c379ad5a5703a8c56928300b02b8f7ce5d5bb72f8acd8ee76d1",
+      "aig_sha256": "b84315d7ce1ae8f4cce1df5f44bce4e0fa894bf9d406540b351b4f79f661a072",
+      "features": [
+        2335,
+        21,
+        2498,
+        131
+      ],
+      "area": 1480.56,
+      "delay": 1095.79
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "rewrite -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "b3e4153d1fe439dc9c164648001d12b2ce6450069fe53d96cc25c2b287c27038",
+      "aig_sha256": "ae5d6582af5727f33d53af4c619bc06e0040714aeaf13b21bade09c94aa3d6d9",
+      "features": [
+        2285,
+        21,
+        2514,
+        128
+      ],
+      "area": 1458.74,
+      "delay": 1098.13
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "balance"
+      ],
+      "graph_sha256": "b68e830cc73ff4ea19713edfa7c5d66d71f8141541d676324bd91815b77cb2a4",
+      "aig_sha256": "beacd42959445a69b983873a7ff54b665922401a246bfe53fe1136b0773d5590",
+      "features": [
+        2505,
+        18,
+        2940,
+        166
+      ],
+      "area": 1608.5,
+      "delay": 1223.3
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "rewrite -z"
+      ],
+      "graph_sha256": "f086966e30da230061963d2cd72e9b7eedbb9370462c4d9bfd915876a7eb1682",
+      "aig_sha256": "9f7ba88114a41307d5a8744a3df6f37005f5ff575bb1c2f0ed1a610daa62725b",
+      "features": [
+        2317,
+        22,
+        2539,
+        134
+      ],
+      "area": 1480.82,
+      "delay": 1048.39
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "balance",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "e0d2628c4825ba4551664855cf58ba452ea9f2bd4ba631bee3f3504da1047dc0",
+      "aig_sha256": "66f2e8896db23b7d11328d11e1a86316cf51e1897aeebb43287d1d14e43c1fd2",
+      "features": [
+        2197,
+        15,
+        2161,
+        95
+      ],
+      "area": 1404.75,
+      "delay": 825.18
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "refactor -z",
+        "rewrite"
+      ],
+      "graph_sha256": "cb21d92812dda28a4190f12d1ae9e03ada149c35ce8477065ee6a90a37d94dff",
+      "aig_sha256": "73021c44aea7c5cc240f0ac9c198426c554ddf9d19d95789705f6adbda61d807",
+      "features": [
+        2266,
+        21,
+        2553,
+        132
+      ],
+      "area": 1441.99,
+      "delay": 1013.18
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "balance"
+      ],
+      "graph_sha256": "438ae3075db3abc04636189cb9c5bfb5040ddfb7f66784686366eedf73f4e1f1",
+      "aig_sha256": "a2074884b39eddc2e02917e7b0145a797e1050a97905d1344215d2bf242d920f",
+      "features": [
+        2215,
+        15,
+        2216,
+        92
+      ],
+      "area": 1430.55,
+      "delay": 883.54
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "f74b4bc49fb336e009880e49192a0a1e9c1207277bf62dd8c60616d939c8e267",
+      "aig_sha256": "540ab75fe6b782532c695739e0e1653017372147922d0045156f9801438c4f61",
+      "features": [
+        2306,
+        18,
+        2524,
+        122
+      ],
+      "area": 1495.45,
+      "delay": 999.69
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "rewrite",
+        "resub -z"
+      ],
+      "graph_sha256": "4053b1c02e9cb00abf84d759ec526b6d8e14f7d5f6115ceba9a341cd9a1ea414",
+      "aig_sha256": "f8be027a2574b8c4a7307e493c82eef9b249404aaa4774d678c439875f19d9d0",
+      "features": [
+        2224,
+        23,
+        2440,
+        129
+      ],
+      "area": 1415.12,
+      "delay": 1046.04
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -z",
+        "refactor"
+      ],
+      "graph_sha256": "b115b4cea62957a62447390750cfd4525abe26ed7c19332d969b838cdedb1818",
+      "aig_sha256": "0e19344272ec079892ec2f663d477b896ac6b49cd6ce19c1c8acb5174e0ea328",
+      "features": [
+        2571,
+        23,
+        2932,
+        187
+      ],
+      "area": 1579.77,
+      "delay": 1329.5
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "rewrite -z",
+        "rewrite"
+      ],
+      "graph_sha256": "5979d143e18d0909c26dfd6a54bc8bcc5ee0783d8d648a6366a28dc0efb86631",
+      "aig_sha256": "d2f23909a7f23692e7568f24a5006dda0703ab883f2f018c3f65e0caafc0566e",
+      "features": [
+        2292,
+        21,
+        2454,
+        126
+      ],
+      "area": 1456.62,
+      "delay": 1049.53
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "refactor -z",
+        "rewrite",
+        "refactor"
+      ],
+      "graph_sha256": "11f66825de3480f8ea72156bd905300e4162a2ea46fbe4e4cf873e46023541a1",
+      "aig_sha256": "d55da9f6e2f9c9553fdc2718d33d18a0003f431e6b600ffd873b9ed607b84f17",
+      "features": [
+        2250,
+        21,
+        2540,
+        132
+      ],
+      "area": 1424.43,
+      "delay": 1069.47
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "balance",
+        "resub -K 6 -N 2"
+      ],
+      "graph_sha256": "94529f790ccaee3ad07a3f5b9446fc69acc48f1337fda1300580ffbd451f17d7",
+      "aig_sha256": "80c76220d1113f3315acc03dd3ae0ec6da89c960415f4d629e84b2d36e409433",
+      "features": [
+        2320,
+        18,
+        2631,
+        132
+      ],
+      "area": 1506.62,
+      "delay": 1055.62
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "balance",
+        "rewrite"
+      ],
+      "graph_sha256": "1ce30b6811a3980cc73ff9ef868951d7d050b6a04b85f29e17b3108a5c3ba598",
+      "aig_sha256": "447e208162af7e4588bb88a6583b30d48bc0ee0ef9a973d40ac53a8c9cee63f5",
+      "features": [
+        2107,
+        15,
+        2125,
+        85
+      ],
+      "area": 1365.38,
+      "delay": 795.29
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "resub -K 6 -N 2"
+      ],
+      "graph_sha256": "ec69e70351853e273538fdbd51b4b645b9ec6b4154463f6464e062617e76bcf2",
+      "aig_sha256": "9abbc2f297fdb07ca46ff80bada50870ebb67f2731946e12ce3278729382f2c6",
+      "features": [
+        2679,
+        23,
+        3035,
+        205
+      ],
+      "area": 1630.85,
+      "delay": 1498.7
+    },
+    {
+      "circuit": "8b66af6afded401af4e7b9220d0d396a89c8646b62b69a55a6bb3f174287a5ce",
+      "source_name": "ex108.truth",
+      "sequence": [
+        "refactor",
+        "rewrite -z"
+      ],
+      "graph_sha256": "68e1e1b8b08954acdd3c1b52e666898f8430871dbcfa46ef5af8ad7cc98870ae",
+      "aig_sha256": "1a9b4477bcbfe3d9a66343d71618d3526e188b801a39394d88c360f258edf63b",
+      "features": [
+        2246,
+        21,
+        2405,
+        123
+      ],
+      "area": 1401.29,
+      "delay": 955.45
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [],
+      "graph_sha256": "96136b6f26950110895d30f42343e0c4dbf1973e9f5ad5007f4e11a2ad9487c9",
+      "aig_sha256": "38088e3602af1a220a07825137fde5e42c29b840365864595143ab4d08d96881",
+      "features": [
+        205,
+        11,
+        177,
+        62
+      ],
+      "area": 132.73,
+      "delay": 422.61
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "resub -K 10 -N 2"
+      ],
+      "graph_sha256": "1b9b9d681e8a685bdb8ebf92da3fad63442933612a0f4b8f4592e7628bbce0d5",
+      "aig_sha256": "a45e5dfdeb5d0854e2ed5fd97fb94fd02ccd17c7d8271374b56bbaef71e05550",
+      "features": [
+        195,
+        10,
+        165,
+        58
+      ],
+      "area": 132.2,
+      "delay": 412.64
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "7f135a94968884626c2550be56f78d649c89cad49171c2a9fee415b5d2ba626e",
+      "aig_sha256": "a238d08b2d89bd2f32a93c591328c1fa6123ba996ae03bf8def33f47b86fff7e",
+      "features": [
+        198,
+        10,
+        170,
+        58
+      ],
+      "area": 132.47,
+      "delay": 410.5
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "c82b6a73988eb34dcca626fa2e53dd0fd69939d2b6e4f040b5b0eaac532595b4",
+      "aig_sha256": "2468c3e587516d0d567c23b5312cc599cc6b8c34ef09a260a646ec6553259966",
+      "features": [
+        139,
+        8,
+        145,
+        24
+      ],
+      "area": 97.62,
+      "delay": 276.59
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "c80d73150d7cdeaf7814c65d0e0a6401e0221ee3c4ec995fc71cfc98c3d13572",
+      "aig_sha256": "199ef97e4eb669dd43c8d96bc501a2869f5b80b0abece316b1b6d903708f6020",
+      "features": [
+        175,
+        9,
+        166,
+        46
+      ],
+      "area": 117.31,
+      "delay": 353.56
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "924ac2a6b0a79acf819de424238b8008f214f5f1a06eecfebd219b377de69060",
+      "aig_sha256": "6efc4f6f2359d278d49c4cde8cc0ee71f5f04f4485c35cc0b875eee06dfebeab",
+      "features": [
+        184,
+        10,
+        160,
+        44
+      ],
+      "area": 131.94,
+      "delay": 379.57
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "328752be2d443a581e145046ec28ad6c58df02a22838aa122c1789be8e5b5464",
+      "aig_sha256": "a05d19e919c5019486c15f3b31f76e67c12538d3f55988ca07701b40f661052d",
+      "features": [
+        196,
+        8,
+        168,
+        58
+      ],
+      "area": 134.6,
+      "delay": 358.42
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "f61062f11db7eb102dde7c8abbdc84cbd7a3be3211b3256676a871998524df01",
+      "aig_sha256": "4ad0acc8617d9f873045c616f6330a0568ec510b607cb2300cdf314767f5d3ed",
+      "features": [
+        179,
+        9,
+        178,
+        47
+      ],
+      "area": 115.71,
+      "delay": 338.32
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "3aed7a71ea0ef33846f64ac37693f0008855d4bee0d3de05cba5f5dda4a3063b",
+      "aig_sha256": "f8fcc9c9d7ecc850f2c05e773dfb38e48cd0fe07030bc138dbaf687221d9866c",
+      "features": [
+        185,
+        10,
+        170,
+        43
+      ],
+      "area": 119.7,
+      "delay": 347.17
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "fd8c16af49d0b69fd3ac02405604adbef30b180512cbc73f142bb361afd31360",
+      "aig_sha256": "3e03d0c3ce93f140451b484f84e1ee305061de166efd830050e03a2a63054396",
+      "features": [
+        176,
+        8,
+        169,
+        30
+      ],
+      "area": 128.74,
+      "delay": 305.78
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance",
+        "rewrite"
+      ],
+      "graph_sha256": "c89921c476f55fbea7b7a9c5e79d68d22b6d8a08d084fbbf2e23fa9c1548da1f",
+      "aig_sha256": "6f0449ffd6b7a29671ced7814ae55e0ebe72ca7df94db88016ff52cc5b377424",
+      "features": [
+        178,
+        8,
+        163,
+        48
+      ],
+      "area": 125.02,
+      "delay": 326.56
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "785d1a154092a69f18f952b31f1d0648927cd069dcc0792ccaa292e0589cf7db",
+      "aig_sha256": "f8bddea7531df03e67bdb0902d9f7a8f9d5c5fbd47e5a06113ab7da58eecc63e",
+      "features": [
+        171,
+        8,
+        143,
+        25
+      ],
+      "area": 112.25,
+      "delay": 317.73
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance",
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "5e035d72f1f6fa8ab57173c75fe28eafa26261756db31b4b3477f9e8d96b8cb9",
+      "aig_sha256": "ee8bab88058d5286995a63caf946e18de106d68aeb72f6198f558fc191011e7f",
+      "features": [
+        174,
+        8,
+        169,
+        29
+      ],
+      "area": 115.71,
+      "delay": 280.67
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "resub -K 10 -N 2",
+        "&get; &dch -f; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "1a0f4b16ce85f1b625810b0243285ef1d8d43eb859e04e8e6b1bdd19f4591cbe",
+      "aig_sha256": "3dd5bd454944da4c9477b1d5ae6f1b50864a6ae7501d9975d6b1ad2211f2c0bd",
+      "features": [
+        147,
+        7,
+        152,
+        25
+      ],
+      "area": 109.86,
+      "delay": 261.98
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "6219752f1cf0a422fbfd78d0b153870ee274845beb2d060c7cc84533f454d184",
+      "aig_sha256": "58d6c7daf6d01351cc3d6d1ef6f67467621e5eb2a685649a5b05f91e348f506f",
+      "features": [
+        178,
+        9,
+        182,
+        41
+      ],
+      "area": 111.72,
+      "delay": 326.06
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "95cf8ea7fc0c991f7697a3566da276b954a528bab342322601e0a3ae8142a2a0",
+      "aig_sha256": "f3ea0f3ea67f950e9e3b2452b74cf86ccb75060c5819ab6eb15fc0445bf4034e",
+      "features": [
+        176,
+        9,
+        166,
+        46
+      ],
+      "area": 117.31,
+      "delay": 354.46
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "balance",
+        "refactor -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "5ea62bc54bfbb03ffa10d33cdd196d099101e0b676aff68ac496da1c6690efad",
+      "aig_sha256": "7a96a1ac8b53635d83c49f8e9d50286cd4e4e5fb8fea56736f0de4d36fe170dd",
+      "features": [
+        164,
+        8,
+        165,
+        29
+      ],
+      "area": 111.99,
+      "delay": 313.84
+    },
+    {
+      "circuit": "348fba61c1f0efbcb7977e631999c4041d5459de027f2cc0112f68d9a542b610",
+      "source_name": "ex112.truth",
+      "sequence": [
+        "resub -K 10 -N 2",
+        "resub -K 10 -N 2",
+        "refactor"
+      ],
+      "graph_sha256": "68fb0ab041e39e9ef11733eea63b2452d495193e9e24e2539852e9c5a01e20cd",
+      "aig_sha256": "5fe3a20b55a024a3bd98e89857a6b1cca119c5f086d925cd5c8c115a7c580f70",
+      "features": [
+        182,
+        10,
+        163,
+        51
+      ],
+      "area": 122.63,
+      "delay": 374.47
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [],
+      "graph_sha256": "28d68cf3332499faf40dcceb21cbed0d32b253bb03ba9d1ea06f821408177a61",
+      "aig_sha256": "a2ea9cd9736338897731b507506fe75054895ff62c3700300c87c6b1b6cfca42",
+      "features": [
+        1020,
+        255,
+        1527,
+        3
+      ],
+      "area": 865.83,
+      "delay": 4128.89
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "resub -K 10"
+      ],
+      "graph_sha256": "68682469a2bd7626244f17372a07e4e81232c37e152da8183f88e124e578d383",
+      "aig_sha256": "58baeb5f52e0ff4e74a3261a2199979f09edf0a89c1b88a9658dd57e2601e99a",
+      "features": [
+        894,
+        255,
+        1275,
+        3
+      ],
+      "area": 717.67,
+      "delay": 4129.06
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "237ef06965e098b519796c0c4360e0c8161c60d09d63d699c8f20e55edca4747",
+      "aig_sha256": "f6796fd0a2720c11737a04f0e5ea7e45501394f443468970ff6bc4a4ebdb9363",
+      "features": [
+        1019,
+        255,
+        1527,
+        4
+      ],
+      "area": 866.36,
+      "delay": 4128.89
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "2b065d6a0fc2261702af35ba06fbc25fb7dc20d094614c2ae2ab59ca5be1a1b6",
+      "aig_sha256": "7526ba565c4bc93672b77265adc4bbc6f09b7b33bce0bd5c6c11792691750891",
+      "features": [
+        1020,
+        255,
+        1528,
+        3
+      ],
+      "area": 881.52,
+      "delay": 4138.9
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "66cb8d25250ce93f9f1e258edd670ecdd01d0da66c81e2dde02687f26165fc6d",
+      "aig_sha256": "67a83a62361065eea2a1d1b468168a7747dc595c5f3a427920f0ccabf8711611",
+      "features": [
+        1029,
+        255,
+        1537,
+        4
+      ],
+      "area": 874.61,
+      "delay": 4140.76
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "255c2fc38fb72f6f595688263040b126e5d84234d09566ffe3c0ac0cce93be36",
+      "aig_sha256": "65f041ea05eb7ac897029a0e11cb57ed0366b91271f9383cdf88b97391147a58",
+      "features": [
+        1019,
+        255,
+        1528,
+        4
+      ],
+      "area": 1016.12,
+      "delay": 3396.84
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "rewrite -z",
+        "resub -z"
+      ],
+      "graph_sha256": "00d3b99ecf641c69e718c62c0eeaca5215c74ef7ac29eceae1aa13d4b53a3881",
+      "aig_sha256": "db3447e891932c2c9a30a6ecafb970b48f0231412526126d61977913ae4515a2",
+      "features": [
+        894,
+        255,
+        1276,
+        3
+      ],
+      "area": 663.4,
+      "delay": 4149.56
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "resub -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "e1e08a0a8938a44571a839d2640a56f431675e77ad7537de4a33307bde5fd502",
+      "aig_sha256": "155d33931ac1fc4464f1e27e741d9dfb61da7d023b42166133e50997b881da98",
+      "features": [
+        893,
+        255,
+        1276,
+        4
+      ],
+      "area": 980.74,
+      "delay": 4108.36
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "resub -K 10",
+        "rewrite -z"
+      ],
+      "graph_sha256": "133706c41fbaf16ac21c9580c0064f12e4022718b912625fd9190f1e5c099ac4",
+      "aig_sha256": "2afcf15a885a5ec4dca20a9b1487393b972def0127276a9d020768aab9eff619",
+      "features": [
+        894,
+        255,
+        1276,
+        3
+      ],
+      "area": 980.21,
+      "delay": 4108.36
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "balance",
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -K 10"
+      ],
+      "graph_sha256": "0919351eed87c6dc70d6d59b70457359471ed160ca7087a67d9dc660cc6d24f3",
+      "aig_sha256": "f455924815749f2b68bd4d38a23375d69a18e65df1b05337c1cb73238334d2cc",
+      "features": [
+        903,
+        255,
+        1290,
+        4
+      ],
+      "area": 758.1,
+      "delay": 4180.01
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "balance",
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "refactor"
+      ],
+      "graph_sha256": "9ef54844ccf2ff475e8df1f83e4983e75cb1b80f2ed363393a50a2e893a18d57",
+      "aig_sha256": "ec3c51521693a9070adccc5014d7d7334ef8f9df7fd915a56228d73b1c38885f",
+      "features": [
+        1023,
+        255,
+        1533,
+        4
+      ],
+      "area": 871.95,
+      "delay": 4134.88
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "refactor -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "a7f64c7958594dfa8fbea495a7fe66c076d598029e8efa97ea4e2a1b52bd6a42",
+      "aig_sha256": "8622622f39c1740bb6de2fdb8a730659104a032eb51c0c08ecf54b19d9f633c9",
+      "features": [
+        1019,
+        255,
+        1527,
+        4
+      ],
+      "area": 866.36,
+      "delay": 4128.89
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "resub -K 10",
+        "refactor"
+      ],
+      "graph_sha256": "814206503927b8845a8bd9489d2f5307858c7bedc5727bd48549144577194cb9",
+      "aig_sha256": "7b83b05ada1a5ec778b73622abae005aef82ba8df9494e34cfe3a736db98ffce",
+      "features": [
+        893,
+        255,
+        1275,
+        4
+      ],
+      "area": 718.2,
+      "delay": 4128.95
+    },
+    {
+      "circuit": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+      "source_name": "adder.aig",
+      "sequence": [
+        "refactor -z",
+        "refactor -z",
+        "resub -z"
+      ],
+      "graph_sha256": "8d732ee1668769314e383c850a81e617a57b6760253df164d8b095baf92882a5",
+      "aig_sha256": "3aae7448053d3718cae71617b3661445093deff6adbc13d92cc9a50f0272e4e2",
+      "features": [
+        893,
+        255,
+        1275,
+        4
+      ],
+      "area": 718.2,
+      "delay": 4128.95
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [],
+      "graph_sha256": "69eb862824dcf5629440a7e40d94eee6f775f41dd6e89281ca5eda5d288ee73d",
+      "aig_sha256": "ef9d24122c555075d2ffdae22514045aeb838809485d2011fa493cedc77979f4",
+      "features": [
+        3336,
+        12,
+        3592,
+        512
+      ],
+      "area": 2253.55,
+      "delay": 3794.57
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "ad5429d1ab85b89d8e98620c963aa41545c8eede701a0a3e22ee9d9c22b4a515",
+      "aig_sha256": "ac8c879a72b1f5db0faa39e4c6ad90872ec6c728941fa2522b66f5638848c7a9",
+      "features": [
+        2952,
+        12,
+        2696,
+        256
+      ],
+      "area": 1984.36,
+      "delay": 1909.59
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "106d11b4cf365c34fef21b8356cbd237180a255cd4704da01da11583cdf66447",
+      "aig_sha256": "15fb090a0c2faf1afd02ba7ead7721d4cc3dde3a9a2ca217f242ddbb45167cee",
+      "features": [
+        3141,
+        12,
+        3664,
+        380
+      ],
+      "area": 2159.39,
+      "delay": 2647.91
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "593bc58686ee47a3e0de1169dc1007fec606f71c545a3b62a832a85dd17af9e1",
+      "aig_sha256": "b79413c25350d2954cc0b323616d1a8bed507f4b6a0fe5beb372d07b5bd621bf",
+      "features": [
+        3336,
+        12,
+        3592,
+        512
+      ],
+      "area": 2253.55,
+      "delay": 3794.57
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "f2b277c06f24f5fb4107a751465784c6b4e6cd34ce0ce8e21b117e6b1f89b60a",
+      "aig_sha256": "5ba3c11f2b9c58c0643fc1fd6c2fc1717826db9ed89ce301f9345ce48cf54baf",
+      "features": [
+        3141,
+        12,
+        3850,
+        380
+      ],
+      "area": 2212.32,
+      "delay": 2676.93
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "c8b9925736dd18e470fc82709171baeeff83eeab076a0ac266b924e5ff2963c3",
+      "aig_sha256": "97d69ddb3b0f1192107c52bb0fc4ece2577514814512c196396185f2c8cab731",
+      "features": [
+        2952,
+        12,
+        3720,
+        256
+      ],
+      "area": 2087.04,
+      "delay": 1641.18
+    },
+    {
+      "circuit": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+      "source_name": "bar.aig",
+      "sequence": [
+        "resub -z",
+        "&get; &dch -f; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -K 10"
+      ],
+      "graph_sha256": "c14acf372c810da0980fdb5fadff4df84e4fc2fab18ca6219b317290a5d4b5eb",
+      "aig_sha256": "27d2c1e87f47188f954990a978dcabfb01794bb71b258fa4bae3105de4853048",
+      "features": [
+        2952,
+        12,
+        2696,
+        256
+      ],
+      "area": 1984.36,
+      "delay": 1909.59
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [],
+      "graph_sha256": "19711b1104fc3b1400e4c04364ea58e90c4859ca276cbdfb8fdc4ec102b03a12",
+      "aig_sha256": "93f655d757149c523c9e9d7134273e4baf532949f955f486abe644118e006000",
+      "features": [
+        2865,
+        287,
+        3501,
+        256
+      ],
+      "area": 2216.58,
+      "delay": 6404.53
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "8fee77a00596b2c144478090896e26006d5a3d02c1691b2d05af11f925f41e32",
+      "aig_sha256": "8347c5d3f12fb31bc35ed00e27e30be17188338453875475fc47bd01ddbbb08f",
+      "features": [
+        2836,
+        231,
+        3231,
+        256
+      ],
+      "area": 2198.49,
+      "delay": 6927.97
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "dbad92a141b784f11f50345b604058920281549ab3c5e05ea640fd8fed00d129",
+      "aig_sha256": "3a4bc4fa6a6783222f81d0e7922eaf164fe9f8454ee4acedadcd2f976db20bb4",
+      "features": [
+        2864,
+        287,
+        3305,
+        256
+      ],
+      "area": 2214.72,
+      "delay": 6351.93
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "4aae758368f286f49bd2e065ad94821cb58d617ab0f3d4a2f84140bc6c4286a0",
+      "aig_sha256": "97e5940d8e419941b9e158fdad208ad0d5048e826ef2f03dd5f3f97076a86735",
+      "features": [
+        2865,
+        234,
+        4010,
+        256
+      ],
+      "area": 2187.85,
+      "delay": 7385.03
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "fec9fcbd496947bce4b2ba16ba4ce655049233c79242899f0359f9c5a87094eb",
+      "aig_sha256": "1c56e143c67099b93e19222d6bb59b317f51a5db9ba6bd2248f2e34c66d0ba1f",
+      "features": [
+        2865,
+        229,
+        3501,
+        256
+      ],
+      "area": 2251.69,
+      "delay": 6145.06
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "resub -K 12 -N 2",
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "rewrite -z"
+      ],
+      "graph_sha256": "f1a17229fe9645378dcb658286e3da9466778a6c8a8780105f670282afafbfda",
+      "aig_sha256": "8728fd6ca56c420c71e7e792c2eb5c35475e6b6f0a8aa72a59b4b30acb9988e5",
+      "features": [
+        2832,
+        231,
+        3463,
+        256
+      ],
+      "area": 2089.43,
+      "delay": 5926.38
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "72ca12f1b2a39a35174111fa2483a55bd77c7b408c79f9ab323eb388e6c75fec",
+      "aig_sha256": "d570f7baf2c61f7e2c0797272a07d0e963f19998e111d5205fbada81cf7157af",
+      "features": [
+        2865,
+        229,
+        3501,
+        256
+      ],
+      "area": 2248.76,
+      "delay": 6141.85
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "resub -K 12 -N 2",
+        "rewrite -z",
+        "refactor"
+      ],
+      "graph_sha256": "94621075a6a20899adea275fbd3030333998454312e64b0408c7c1c798f2bbd1",
+      "aig_sha256": "77db7d81e4652817c52a9a2923fc15906a75c7dde11e5b82a72d1e1928980eeb",
+      "features": [
+        2852,
+        287,
+        3305,
+        256
+      ],
+      "area": 2183.33,
+      "delay": 7262.76
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "balance",
+        "rewrite"
+      ],
+      "graph_sha256": "af767f2f1d8218ecda9f29c5d90174a5f82228a4bb8e8542be7b71a78bbb4d5c",
+      "aig_sha256": "806774f76328baf496aa3a298672d1ba40555cab3f3aec5c50c229710a574cbf",
+      "features": [
+        2865,
+        229,
+        3501,
+        256
+      ],
+      "area": 2251.69,
+      "delay": 6145.06
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "rewrite -z",
+        "rewrite"
+      ],
+      "graph_sha256": "1a3dcf374a8d623b3e33fff1409be6e297bb8326e58f7ca3ca1977953041cc8f",
+      "aig_sha256": "84a78b027ae8bab5f4d03821cd12aa9a94a0b944a14e2fb180b7010333c4e0aa",
+      "features": [
+        2863,
+        287,
+        3303,
+        256
+      ],
+      "area": 2216.05,
+      "delay": 6352.74
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "balance",
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "5ac0a5122d6eb05ccf8cef78507037cae25cdc8af5601da250da9276b36d41c9",
+      "aig_sha256": "11fb87afd7c7646cf70ae00a37eb630b88b136a06bcf65ae87becada4940a317",
+      "features": [
+        2865,
+        229,
+        3501,
+        256
+      ],
+      "area": 2248.76,
+      "delay": 6141.85
+    },
+    {
+      "circuit": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+      "source_name": "max.aig",
+      "sequence": [
+        "balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "5a85a5dbcb94baaa3c04f594af86463fe94b44bd927a4c4665f5259962d697a8",
+      "aig_sha256": "fbb571fc371e0d1d00d5f07afa58e7c44325b36eb7c45440bd757f57be9d45b0",
+      "features": [
+        2865,
+        214,
+        4100,
+        256
+      ],
+      "area": 2339.2,
+      "delay": 6016.43
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [],
+      "graph_sha256": "82e959b9a786966673220b5de2354f18a4c0756bf578d64263f9813b51c336fa",
+      "aig_sha256": "80db201c12598810cece5c7f7531543aa3beb9e0b94685d3f78928a1aba158ab",
+      "features": [
+        5416,
+        225,
+        6063,
+        84
+      ],
+      "area": 4099.86,
+      "delay": 4611.04
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "8cacf91e83ddd606157d2cd757777a7cf24ad2810699845722727c40974cc48b",
+      "aig_sha256": "30d9d31594c51d8502cfef691ee2e2317c127d1c476d2c467746ac0e684f7310",
+      "features": [
+        5392,
+        186,
+        6015,
+        84
+      ],
+      "area": 4253.07,
+      "delay": 4782.68
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -K 6"
+      ],
+      "graph_sha256": "173e5616cdaf3eb156b00d72f0f379469bb12bbebd6bec18ddb7eefaee80ff94",
+      "aig_sha256": "0fc7afe27f989ab817d53cd3f6a6713b510ebc504d9cff4ca7eb23c9506cd878",
+      "features": [
+        5382,
+        225,
+        6007,
+        82
+      ],
+      "area": 4067.41,
+      "delay": 4220.56
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "759679ad52d61d11217e1aa0a41634d2b0544dd3d4647361d09beb5b5e48f6c6",
+      "aig_sha256": "5b67bbbf512ceb54cefbec32c8ba8d251f771c3b0afaa55e9f9b23d80fdf33d8",
+      "features": [
+        5315,
+        218,
+        5875,
+        92
+      ],
+      "area": 4097.73,
+      "delay": 4512.73
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z"
+      ],
+      "graph_sha256": "e55c1425d489ce1675e614982445af30eef83394ef1d4d25513cc4a385e5cb16",
+      "aig_sha256": "5494d1a2809d1cb73c16588a035401858e19f6db3b16c2f664ecd2470b56b0a1",
+      "features": [
+        5381,
+        225,
+        6005,
+        82
+      ],
+      "area": 4066.34,
+      "delay": 4228.64
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "423c61c4e71aca7dbffa8676f5de02731d982a0bde67ac4e38da37885284391e",
+      "aig_sha256": "bffaf0293422c65f21d87e410b29af58b9eb94ad1bc05e60e991e75361e8bd79",
+      "features": [
+        5321,
+        224,
+        5921,
+        84
+      ],
+      "area": 4053.04,
+      "delay": 4292.17
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "rewrite -z"
+      ],
+      "graph_sha256": "63adb83ec50ea5ada78c30aa7c8bc4c01b224af8e2902ecc516b836ef2bb027d",
+      "aig_sha256": "759b5a31653d0aeadf45191dbab7eb35901564753df10b362d641b9e5646aa33",
+      "features": [
+        5218,
+        200,
+        5401,
+        76
+      ],
+      "area": 4036.55,
+      "delay": 4336.4
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "rewrite"
+      ],
+      "graph_sha256": "5e4015c249526b18ca115f86a9dda5aed7d903ff67b1b3d79e503bdb3b53ad22",
+      "aig_sha256": "779aa76637889c04fee0dc063baa22d93136d588b1e688bcf3e6ffe461a6966b",
+      "features": [
+        5337,
+        223,
+        5847,
+        84
+      ],
+      "area": 4089.22,
+      "delay": 4501.89
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "rewrite"
+      ],
+      "graph_sha256": "7c42d787c3b1cf0bb50bda8483568fbe71d0a8c1ccf3756f50eef882321011c9",
+      "aig_sha256": "a3790e6df866fc98b4be3c96276e47c3729b9ba13fa474d0c46fd7a012da284d",
+      "features": [
+        5306,
+        223,
+        5800,
+        82
+      ],
+      "area": 4084.7,
+      "delay": 4273.45
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "balance",
+        "balance"
+      ],
+      "graph_sha256": "9b108347a2a49905f5c653f9d4e5e3fc2b39d6c1fc2cb20b55ce734070aa2cc2",
+      "aig_sha256": "e2cc2dd9fc75fa38b1602ea1f0da118443e83cdc5ac109cbdc5e24b081ecd9d5",
+      "features": [
+        5377,
+        186,
+        5987,
+        84
+      ],
+      "area": 4250.95,
+      "delay": 4778.22
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "rewrite -z"
+      ],
+      "graph_sha256": "55d714d172329a9d364fdc77790eed2c9fe0310a1e5ab1a15e59dd7a56a18739",
+      "aig_sha256": "9814721e84c59d2751764daee1b38a812ac1a81bcd2018643fdbcbe807f80415",
+      "features": [
+        5193,
+        198,
+        5365,
+        74
+      ],
+      "area": 4083.63,
+      "delay": 4678.14
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "refactor -z"
+      ],
+      "graph_sha256": "61f1b9e5275f9a806d88fc679548e33b9632988f5483406b6f0fc48e26193586",
+      "aig_sha256": "09e3464bfad393589f95ed440882240f7998f252d89cb028a1daf071228e18ca",
+      "features": [
+        5292,
+        218,
+        5836,
+        90
+      ],
+      "area": 4119.28,
+      "delay": 4696.56
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "refactor",
+        "refactor"
+      ],
+      "graph_sha256": "eea0a26bcd2f9ccb382c1092a732774461cf0c7ee943d4faae9c81a5daa6c20a",
+      "aig_sha256": "fbdb7ba8221115dfcde2a20957f1797693392edcf199559158782079f272fd91",
+      "features": [
+        5321,
+        224,
+        5921,
+        84
+      ],
+      "area": 4053.04,
+      "delay": 4292.17
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "refactor"
+      ],
+      "graph_sha256": "bf0d1d149f2181fbe7ff1a4af93f991f8c525331f35e4bdba8d15bfd8af8ad01",
+      "aig_sha256": "df70e5fbf00b21c45299e4c6f047d91dc656d6aab5f3aeb4e64418e728d021a3",
+      "features": [
+        5297,
+        224,
+        5872,
+        82
+      ],
+      "area": 4055.7,
+      "delay": 4250.88
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "refactor",
+        "resub -K 6"
+      ],
+      "graph_sha256": "53a0495f20bfd8b3bf4f303e9d26f213d775745725f02c730bce2ef45c055417",
+      "aig_sha256": "83df4b2e6a1b54cd57b54dcaa759b89c0e68b87ffb6f43439553e873fa98817f",
+      "features": [
+        5293,
+        224,
+        5865,
+        82
+      ],
+      "area": 4052.51,
+      "delay": 4266.97
+    },
+    {
+      "circuit": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+      "source_name": "sin.aig",
+      "sequence": [
+        "resub -z",
+        "rewrite -z",
+        "resub -z"
+      ],
+      "graph_sha256": "a5d66b2173ea4f7a9323927c12e1ff0b29bb83b4c0d2ea122ec32e9587e74612",
+      "aig_sha256": "3da1081b953a0af676930260f54365c5e7700ba3b4612cce36eabd4a9b3478cd",
+      "features": [
+        5179,
+        198,
+        5340,
+        74
+      ],
+      "area": 4069.53,
+      "delay": 4662.02
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [],
+      "graph_sha256": "53b53f2c49bdd865495f0a8ee475d94aaf3c72ec9cb9f7b4f15a6046060a6b94",
+      "aig_sha256": "a8a230ad0a5146c98d0fca6564f5785c87ca4b5d5a11896fe1a5044a87c2ef9d",
+      "features": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "area": 2.66,
+      "delay": 97.26
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "refactor"
+      ],
+      "graph_sha256": "aeb59a74ecbb8f77901c80970a33ea06c12b194bf57190987626c610940c75d1",
+      "aig_sha256": "54ba3453916602657e2bf9cb276cd319e05e811bbb145a145bb1b1296ee43005",
+      "features": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "area": 2.66,
+      "delay": 97.26
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "b9adbea0e2a400b6d674a25e98254cf7f61218a822bf105e219f672fe2574340",
+      "aig_sha256": "a0675f5acf93d601c0ce24469af2497de5c2a4425dd7ec5fad9002e05ee7491d",
+      "features": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "area": 2.66,
+      "delay": 89.59
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "282ca3967d8aed2b7198ed0ca6282de4ee31f2374b6c16524a4fa08f3b1e7ebc",
+      "aig_sha256": "48c47f70548c8f43453a606c2394584773517014e4cfb410b89d8b37142392d7",
+      "features": [
+        5,
+        3,
+        3,
+        2
+      ],
+      "area": 3.46,
+      "delay": 97.58
+    },
+    {
+      "circuit": "52bb00e7ce87130a643923f048a77f217c7aa8cad99180b899d0dc0d0235940a",
+      "source_name": "chain-2.blif",
+      "sequence": [
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "4b1f5eeaad6c57a160e17c1a493c04f1d3a2bfdcb26de7e86a3db2a2b4061771",
+      "aig_sha256": "f4a945a934611aee32e01edae95165c5b61acadb3bf69cfd56ead04596ba6b34",
+      "features": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "area": 2.66,
+      "delay": 86.68
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [],
+      "graph_sha256": "dd5fa4299bf31bc32afc5c9b98a3b3235646c39792e9c693c60a3f1d91c55279",
+      "aig_sha256": "de4924c0aba21f2c1b74a6c4ce2e52a2cf7e9f4beb3793462a026fa76748e381",
+      "features": [
+        6,
+        5,
+        3,
+        2
+      ],
+      "area": 3.46,
+      "delay": 130.52
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "2027bf159a968bb8e5ca0a512b92c6ac5e9caa8806ea8bb7645f532efa9005d5",
+      "aig_sha256": "bcacf4d600f06e226dbb89e15d6b62c88aee8b4bc2ff3eaa805ff20f7830f39b",
+      "features": [
+        6,
+        3,
+        3,
+        2
+      ],
+      "area": 2.93,
+      "delay": 95.08
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "036c35dbe0943d96067f20e57dedee3a5155d85af8ecb6b7f065503eeea17a13",
+      "aig_sha256": "c73b768f60b0cd05d73607d42b72c739e964b8ebcca5a707940559405baf522f",
+      "features": [
+        5,
+        3,
+        3,
+        1
+      ],
+      "area": 2.93,
+      "delay": 101.08
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "resub -K 10 -N 2"
+      ],
+      "graph_sha256": "fd48ebd5f1bc6805abeaaea13a7a79a84aa78a32a5bbbff7841a8fd23697c0df",
+      "aig_sha256": "2f7c8dd1480627ceb0b9ca8985d1c654e8850f366cbb8466aac4206542fe58e2",
+      "features": [
+        5,
+        5,
+        3,
+        1
+      ],
+      "area": 3.46,
+      "delay": 130.52
+    },
+    {
+      "circuit": "edc616806a80b08e5327221134d85084b476544c10033ed287b1781c07217b2d",
+      "source_name": "chain-3.blif",
+      "sequence": [
+        "rewrite -z",
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "c7e9a76ab086b6c304b1afb96fbced117d4d94bb4be85dcbe644a154d9763795",
+      "aig_sha256": "7a10b04cfc730614eb79355d2ee1c2aad4f3b2f62002c8b122319314424b6419",
+      "features": [
+        5,
+        3,
+        3,
+        1
+      ],
+      "area": 2.93,
+      "delay": 95.08
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [],
+      "graph_sha256": "96ea9ec13e00da11c8a8197f89448c272d7f4b5f25f367925ef6797b2d1a31de",
+      "aig_sha256": "63d95a35502c9f691b130d912fa50834db69f29d019ad9b38a1714322cc7a759",
+      "features": [
+        7,
+        6,
+        3,
+        2
+      ],
+      "area": 4.26,
+      "delay": 177.24
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 4; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "3c56d2ac404af61ecf9e6e96bdff3ce1ef7073ed1d9b8f7acb3a20b559ba76f3",
+      "aig_sha256": "5df4eaaacdbb9c187007caa7c812d20414b7b9b5e1ff82fd79072153330627a9",
+      "features": [
+        6,
+        3,
+        3,
+        1
+      ],
+      "area": 3.19,
+      "delay": 97.26
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "b501c2c8f9ef9c7c929585d1ac7923516fb560255d6d1e3045be7b98d23530bf",
+      "aig_sha256": "60047b6e0910fe55cdaba04e3f9718c62fc47c6352ce51a7b37139c13a840154",
+      "features": [
+        6,
+        6,
+        3,
+        1
+      ],
+      "area": 4.26,
+      "delay": 177.24
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "38d9677d1e9438d2a88bb8d60c4887c55e01c473db918661a86a85ba0d97bd6a",
+      "aig_sha256": "b2bf797608157b689335590efd9e92f88dfa8f000afe6fa36d1cc592167b31df",
+      "features": [
+        7,
+        3,
+        3,
+        2
+      ],
+      "area": 3.19,
+      "delay": 101.08
+    },
+    {
+      "circuit": "5c5d0571dd274d4eaf142d47677a570ea2022fa03ac6296e9b8b506aa1a84f71",
+      "source_name": "chain-4.blif",
+      "sequence": [
+        "balance",
+        "refactor -z"
+      ],
+      "graph_sha256": "e763c7d7331d4919d9191f5cad4fea757316fa868b85b366f2dbb79c56bcab86",
+      "aig_sha256": "7c4b42c28138f0d1dcd951148fac3276611e03d472f223d19fb0d5cbc85444d5",
+      "features": [
+        6,
+        3,
+        3,
+        1
+      ],
+      "area": 3.19,
+      "delay": 101.08
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [],
+      "graph_sha256": "624a0ae384a0152f5aab6d0da4649211dc30ea8f01675ad8a948b788b0d8a933",
+      "aig_sha256": "3f76dc8143fca3e3c63eef8f5484646214e68faf8ec7f5dba12bb69e47bcfc9f",
+      "features": [
+        8,
+        7,
+        3,
+        2
+      ],
+      "area": 5.85,
+      "delay": 158.96
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "4a5da610af3035c0e693d3f6879e3677b65139a8afdd3989b85cc4f36513eed8",
+      "aig_sha256": "76b0b30913cdfb55438413e6f573873c014559e348404899c32872b5e6f10de6",
+      "features": [
+        8,
+        4,
+        3,
+        2
+      ],
+      "area": 3.99,
+      "delay": 134.67
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "06a6f78eec8e05600d4cc07b64d96d40cafcf1f0191b77dca6d0b80c1cdcfb1c",
+      "aig_sha256": "4e6e07bdfe00f81a7c46b9eeb49d45921a0c573895a4a8fbf7fcd47cb7c7ba07",
+      "features": [
+        7,
+        7,
+        3,
+        1
+      ],
+      "area": 4.26,
+      "delay": 131.47
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "994a6ebb0abd26d34bb4c714ece5b9ce5a699c01d0fd719366c105b6e80a96eb",
+      "aig_sha256": "3a5c38690549bff7f503e9bf29e3ae942709be2bb67c1d026e2ff0a4b2e0cf3b",
+      "features": [
+        7,
+        3,
+        3,
+        1
+      ],
+      "area": 3.46,
+      "delay": 106.92
+    },
+    {
+      "circuit": "6b8f85733def5546fae5640f98ce28e0006a957a75b0af5b52cdaf8681367102",
+      "source_name": "chain-5.blif",
+      "sequence": [
+        "rewrite",
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -z"
+      ],
+      "graph_sha256": "692e1adac5fb6413ea414fef3333e7aa4aa60e7c9411946d82d08896942c52a8",
+      "aig_sha256": "3e660a002e32e8d1ad19efe13bfdd56cc50338c5ccc085906911a489c34d613c",
+      "features": [
+        7,
+        3,
+        3,
+        1
+      ],
+      "area": 3.46,
+      "delay": 106.92
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [],
+      "graph_sha256": "091d70e62e2e1e593ae516f0af6a635e912d06aea64a13697c348cc7b1f8f0e3",
+      "aig_sha256": "d00cff626b96b488d40f34a9c597c98efc9fcd3494cb249c022b1d61803a67df",
+      "features": [
+        9,
+        8,
+        3,
+        2
+      ],
+      "area": 6.65,
+      "delay": 194.81
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "17654afdbc522292adf6f1f74e5aace1a7b557a6067200d7a7c0a488105894b6",
+      "aig_sha256": "03df7b0833704ffb1f3ebb02e1dc2a39b1208c452497996662af38d72bd6f842",
+      "features": [
+        9,
+        4,
+        3,
+        2
+      ],
+      "area": 4.26,
+      "delay": 134.2
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "0e0df718781a271063628031ce7a59aba26a31f98ac063c3fc37d3ba2c5f4868",
+      "aig_sha256": "ef11582a706b0299092bec12cacaa9783865ffc607f347e6f809250343087e08",
+      "features": [
+        8,
+        8,
+        3,
+        1
+      ],
+      "area": 5.05,
+      "delay": 141.95
+    },
+    {
+      "circuit": "57197a8b463a4d62be8172ea9224269f90c2d0ea80b7f1c3ebb608524abe207f",
+      "source_name": "chain-6.blif",
+      "sequence": [
+        "rewrite -z",
+        "resub -K 12 -N 2",
+        "&get; &dch; &if -a -K 3; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "6a3cd29c26a8166b83b99991ea9c070020bbb91dd099b17c1c8dc9e9f9afeef5",
+      "aig_sha256": "706196904299a5de004ee72f6350fd0dddf68fc7fc15e9042c310d17ed15a90e",
+      "features": [
+        8,
+        4,
+        3,
+        1
+      ],
+      "area": 4.26,
+      "delay": 134.67
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [],
+      "graph_sha256": "e564888d14f8ac5d590ab740e56d788af3bc214c57a6d417a238f2f72f1a4522",
+      "aig_sha256": "5f5c338b53c94a09063399af2c03074251eb73bf73a1421285c1fee3fcf82399",
+      "features": [
+        10,
+        9,
+        3,
+        2
+      ],
+      "area": 5.85,
+      "delay": 166.85
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "c1f40fea4716c80f17b4cd7bd7a871d2fe10027370f926144aab462d70da5f32",
+      "aig_sha256": "58f931068077034cfaa4f6292211ff5f026a9d1ec7a147dee5667aaa5d980118",
+      "features": [
+        9,
+        9,
+        3,
+        1
+      ],
+      "area": 5.85,
+      "delay": 166.85
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "a92034533ab84d7826fa52752fa9e6f9172989593e8f6f7ed91256fceb561a01",
+      "aig_sha256": "5294ee9757662a016843bc9fcec99a02294570747cbaf436003b6156c6cf1da3",
+      "features": [
+        10,
+        4,
+        3,
+        2
+      ],
+      "area": 4.52,
+      "delay": 139.1
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "ad5f1fdf3bfbcd795d62f93285ea49985e865cf853fa32507861a6c28a3b420b",
+      "aig_sha256": "92c0be4123a8662182b2082eaf0d3342da4a01dc3094b514dbae58dc67d6551c",
+      "features": [
+        9,
+        4,
+        3,
+        1
+      ],
+      "area": 4.52,
+      "delay": 146.1
+    },
+    {
+      "circuit": "a59ecf7748d050c5b3d46e9d01e05e4e573e08c0ef16c011093567bdca58d0f7",
+      "source_name": "chain-7.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance",
+        "resub -z"
+      ],
+      "graph_sha256": "6c445b53718bf8d21b9ceb76f3c9eccb9f9faa2c75741c57e0613d82d0e87573",
+      "aig_sha256": "c4e16792cc10e05769ff650b882286e167713570d528f98adbd795e80286761b",
+      "features": [
+        9,
+        4,
+        3,
+        1
+      ],
+      "area": 4.52,
+      "delay": 146.1
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [],
+      "graph_sha256": "f7888a30024f76a5438c4945581699b9f92bfc11d54d2ec8fb90a34f28cea143",
+      "aig_sha256": "6fa237f68368fc6040a23de078931cb65d643adc737fbb23494da710bd35d6dc",
+      "features": [
+        11,
+        10,
+        3,
+        2
+      ],
+      "area": 6.92,
+      "delay": 192.51
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "balance"
+      ],
+      "graph_sha256": "7d6a4e8ca884c5bc0a93daa4948b7bc9c6474ad1a1a1de71d7c8de039d056c21",
+      "aig_sha256": "082162ba469f7fcfcaf152199777ccf6eb6970dbf60276201f5d6e09ff2efe8c",
+      "features": [
+        11,
+        4,
+        3,
+        2
+      ],
+      "area": 4.79,
+      "delay": 146.1
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "refactor -z"
+      ],
+      "graph_sha256": "42207864a4b11b2754f7d54473918dfd87042e0141307f965d3d4dd5d7a29d4a",
+      "aig_sha256": "b8b7230ecd2600e7f29ba0e59918f21ac075cadb58b61b2cfde4c8489901ee4b",
+      "features": [
+        10,
+        5,
+        3,
+        1
+      ],
+      "area": 5.32,
+      "delay": 183.96
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "resub -K 6 -N 2"
+      ],
+      "graph_sha256": "aef3e30771357c8d9f8576cb79401ab28d94f5ee422d10de1d6cf54464bdb9c8",
+      "aig_sha256": "61fc460eafda7c4ade29aa3fac42da2e508fb41c412421059d2572a787d4b3c2",
+      "features": [
+        10,
+        10,
+        3,
+        1
+      ],
+      "area": 6.92,
+      "delay": 192.51
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "&get; &dch -f; &if -a -K 5; &mfs -e -W 20 -L 20; &fx; &st; &put; balance"
+      ],
+      "graph_sha256": "f79e71bb4c1f7ca2c9fd1c2c508d8c00be7869654a91f22595c6c35eb082a503",
+      "aig_sha256": "21c5075606e37700793aaa24c47746a76e6581139db93c020950349a7b3742ae",
+      "features": [
+        10,
+        4,
+        3,
+        1
+      ],
+      "area": 4.79,
+      "delay": 146.1
+    },
+    {
+      "circuit": "3732a0e7a927faff5b380bc92e0c034aefcf0dbedafea95e61d2779051739925",
+      "source_name": "chain-8.blif",
+      "sequence": [
+        "resub -K 6 -N 2",
+        "balance",
+        "refactor"
+      ],
+      "graph_sha256": "cde531cf4f06a564161b5259052ba43ebdead6d22340317687d6b1c78431dfa5",
+      "aig_sha256": "4bd356c57070e7637b7b5e2cdb2fe35d11b158758de1bb490e9889a03572c60c",
+      "features": [
+        10,
+        4,
+        3,
+        1
+      ],
+      "area": 4.79,
+      "delay": 146.1
+    }
+  ],
+  "source_artifact_sha256": "ba457b25bb4366ec35d63fa2bb4cf7d4352f6fefc1caa8c4ddba98c52d8a92b2"
+}

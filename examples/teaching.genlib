@@ -1,0 +1,11 @@
+# Illustrative library. Arbitrary area and delay units; no foundry data.
+GATE zero 0 O=CONST0;
+GATE one 0 O=CONST1;
+GATE inv 0.5 O=!a; PIN * INV 1 999 0.5 0 0.5 0
+GATE buf 0.5 O=a; PIN * NONINV 1 999 0.5 0 0.5 0
+GATE nand2 1 O=!(a*b); PIN * INV 1 999 1 0 1 0
+GATE nor2 1.2 O=!(a+b); PIN * INV 1 999 1 0 1 0
+GATE and2 1.5 O=a*b; PIN * NONINV 1 999 1.5 0 1.5 0
+GATE or2 1.7 O=a+b; PIN * NONINV 1 999 1.5 0 1.5 0
+GATE nand3 1.65 O=!(a*b*c); PIN * INV 1 999 1.25 0 1.25 0
+GATE and3 2.15 O=a*b*c; PIN * NONINV 1 999 1.75 0 1.75 0

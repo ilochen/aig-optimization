@@ -1,0 +1,26 @@
+name: Validate synthesis and search
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build the tested Berkeley ABC revision
+        run: |
+          git clone https://github.com/berkeley-abc/abc.git abc
+          git -C abc checkout 8ba3d9b91c3d529223e90bcab0e9094bc015eac7
+          make -C abc -j2 ABC_USE_NO_READLINE=1
+      - run: python3 -m pip install .
+      - run: aigopt --help
+      - run: python3 -m unittest discover -s tests -v
+        env:
+          ABC_BINARY: ${{ github.workspace }}/abc/abc
+      - run: node --test tests/browser-model.test.js
